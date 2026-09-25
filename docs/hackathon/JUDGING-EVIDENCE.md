@@ -1,46 +1,16 @@
-> **Historical R3 scope, superseded 2026-09-23:** the owner selected an operations-coordinator job simulation. Use the [current R4 plan](../career/DELIVERY-PLAN.md). This file preserves earlier PowerLab scope/evidence and must not drive new feature work or be copied as the current submission story.
+# R4 judging evidence map
 
-# Judging evidence and competitive release gates
+Type: release map, 2026-09-25. Based on the [official rules](https://amazonappdev2026.devpost.com/rules). It is our interpretation of four equally weighted criteria, not an official score or guarantee. The earlier PowerLab map is preserved in [R3 history](JUDGING-EVIDENCE-R3.md).
 
-Type: product strategy/reference. Revision 3. This is our interpretation of the published criteria, not an official scoring rubric or forecast of a prize.
+| Criterion | Judge-visible R4 evidence | Observed so far | Remaining gap |
+| --- | --- | --- | --- |
+| Tech Implementation | Source-scoped actor answers; typed AI proposal → explicit Apply/Undo; deterministic stock/capacity/deadline/cost review; persisted replay/report; documented Bedrock/AWS integration | One full shift, one replay, one Lite focus, proposal Apply/Undo, reload and container restart in Chrome | Hosted Sonic browser turn, broader error/concurrent paths, reproducible public repo setup |
+| Design | Board is primary workspace; distinguish expected stock from confirmed stock; show pending offer versus recorded agreement; disclose assistance; recover from change | One guided shift, one replay and report path visible | Target-user usability, mobile/keyboard pass, voice recovery |
+| Potential Impact | A realistic entry-level work-preparation task with a clear learner and practitioner job; report what users actually do | Product hypothesis and one fictional scenario authored | Practitioner review and small learner pilot; no measured learning claim yet |
+| Quality of Idea | Stakeholder conversation changes a shared plan under a supplier disruption; replay tests adaptation; handoff makes decisions inspectable | Core workflow observed end to end on the AWS demo | Demonstrate the distinct value clearly in the video; compare fairly with an AI assistant using the same facts |
 
-The [official rules](https://amazonappdev2026.devpost.com/rules) have a viability/track-fit screen followed by four equally weighted criteria: Tech Implementation, Design, Potential Impact and Quality of the Idea. Their Alexa+ examples distinguish simple Q&A from contextual tool workflows. The AWS examples favor purposeful integration. An optional genuine friction log may receive up to a 10% bonus. More services do not automatically earn more points.
+## Release interpretation
 
-## Stage-one eligibility gate
+The chosen Alexa+ route is a clearly labeled **web simulation**. The [rules](https://amazonappdev2026.devpost.com/rules) allow that route using an AI or agentic tool without a required MCP surface. The AWS Builder mini challenge requires documented AWS service integration. The current demo uses CloudFront, EC2, S3/SSM deployment operations and Bedrock Nova 2 Lite at runtime; Sonic is wired but lacks a successful hosted browser voice receipt. Claims in the video and Devpost story must match that distinction.
 
-Use the Alexa+ web-simulation route and document the actual simulated conversational experience. Select AWS Builder only with actual documented service use. Repository, video, feedback, language and access obligations are in [requirements](REQUIREMENTS.md). None is complete merely because this plan names it.
-
-## Make each strength visible
-
-| Criterion | Product decision | Moment a judge should see | Artifact / evidence to collect | Current state |
-| --- | --- | --- | --- | --- |
-| Tech Implementation | Voice and manual commands share a validated domain boundary; actual simulator and persistent records | A spoken edit changes the schedule; a returned run drives the curve; reload restores it | Sanitized action/provider trace, reproducible reference cases, source paths, deployment manifest | Planned |
-| Tech Implementation | Bedrock coaching chooses a permitted experiment from actual evidence | Relevant activity appears after a specific failed constraint | Input/output schema, actual run ID/source IDs, failure fallback and usage evidence | Planned |
-| Design | One focused visual lab, readable W/Wh, equivalent keyboard/manual controls | Learner sees why the plan fails and can make a change immediately | Actual desktop/mobile screens, accessibility observations, full journey and recovery | Planned |
-| Design | Voice is useful without being compulsory | “Move laptop to hour three”; corrected/ambiguous command is recoverable | Command/task success, latency, transcript/undo/stop behavior | Planned |
-| Potential Impact | Concrete introductory STEM lesson and tutor review job | Student applies the principle in B; tutor inspects the relevant run | Real pilot with denominator, qualitative findings, fair comparator, delayed C if available | Unvalidated |
-| Potential Impact | Content can extend through reviewed packs | Explain where the lesson fits before/after class | Tutor feedback, authoring contract, sustainable cost assumptions | Hypothesis |
-| Quality of the Idea | A practical design artifact, contextual assistance and continuity form one workflow | Capacity increases but the plan still fails under a lower power ceiling; learner adapts | Clear story, actual interactions and explanation of prior art/differentiation | Planned |
-| Quality of the Idea | Agent remembers factual work and routes to the right next task | Resume an unresolved constraint, then independent review | Persistent artifact + evidence-based recommendation, accurate elapsed time | Planned |
-| Friction bonus | Actionable feedback from genuine build experience | Brief feedback reference in submission | Repro steps, expected/actual behavior, workaround, redacted trace and suggestion | Existing internal notes need curation |
-
-## Internal quality review, not pretend scores
-
-Use **Missing / Implemented / Verified / Demonstrated** per row. A row is Demonstrated only when it has functioning behavior, evidence and a clear place in the submission. No self-assigned 100/100 or estimated winning probability.
-
-Before feature freeze, review all four criteria together. A sophisticated backend with a confusing lab, or attractive animation without actual outcomes, leaves a material gap. Reserve time for the weak criterion rather than adding another model or screen.
-
-## Specific risks to competitiveness
-
-- Existing products already offer adaptive lessons and interactive visuals; [research](../research/COMPETITIVE-LANDSCAPE.md) must inform honest positioning.
-- Prior hackathon projects already use misconceptions and transfer. Our story must explain this practical job and show why the execution helps.
-- Voice that merely reads a paragraph contributes little to this lesson. Show real tool actions and state continuity.
-- Small pilot results cannot justify sweeping educational claims. Specific, modest evidence is stronger than invented adoption or mastery.
-- The energy example must be tied to a real course/tutor need. Validate the choice early; everyday appearance alone does not establish impact.
-- Canned screenshots, narrated future features and hidden failures cannot substitute for a functioning product.
-
-## Release gates
-
-G0: source/rules audit and coherent scope. G1: reviewed lesson + meaningful local lab. G2: feasible live voice action and grounded coach. G3: independent transfer, durable state and report. G4: isolated hosted review path and requested verification. G5: actual pilot/iteration and complete claim audit. G6: authentic video, final access and confirmed submission.
-
-The [roadmap](../delivery/ROADMAP.md) assigns dates and [backlog](../delivery/BACKLOG.md) assigns work. If a gate fails, document the gap and adjust claims/scope; do not mark it complete to preserve a schedule.
+The [submission workbook](SUBMISSION-WORKBOOK.md) and [R4 script](DEMO-SCRIPT.md) convert this map into the entry package. Genuine, reproducible friction can be submitted for the optional feedback bonus; the [internal friction log](../research/FRICTION-LOG.md) must be redacted and curated first.
