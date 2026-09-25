@@ -4,6 +4,8 @@
 
 **R4 — 25/09/2026:** học qua công việc mô phỏng. Bạn đã chọn **điều phối vận hành**, xử lý đơn hàng, khách hàng và sự cố giao hàng. Bài đầu tiên: **First Shift — Ca trực đầu tiên**. Bản demo hiện chạy trên AWS tại [LearnSprint First Shift](https://d2g4a2ezl5lw7r.cloudfront.net/career); các nguyên mẫu trước được giữ lại.
 
+Mã nguồn công khai: [GitHub](https://github.com/xuanhai0913/LearnSprint), giấy phép [MIT](LICENSE). Đây là mô phỏng trải nghiệm Alexa+ trên web cho hackathon; không phải tích hợp hoặc chứng nhận Alexa+ gốc.
+
 ## Kế hoạch hiện tại
 
 | Nội dung | Tài liệu |

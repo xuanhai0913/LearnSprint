@@ -30,7 +30,7 @@ Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has 
 ## Reviewer links and access
 
 - Hosted demo: <https://d2g4a2ezl5lw7r.cloudfront.net/career>. Public First Shift entry requires no sign-in. Each browser owns its saved shifts through a Secure cookie; reviewers can start a fresh attempt.
-- Source repository URL: **pending publication**. A standalone local Git repository exists at `Documents/GitHub/LearnSprint`. The owner selected a public repository with the MIT license. The GitHub URL must be inserted and checked after publication.
+- Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and setup guidance. The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. Check a clean clone/setup before submission.
 - Public YouTube/Vimeo video under three minutes: **pending**. Use the [current R4 script](DEMO-SCRIPT.md).
 - Thumbnail/screenshots: **pending**. Capture the deployed R4 experience with synthetic data and no AWS account details.
 - Open Source additional challenge: **do not select by default**. Publishing the main repo alone does not satisfy a distinct open-source contribution.
