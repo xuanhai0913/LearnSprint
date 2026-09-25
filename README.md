@@ -6,6 +6,8 @@
 
 Mã nguồn công khai: [GitHub](https://github.com/xuanhai0913/LearnSprint), giấy phép [MIT](LICENSE). Đây là mô phỏng trải nghiệm Alexa+ trên web cho hackathon; không phải tích hợp hoặc chứng nhận Alexa+ gốc.
 
+**For judges / English:** [Reviewer guide](docs/hackathon/REVIEWER-GUIDE.md) · [submission story](docs/hackathon/SUBMISSION-WORKBOOK.md) · [demo script](docs/hackathon/DEMO-SCRIPT.md) · [current evidence](docs/hackathon/JUDGING-EVIDENCE.md).
+
 ## Kế hoạch hiện tại
 
 | Nội dung | Tài liệu |

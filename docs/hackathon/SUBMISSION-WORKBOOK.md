@@ -11,7 +11,7 @@ Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has 
 | Primary route | Alexa+ experience **simulation**. The web app demonstrates contextual conversation and explicit actions; it is not a native Alexa+ integration or certification. |
 | Mini challenge | AWS Builder. The demo runs on AWS and uses Amazon Bedrock Nova 2 Lite for bounded request interpretation and coaching focus. Nova 2 Sonic has a live transport but a successful hosted browser voice turn is not yet verified. |
 | Audience | Adults preparing for entry-level order support or operations coordination; English is the first interface language. |
-| Status | Hosted preview and several browser journeys observed. Practitioner/learner validation, final video, repository publication and form submission remain open. |
+| Status | Hosted preview and several browser journeys observed. Public MIT repository is live. Practitioner/learner validation, final video and form submission remain open. |
 
 ## Public project story draft
 
@@ -25,12 +25,12 @@ Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has 
 
 **Observed accomplishments.** One complete manual first shift and one linked changed-condition replay were saved and reloaded in Chrome. An authored guidance request and one live AI-selected focus persisted. A saved Lite proposal was applied and undone, with the board and record retained after reload and an app-container restart. A fresh browser cookie could not open the existing shift. These are narrow demo observations, not evidence of learning outcomes or broad reliability.
 
-**Challenges and next steps.** Source-backed conversation and AI proposals need strict separation from commitments. A cloud UI update exposed duplicate contact panels and was repaired. Sonic reached the provider and consumed three bounded reservations, but no browser voice action was saved; the voice experience needs diagnosis and a verified demonstration. Next: practitioner review of scenario realism, a small learner pilot, voice repair, public source/setup/license, and a concise demo video.
+**Challenges and next steps.** Source-backed conversation and AI proposals need strict separation from commitments. A cloud UI update exposed duplicate contact panels and was repaired. Sonic reached the provider and consumed three bounded reservations, but no browser voice action was saved; the voice experience needs diagnosis and a verified demonstration. Next: practitioner review of scenario realism, a small learner pilot, voice repair, and a concise demo video.
 
 ## Reviewer links and access
 
 - Hosted demo: <https://d2g4a2ezl5lw7r.cloudfront.net/career>. Public First Shift entry requires no sign-in. Each browser owns its saved shifts through a Secure cookie; reviewers can start a fresh attempt.
-- Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and setup guidance. The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. Check a clean clone/setup before submission.
+- Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and [reviewer guide](REVIEWER-GUIDE.md). The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. A clean clone/setup remains unverified.
 - Public YouTube/Vimeo video under three minutes: **pending**. Use the [current R4 script](DEMO-SCRIPT.md).
 - Thumbnail/screenshots: **pending**. Capture the deployed R4 experience with synthetic data and no AWS account details.
 - Open Source additional challenge: **do not select by default**. Publishing the main repo alone does not satisfy a distinct open-source contribution.
@@ -41,7 +41,7 @@ Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has 
 2. Select Alexa+ simulation primary route and AWS Builder mini challenge if the live form offers those exact fields. Describe simulated behavior and actual AWS use explicitly.
 3. Paste the final English story after checking every claim against the release and video.
 4. Add public source, free demo access, short public video and any required media/thumbnail. Confirm links in a clean browser.
-5. Answer tool feedback for services actually used: Bedrock Nova 2 Lite, attempted Nova 2 Sonic, EC2, CloudFront, S3, SSM and relevant SDKs. Separate successful behavior from friction. Do not list AgentCore, Strands, DynamoDB or Lambda as used.
+5. Adapt the [product feedback draft](PRODUCT-FEEDBACK.md) to the live form for services actually used: Bedrock Nova 2 Lite, attempted Nova 2 Sonic, EC2, CloudFront, S3, SSM and relevant SDKs. Separate successful behavior from friction. Do not list AgentCore, Strands, DynamoDB or Lambda as used.
 6. If the form requests tool feedback, cover purpose, what worked, what needs improvement, onboarding and whether the tool would be used again. Use observed examples and a redacted friction note.
 7. Review the real submission preview and terms with the owner, submit before the internal October 22 evening VN target, then record the confirmation URL/time. Official close is October 24, 2026 at 02:00 VN per the last rules check.
 
