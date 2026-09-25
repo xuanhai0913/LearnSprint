@@ -1,0 +1,103 @@
+1
+00:00:09,000 --> 00:00:11,966
+How do you prepare for a job you have never done?
+
+2
+00:00:11,966 --> 00:00:19,795
+LearnSprint lets you practice a fictional first shift in operations, where your decisions change the plan.
+
+3
+00:00:19,795 --> 00:00:23,705
+Three orders share limited stock and delivery departures.
+
+4
+00:00:23,705 --> 00:00:26,386
+I ask the warehouse what is available.
+
+5
+00:00:26,386 --> 00:00:33,895
+The reply points to scenario facts, so I can distinguish confirmed stock from an expected arrival.
+
+6
+00:00:33,895 --> 00:00:37,145
+I allocate the kits and review the whole board.
+
+7
+00:00:37,145 --> 00:00:44,702
+The application checks inventory over time, carrier capacity, order quantities, deadlines, and shipping cost.
+
+8
+00:00:44,702 --> 00:00:48,457
+I decide when to record this plan.
+
+9
+00:00:48,457 --> 00:00:50,681
+Then the supplier is delayed.
+
+10
+00:00:50,681 --> 00:00:56,148
+The earlier review stays in the record, but it no longer describes the current facts.
+
+11
+00:00:56,148 --> 00:01:00,384
+I need to respond to the changed situation.
+
+12
+00:01:00,384 --> 00:01:03,351
+Customer B can accept a split delivery.
+
+13
+00:01:03,351 --> 00:01:09,826
+Asking reveals the offer; I must explicitly record the agreement before it changes the constraints.
+
+14
+00:01:09,826 --> 00:01:15,163
+I move twenty kits to tomorrow and review the recovery plan.
+
+15
+00:01:15,163 --> 00:01:20,053
+The handoff preserves my plan, its assumptions, and unresolved issues.
+
+16
+00:01:20,053 --> 00:01:28,748
+This is evidence of decisions inside a simulation, not a claim that parcels were delivered or that I am ready for a job.
+
+17
+00:01:28,748 --> 00:01:33,039
+A linked replay changes the opening stock and customer terms.
+
+18
+00:01:33,039 --> 00:01:36,817
+It starts with a clean board and keeps its own help history.
+
+19
+00:01:36,817 --> 00:01:44,360
+The report compares the saved decisions, rather than treating a repeated answer as proof of learning.
+
+20
+00:01:44,360 --> 00:01:50,898
+Amazon Bedrock Nova Two Lite interprets a typed request into one bounded allocation proposal.
+
+21
+00:01:50,898 --> 00:01:54,958
+I see the exact edit, choose Apply, and can Undo.
+
+22
+00:01:54,958 --> 00:01:59,561
+The application still owns the facts and checks.
+
+23
+00:01:59,561 --> 00:02:04,112
+This Alexa Plus style web simulation runs on AWS.
+
+24
+00:02:04,112 --> 00:02:06,787
+Browser voice remains a prototype.
+
+25
+00:02:06,787 --> 00:02:10,453
+Next comes practitioner review and a learner pilot.
+
+26
+00:02:10,453 --> 00:02:15,000
+LearnSprint: practice the work before the first job.

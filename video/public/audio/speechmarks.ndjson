@@ -1,0 +1,326 @@
+{"time":0,"type":"sentence","start":49,"end":98,"value":"How do you prepare for a job you have never done?"}
+{"time":125,"type":"ssml","start":27,"end":46,"value":"hook"}
+{"time":125,"type":"word","start":49,"end":52,"value":"How"}
+{"time":263,"type":"word","start":53,"end":55,"value":"do"}
+{"time":360,"type":"word","start":56,"end":59,"value":"you"}
+{"time":485,"type":"word","start":60,"end":67,"value":"prepare"}
+{"time":957,"type":"word","start":68,"end":71,"value":"for"}
+{"time":1096,"type":"word","start":72,"end":73,"value":"a"}
+{"time":1235,"type":"word","start":74,"end":77,"value":"job"}
+{"time":1512,"type":"word","start":78,"end":81,"value":"you"}
+{"time":1665,"type":"word","start":82,"end":86,"value":"have"}
+{"time":1887,"type":"word","start":87,"end":92,"value":"never"}
+{"time":2164,"type":"word","start":93,"end":97,"value":"done"}
+{"time":2966,"type":"sentence","start":99,"end":205,"value":"LearnSprint lets you practice a fictional first shift in operations, where your decisions change the plan."}
+{"time":3091,"type":"word","start":99,"end":110,"value":"LearnSprint"}
+{"time":3743,"type":"word","start":111,"end":115,"value":"lets"}
+{"time":3993,"type":"word","start":116,"end":119,"value":"you"}
+{"time":4132,"type":"word","start":120,"end":128,"value":"practice"}
+{"time":4687,"type":"word","start":129,"end":130,"value":"a"}
+{"time":4756,"type":"word","start":131,"end":140,"value":"fictional"}
+{"time":5311,"type":"word","start":141,"end":146,"value":"first"}
+{"time":5602,"type":"word","start":147,"end":152,"value":"shift"}
+{"time":5935,"type":"word","start":153,"end":155,"value":"in"}
+{"time":6157,"type":"word","start":156,"end":166,"value":"operations"}
+{"time":7022,"type":"word","start":168,"end":173,"value":"where"}
+{"time":7383,"type":"word","start":174,"end":178,"value":"your"}
+{"time":7591,"type":"word","start":179,"end":188,"value":"decisions"}
+{"time":8229,"type":"word","start":189,"end":195,"value":"change"}
+{"time":8645,"type":"word","start":196,"end":199,"value":"the"}
+{"time":8770,"type":"word","start":200,"end":204,"value":"plan"}
+{"time":9665,"type":"word","start":209,"end":230,"value":"<break time=\"500ms\"\/>"}
+{"time":10165,"type":"ssml","start":230,"end":250,"value":"brief"}
+{"time":10795,"type":"sentence","start":253,"end":310,"value":"Three orders share limited stock and delivery departures."}
+{"time":10920,"type":"word","start":253,"end":258,"value":"Three"}
+{"time":11128,"type":"word","start":259,"end":265,"value":"orders"}
+{"time":11544,"type":"word","start":266,"end":271,"value":"share"}
+{"time":11891,"type":"word","start":272,"end":279,"value":"limited"}
+{"time":12377,"type":"word","start":280,"end":285,"value":"stock"}
+{"time":12751,"type":"word","start":286,"end":289,"value":"and"}
+{"time":12862,"type":"word","start":290,"end":298,"value":"delivery"}
+{"time":13417,"type":"word","start":299,"end":309,"value":"departures"}
+{"time":14705,"type":"sentence","start":311,"end":349,"value":"I ask the warehouse what is available."}
+{"time":14842,"type":"word","start":311,"end":312,"value":"I"}
+{"time":15037,"type":"word","start":313,"end":316,"value":"ask"}
+{"time":15328,"type":"word","start":317,"end":320,"value":"the"}
+{"time":15453,"type":"word","start":321,"end":330,"value":"warehouse"}
+{"time":16008,"type":"word","start":331,"end":335,"value":"what"}
+{"time":16147,"type":"word","start":336,"end":338,"value":"is"}
+{"time":16285,"type":"word","start":339,"end":348,"value":"available"}
+{"time":17386,"type":"sentence","start":350,"end":448,"value":"The reply points to scenario facts, so I can distinguish confirmed stock from an expected arrival."}
+{"time":17511,"type":"word","start":350,"end":353,"value":"The"}
+{"time":17594,"type":"word","start":354,"end":359,"value":"reply"}
+{"time":18066,"type":"word","start":360,"end":366,"value":"points"}
+{"time":18482,"type":"word","start":367,"end":369,"value":"to"}
+{"time":18634,"type":"word","start":370,"end":378,"value":"scenario"}
+{"time":19231,"type":"word","start":379,"end":384,"value":"facts"}
+{"time":19918,"type":"word","start":386,"end":388,"value":"so"}
+{"time":20126,"type":"word","start":389,"end":390,"value":"I"}
+{"time":20265,"type":"word","start":391,"end":394,"value":"can"}
+{"time":20404,"type":"word","start":395,"end":406,"value":"distinguish"}
+{"time":21000,"type":"word","start":407,"end":416,"value":"confirmed"}
+{"time":21514,"type":"word","start":417,"end":422,"value":"stock"}
+{"time":21930,"type":"word","start":423,"end":427,"value":"from"}
+{"time":22138,"type":"word","start":428,"end":430,"value":"an"}
+{"time":22249,"type":"word","start":431,"end":439,"value":"expected"}
+{"time":22832,"type":"word","start":440,"end":447,"value":"arrival"}
+{"time":23765,"type":"word","start":452,"end":473,"value":"<break time=\"500ms\"\/>"}
+{"time":24265,"type":"ssml","start":473,"end":492,"value":"plan"}
+{"time":24895,"type":"sentence","start":495,"end":542,"value":"I allocate the kits and review the whole board."}
+{"time":25033,"type":"word","start":495,"end":496,"value":"I"}
+{"time":25213,"type":"word","start":497,"end":505,"value":"allocate"}
+{"time":25727,"type":"word","start":506,"end":509,"value":"the"}
+{"time":25810,"type":"word","start":510,"end":514,"value":"kits"}
+{"time":26268,"type":"word","start":515,"end":518,"value":"and"}
+{"time":26476,"type":"word","start":519,"end":525,"value":"review"}
+{"time":26823,"type":"word","start":526,"end":529,"value":"the"}
+{"time":26934,"type":"word","start":530,"end":535,"value":"whole"}
+{"time":27239,"type":"word","start":536,"end":541,"value":"board"}
+{"time":28145,"type":"sentence","start":543,"end":652,"value":"The application checks inventory over time, carrier capacity, order quantities, deadlines, and shipping cost."}
+{"time":28270,"type":"word","start":543,"end":546,"value":"The"}
+{"time":28464,"type":"word","start":547,"end":558,"value":"application"}
+{"time":29241,"type":"word","start":559,"end":565,"value":"checks"}
+{"time":29519,"type":"word","start":566,"end":575,"value":"inventory"}
+{"time":30171,"type":"word","start":576,"end":580,"value":"over"}
+{"time":30448,"type":"word","start":581,"end":585,"value":"time"}
+{"time":30860,"type":"word","start":587,"end":594,"value":"carrier"}
+{"time":31457,"type":"word","start":595,"end":603,"value":"capacity"}
+{"time":32259,"type":"word","start":605,"end":610,"value":"order"}
+{"time":32620,"type":"word","start":611,"end":621,"value":"quantities"}
+{"time":33446,"type":"word","start":623,"end":632,"value":"deadlines"}
+{"time":34157,"type":"word","start":634,"end":637,"value":"and"}
+{"time":34338,"type":"word","start":638,"end":646,"value":"shipping"}
+{"time":34685,"type":"word","start":647,"end":651,"value":"cost"}
+{"time":35702,"type":"sentence","start":653,"end":687,"value":"I decide when to record this plan."}
+{"time":35839,"type":"word","start":653,"end":654,"value":"I"}
+{"time":35964,"type":"word","start":655,"end":661,"value":"decide"}
+{"time":36450,"type":"word","start":662,"end":666,"value":"when"}
+{"time":36616,"type":"word","start":667,"end":669,"value":"to"}
+{"time":36727,"type":"word","start":670,"end":676,"value":"record"}
+{"time":37143,"type":"word","start":677,"end":681,"value":"this"}
+{"time":37421,"type":"word","start":682,"end":686,"value":"plan"}
+{"time":38327,"type":"word","start":691,"end":712,"value":"<break time=\"500ms\"\/>"}
+{"time":38827,"type":"ssml","start":712,"end":735,"value":"incident"}
+{"time":39457,"type":"sentence","start":738,"end":767,"value":"Then the supplier is delayed."}
+{"time":39582,"type":"word","start":738,"end":742,"value":"Then"}
+{"time":39748,"type":"word","start":743,"end":746,"value":"the"}
+{"time":39859,"type":"word","start":747,"end":755,"value":"supplier"}
+{"time":40484,"type":"word","start":756,"end":758,"value":"is"}
+{"time":40622,"type":"word","start":759,"end":766,"value":"delayed"}
+{"time":41681,"type":"sentence","start":768,"end":853,"value":"The earlier review stays in the record, but it no longer describes the current facts."}
+{"time":41806,"type":"word","start":768,"end":771,"value":"The"}
+{"time":42083,"type":"word","start":772,"end":779,"value":"earlier"}
+{"time":42458,"type":"word","start":780,"end":786,"value":"review"}
+{"time":42916,"type":"word","start":787,"end":792,"value":"stays"}
+{"time":43263,"type":"word","start":793,"end":795,"value":"in"}
+{"time":43401,"type":"word","start":796,"end":799,"value":"the"}
+{"time":43471,"type":"word","start":800,"end":806,"value":"record"}
+{"time":44022,"type":"word","start":808,"end":811,"value":"but"}
+{"time":44369,"type":"word","start":812,"end":814,"value":"it"}
+{"time":44452,"type":"word","start":815,"end":817,"value":"no"}
+{"time":44715,"type":"word","start":818,"end":824,"value":"longer"}
+{"time":45132,"type":"word","start":825,"end":834,"value":"describes"}
+{"time":45687,"type":"word","start":835,"end":838,"value":"the"}
+{"time":45798,"type":"word","start":839,"end":846,"value":"current"}
+{"time":46145,"type":"word","start":847,"end":852,"value":"facts"}
+{"time":47148,"type":"sentence","start":854,"end":897,"value":"I need to respond to the changed situation."}
+{"time":47285,"type":"word","start":854,"end":855,"value":"I"}
+{"time":47410,"type":"word","start":856,"end":860,"value":"need"}
+{"time":47632,"type":"word","start":861,"end":863,"value":"to"}
+{"time":47757,"type":"word","start":864,"end":871,"value":"respond"}
+{"time":48242,"type":"word","start":872,"end":874,"value":"to"}
+{"time":48312,"type":"word","start":875,"end":878,"value":"the"}
+{"time":48464,"type":"word","start":879,"end":886,"value":"changed"}
+{"time":48867,"type":"word","start":887,"end":896,"value":"situation"}
+{"time":50254,"type":"word","start":901,"end":922,"value":"<break time=\"500ms\"\/>"}
+{"time":50754,"type":"ssml","start":922,"end":946,"value":"agreement"}
+{"time":51384,"type":"sentence","start":949,"end":988,"value":"Customer B can accept a split delivery."}
+{"time":51509,"type":"word","start":949,"end":957,"value":"Customer"}
+{"time":51995,"type":"word","start":958,"end":959,"value":"B"}
+{"time":52203,"type":"word","start":960,"end":963,"value":"can"}
+{"time":52411,"type":"word","start":964,"end":970,"value":"accept"}
+{"time":52758,"type":"word","start":971,"end":972,"value":"a"}
+{"time":52897,"type":"word","start":973,"end":978,"value":"split"}
+{"time":53174,"type":"word","start":979,"end":987,"value":"delivery"}
+{"time":54351,"type":"sentence","start":989,"end":1088,"value":"Asking reveals the offer; I must explicitly record the agreement before it changes the constraints."}
+{"time":54488,"type":"word","start":989,"end":995,"value":"Asking"}
+{"time":54890,"type":"word","start":996,"end":1003,"value":"reveals"}
+{"time":55376,"type":"word","start":1004,"end":1007,"value":"the"}
+{"time":55515,"type":"word","start":1008,"end":1013,"value":"offer"}
+{"time":56124,"type":"word","start":1015,"end":1016,"value":"I"}
+{"time":56402,"type":"word","start":1017,"end":1021,"value":"must"}
+{"time":56679,"type":"word","start":1022,"end":1032,"value":"explicitly"}
+{"time":57414,"type":"word","start":1033,"end":1039,"value":"record"}
+{"time":57858,"type":"word","start":1040,"end":1043,"value":"the"}
+{"time":57997,"type":"word","start":1044,"end":1053,"value":"agreement"}
+{"time":58483,"type":"word","start":1054,"end":1060,"value":"before"}
+{"time":58899,"type":"word","start":1061,"end":1063,"value":"it"}
+{"time":58968,"type":"word","start":1064,"end":1071,"value":"changes"}
+{"time":59454,"type":"word","start":1072,"end":1075,"value":"the"}
+{"time":59593,"type":"word","start":1076,"end":1087,"value":"constraints"}
+{"time":60826,"type":"sentence","start":1089,"end":1149,"value":"I move twenty kits to tomorrow and review the recovery plan."}
+{"time":60964,"type":"word","start":1089,"end":1090,"value":"I"}
+{"time":61089,"type":"word","start":1091,"end":1095,"value":"move"}
+{"time":61366,"type":"word","start":1096,"end":1102,"value":"twenty"}
+{"time":61713,"type":"word","start":1103,"end":1107,"value":"kits"}
+{"time":61990,"type":"word","start":1108,"end":1110,"value":"to"}
+{"time":62199,"type":"word","start":1111,"end":1119,"value":"tomorrow"}
+{"time":62781,"type":"word","start":1120,"end":1123,"value":"and"}
+{"time":62989,"type":"word","start":1124,"end":1130,"value":"review"}
+{"time":63378,"type":"word","start":1131,"end":1134,"value":"the"}
+{"time":63461,"type":"word","start":1135,"end":1143,"value":"recovery"}
+{"time":64086,"type":"word","start":1144,"end":1148,"value":"plan"}
+{"time":65033,"type":"word","start":1153,"end":1174,"value":"<break time=\"500ms\"\/>"}
+{"time":65533,"type":"ssml","start":1174,"end":1196,"value":"handoff"}
+{"time":66163,"type":"sentence","start":1199,"end":1269,"value":"The handoff preserves my plan, its assumptions, and unresolved issues."}
+{"time":66288,"type":"word","start":1199,"end":1202,"value":"The"}
+{"time":66371,"type":"word","start":1203,"end":1210,"value":"handoff"}
+{"time":66843,"type":"word","start":1211,"end":1220,"value":"preserves"}
+{"time":67398,"type":"word","start":1221,"end":1223,"value":"my"}
+{"time":67606,"type":"word","start":1224,"end":1228,"value":"plan"}
+{"time":68203,"type":"word","start":1230,"end":1233,"value":"its"}
+{"time":68439,"type":"word","start":1234,"end":1245,"value":"assumptions"}
+{"time":69099,"type":"word","start":1247,"end":1250,"value":"and"}
+{"time":69391,"type":"word","start":1251,"end":1261,"value":"unresolved"}
+{"time":70085,"type":"word","start":1262,"end":1268,"value":"issues"}
+{"time":71053,"type":"sentence","start":1270,"end":1390,"value":"This is evidence of decisions inside a simulation, not a claim that parcels were delivered or that I am ready for a job."}
+{"time":71178,"type":"word","start":1270,"end":1274,"value":"This"}
+{"time":71442,"type":"word","start":1275,"end":1277,"value":"is"}
+{"time":71594,"type":"word","start":1278,"end":1286,"value":"evidence"}
+{"time":72052,"type":"word","start":1287,"end":1289,"value":"of"}
+{"time":72149,"type":"word","start":1290,"end":1299,"value":"decisions"}
+{"time":72774,"type":"word","start":1300,"end":1306,"value":"inside"}
+{"time":73190,"type":"word","start":1307,"end":1308,"value":"a"}
+{"time":73356,"type":"word","start":1309,"end":1319,"value":"simulation"}
+{"time":74160,"type":"word","start":1321,"end":1324,"value":"not"}
+{"time":74701,"type":"word","start":1325,"end":1326,"value":"a"}
+{"time":74770,"type":"word","start":1327,"end":1332,"value":"claim"}
+{"time":75117,"type":"word","start":1333,"end":1337,"value":"that"}
+{"time":75325,"type":"word","start":1338,"end":1345,"value":"parcels"}
+{"time":75866,"type":"word","start":1346,"end":1350,"value":"were"}
+{"time":76019,"type":"word","start":1351,"end":1360,"value":"delivered"}
+{"time":76519,"type":"word","start":1361,"end":1363,"value":"or"}
+{"time":76782,"type":"word","start":1364,"end":1368,"value":"that"}
+{"time":76990,"type":"word","start":1369,"end":1370,"value":"I"}
+{"time":77060,"type":"word","start":1371,"end":1373,"value":"am"}
+{"time":77129,"type":"word","start":1374,"end":1379,"value":"ready"}
+{"time":77476,"type":"word","start":1380,"end":1383,"value":"for"}
+{"time":77615,"type":"word","start":1384,"end":1385,"value":"a"}
+{"time":77753,"type":"word","start":1386,"end":1389,"value":"job"}
+{"time":78618,"type":"word","start":1394,"end":1415,"value":"<break time=\"500ms\"\/>"}
+{"time":79118,"type":"ssml","start":1415,"end":1436,"value":"replay"}
+{"time":79748,"type":"sentence","start":1439,"end":1500,"value":"A linked replay changes the opening stock and customer terms."}
+{"time":79873,"type":"word","start":1439,"end":1440,"value":"A"}
+{"time":79998,"type":"word","start":1441,"end":1447,"value":"linked"}
+{"time":80289,"type":"word","start":1448,"end":1454,"value":"replay"}
+{"time":80775,"type":"word","start":1455,"end":1462,"value":"changes"}
+{"time":81330,"type":"word","start":1463,"end":1466,"value":"the"}
+{"time":81538,"type":"word","start":1467,"end":1474,"value":"opening"}
+{"time":81996,"type":"word","start":1475,"end":1480,"value":"stock"}
+{"time":82370,"type":"word","start":1481,"end":1484,"value":"and"}
+{"time":82467,"type":"word","start":1485,"end":1493,"value":"customer"}
+{"time":83008,"type":"word","start":1494,"end":1499,"value":"terms"}
+{"time":84039,"type":"sentence","start":1501,"end":1561,"value":"It starts with a clean board and keeps its own help history."}
+{"time":84164,"type":"word","start":1501,"end":1503,"value":"It"}
+{"time":84303,"type":"word","start":1504,"end":1510,"value":"starts"}
+{"time":84719,"type":"word","start":1511,"end":1515,"value":"with"}
+{"time":84927,"type":"word","start":1516,"end":1517,"value":"a"}
+{"time":84955,"type":"word","start":1518,"end":1523,"value":"clean"}
+{"time":85288,"type":"word","start":1524,"end":1529,"value":"board"}
+{"time":85621,"type":"word","start":1530,"end":1533,"value":"and"}
+{"time":85829,"type":"word","start":1534,"end":1539,"value":"keeps"}
+{"time":86107,"type":"word","start":1540,"end":1543,"value":"its"}
+{"time":86287,"type":"word","start":1544,"end":1547,"value":"own"}
+{"time":86454,"type":"word","start":1548,"end":1552,"value":"help"}
+{"time":86731,"type":"word","start":1553,"end":1560,"value":"history"}
+{"time":87817,"type":"sentence","start":1562,"end":1663,"value":"The report compares the saved decisions, rather than treating a repeated answer as proof of learning."}
+{"time":87942,"type":"word","start":1562,"end":1565,"value":"The"}
+{"time":88067,"type":"word","start":1566,"end":1572,"value":"report"}
+{"time":88497,"type":"word","start":1573,"end":1581,"value":"compares"}
+{"time":89052,"type":"word","start":1582,"end":1585,"value":"the"}
+{"time":89191,"type":"word","start":1586,"end":1591,"value":"saved"}
+{"time":89538,"type":"word","start":1592,"end":1601,"value":"decisions"}
+{"time":90327,"type":"word","start":1603,"end":1609,"value":"rather"}
+{"time":90924,"type":"word","start":1610,"end":1614,"value":"than"}
+{"time":91077,"type":"word","start":1615,"end":1623,"value":"treating"}
+{"time":91479,"type":"word","start":1624,"end":1625,"value":"a"}
+{"time":91562,"type":"word","start":1626,"end":1634,"value":"repeated"}
+{"time":92242,"type":"word","start":1635,"end":1641,"value":"answer"}
+{"time":92631,"type":"word","start":1642,"end":1644,"value":"as"}
+{"time":92797,"type":"word","start":1645,"end":1650,"value":"proof"}
+{"time":93144,"type":"word","start":1651,"end":1653,"value":"of"}
+{"time":93283,"type":"word","start":1654,"end":1662,"value":"learning"}
+{"time":94230,"type":"word","start":1667,"end":1688,"value":"<break time=\"500ms\"\/>"}
+{"time":94730,"type":"ssml","start":1688,"end":1705,"value":"ai"}
+{"time":95360,"type":"sentence","start":1708,"end":1801,"value":"Amazon Bedrock Nova Two Lite interprets a typed request into one bounded allocation proposal."}
+{"time":95498,"type":"word","start":1708,"end":1714,"value":"Amazon"}
+{"time":95969,"type":"word","start":1715,"end":1722,"value":"Bedrock"}
+{"time":96524,"type":"word","start":1723,"end":1727,"value":"Nova"}
+{"time":96941,"type":"word","start":1728,"end":1731,"value":"Two"}
+{"time":97149,"type":"word","start":1732,"end":1736,"value":"Lite"}
+{"time":97426,"type":"word","start":1737,"end":1747,"value":"interprets"}
+{"time":98051,"type":"word","start":1748,"end":1749,"value":"a"}
+{"time":98134,"type":"word","start":1750,"end":1755,"value":"typed"}
+{"time":98467,"type":"word","start":1756,"end":1763,"value":"request"}
+{"time":99064,"type":"word","start":1764,"end":1768,"value":"into"}
+{"time":99313,"type":"word","start":1769,"end":1772,"value":"one"}
+{"time":99591,"type":"word","start":1773,"end":1780,"value":"bounded"}
+{"time":100063,"type":"word","start":1781,"end":1791,"value":"allocation"}
+{"time":100687,"type":"word","start":1792,"end":1800,"value":"proposal"}
+{"time":101898,"type":"sentence","start":1802,"end":1851,"value":"I see the exact edit, choose Apply, and can Undo."}
+{"time":102036,"type":"word","start":1802,"end":1803,"value":"I"}
+{"time":102160,"type":"word","start":1804,"end":1807,"value":"see"}
+{"time":102438,"type":"word","start":1808,"end":1811,"value":"the"}
+{"time":102577,"type":"word","start":1812,"end":1817,"value":"exact"}
+{"time":103062,"type":"word","start":1818,"end":1822,"value":"edit"}
+{"time":103529,"type":"word","start":1824,"end":1830,"value":"choose"}
+{"time":104028,"type":"word","start":1831,"end":1836,"value":"Apply"}
+{"time":104594,"type":"word","start":1838,"end":1841,"value":"and"}
+{"time":104789,"type":"word","start":1842,"end":1845,"value":"can"}
+{"time":104983,"type":"word","start":1846,"end":1850,"value":"Undo"}
+{"time":105958,"type":"sentence","start":1852,"end":1900,"value":"The application still owns the facts and checks."}
+{"time":106083,"type":"word","start":1852,"end":1855,"value":"The"}
+{"time":106277,"type":"word","start":1856,"end":1867,"value":"application"}
+{"time":107054,"type":"word","start":1868,"end":1873,"value":"still"}
+{"time":107471,"type":"word","start":1874,"end":1878,"value":"owns"}
+{"time":107748,"type":"word","start":1879,"end":1882,"value":"the"}
+{"time":107901,"type":"word","start":1883,"end":1888,"value":"facts"}
+{"time":108303,"type":"word","start":1889,"end":1892,"value":"and"}
+{"time":108456,"type":"word","start":1893,"end":1899,"value":"checks"}
+{"time":109431,"type":"word","start":1904,"end":1925,"value":"<break time=\"500ms\"\/>"}
+{"time":109931,"type":"ssml","start":1925,"end":1945,"value":"close"}
+{"time":110561,"type":"sentence","start":1948,"end":1997,"value":"This Alexa Plus style web simulation runs on AWS."}
+{"time":110686,"type":"word","start":1948,"end":1952,"value":"This"}
+{"time":110894,"type":"word","start":1953,"end":1958,"value":"Alexa"}
+{"time":111380,"type":"word","start":1959,"end":1963,"value":"Plus"}
+{"time":111727,"type":"word","start":1964,"end":1969,"value":"style"}
+{"time":112143,"type":"word","start":1970,"end":1973,"value":"web"}
+{"time":112351,"type":"word","start":1974,"end":1984,"value":"simulation"}
+{"time":113072,"type":"word","start":1985,"end":1989,"value":"runs"}
+{"time":113461,"type":"word","start":1990,"end":1992,"value":"on"}
+{"time":113641,"type":"word","start":1993,"end":1996,"value":"AWS"}
+{"time":115112,"type":"sentence","start":1998,"end":2032,"value":"Browser voice remains a prototype."}
+{"time":115174,"type":"word","start":1998,"end":2005,"value":"Browser"}
+{"time":115729,"type":"word","start":2006,"end":2011,"value":"voice"}
+{"time":116035,"type":"word","start":2012,"end":2019,"value":"remains"}
+{"time":116493,"type":"word","start":2020,"end":2021,"value":"a"}
+{"time":116631,"type":"word","start":2022,"end":2031,"value":"prototype"}
+{"time":117787,"type":"sentence","start":2033,"end":2084,"value":"Next comes practitioner review and a learner pilot."}
+{"time":117924,"type":"word","start":2033,"end":2037,"value":"Next"}
+{"time":118271,"type":"word","start":2038,"end":2043,"value":"comes"}
+{"time":118535,"type":"word","start":2044,"end":2056,"value":"practitioner"}
+{"time":119298,"type":"word","start":2057,"end":2063,"value":"review"}
+{"time":119811,"type":"word","start":2064,"end":2067,"value":"and"}
+{"time":119922,"type":"word","start":2068,"end":2069,"value":"a"}
+{"time":120033,"type":"word","start":2070,"end":2077,"value":"learner"}
+{"time":120408,"type":"word","start":2078,"end":2083,"value":"pilot"}
+{"time":121453,"type":"sentence","start":2085,"end":2137,"value":"LearnSprint: practice the work before the first job."}
+{"time":121578,"type":"word","start":2085,"end":2096,"value":"LearnSprint"}
+{"time":122366,"type":"word","start":2098,"end":2106,"value":"practice"}
+{"time":123115,"type":"word","start":2107,"end":2110,"value":"the"}
+{"time":123240,"type":"word","start":2111,"end":2115,"value":"work"}
+{"time":123490,"type":"word","start":2116,"end":2122,"value":"before"}
+{"time":123795,"type":"word","start":2123,"end":2126,"value":"the"}
+{"time":123948,"type":"word","start":2127,"end":2132,"value":"first"}
+{"time":124281,"type":"word","start":2133,"end":2136,"value":"job"}
+{"time":125186,"type":"word","start":2141,"end":2162,"value":"<break time=\"500ms\"\/>"}

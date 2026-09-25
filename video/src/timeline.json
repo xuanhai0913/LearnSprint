@@ -1,0 +1,202 @@
+{
+  "durationMs": 150000,
+  "introMs": 9000,
+  "audioMs": 126000,
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Practice the work",
+      "startMs": 9125,
+      "endMs": 19165,
+      "footage": "footage/01-hook.mp4"
+    },
+    {
+      "id": "brief",
+      "title": "Three orders. Shared constraints.",
+      "startMs": 19165,
+      "endMs": 33265,
+      "footage": "footage/02-brief.mp4"
+    },
+    {
+      "id": "plan",
+      "title": "Make a plan, then review it",
+      "startMs": 33265,
+      "endMs": 47827,
+      "footage": "footage/03-plan.mp4"
+    },
+    {
+      "id": "incident",
+      "title": "The facts change",
+      "startMs": 47827,
+      "endMs": 59754,
+      "footage": "footage/04-incident.mp4"
+    },
+    {
+      "id": "agreement",
+      "title": "An offer is not yet an agreement",
+      "startMs": 59754,
+      "endMs": 74533,
+      "footage": "footage/05-agreement.mp4"
+    },
+    {
+      "id": "handoff",
+      "title": "Leave an inspectable handoff",
+      "startMs": 74533,
+      "endMs": 88118,
+      "footage": "footage/06-handoff.mp4"
+    },
+    {
+      "id": "replay",
+      "title": "Try a changed situation",
+      "startMs": 88118,
+      "endMs": 103730,
+      "footage": "footage/07-replay.mp4"
+    },
+    {
+      "id": "ai",
+      "title": "AI proposes. The learner decides.",
+      "startMs": 103730,
+      "endMs": 118931,
+      "footage": "footage/08-ai.mp4"
+    },
+    {
+      "id": "close",
+      "title": "LearnSprint",
+      "startMs": 118931,
+      "endMs": 135000,
+      "footage": "footage/09-close.mp4"
+    }
+  ],
+  "captions": [
+    {
+      "startMs": 9000,
+      "endMs": 11966,
+      "text": "How do you prepare for a job you have never done?"
+    },
+    {
+      "startMs": 11966,
+      "endMs": 19795,
+      "text": "LearnSprint lets you practice a fictional first shift in operations, where your decisions change the plan."
+    },
+    {
+      "startMs": 19795,
+      "endMs": 23705,
+      "text": "Three orders share limited stock and delivery departures."
+    },
+    {
+      "startMs": 23705,
+      "endMs": 26386,
+      "text": "I ask the warehouse what is available."
+    },
+    {
+      "startMs": 26386,
+      "endMs": 33895,
+      "text": "The reply points to scenario facts, so I can distinguish confirmed stock from an expected arrival."
+    },
+    {
+      "startMs": 33895,
+      "endMs": 37145,
+      "text": "I allocate the kits and review the whole board."
+    },
+    {
+      "startMs": 37145,
+      "endMs": 44702,
+      "text": "The application checks inventory over time, carrier capacity, order quantities, deadlines, and shipping cost."
+    },
+    {
+      "startMs": 44702,
+      "endMs": 48457,
+      "text": "I decide when to record this plan."
+    },
+    {
+      "startMs": 48457,
+      "endMs": 50681,
+      "text": "Then the supplier is delayed."
+    },
+    {
+      "startMs": 50681,
+      "endMs": 56148,
+      "text": "The earlier review stays in the record, but it no longer describes the current facts."
+    },
+    {
+      "startMs": 56148,
+      "endMs": 60384,
+      "text": "I need to respond to the changed situation."
+    },
+    {
+      "startMs": 60384,
+      "endMs": 63351,
+      "text": "Customer B can accept a split delivery."
+    },
+    {
+      "startMs": 63351,
+      "endMs": 69826,
+      "text": "Asking reveals the offer; I must explicitly record the agreement before it changes the constraints."
+    },
+    {
+      "startMs": 69826,
+      "endMs": 75163,
+      "text": "I move twenty kits to tomorrow and review the recovery plan."
+    },
+    {
+      "startMs": 75163,
+      "endMs": 80053,
+      "text": "The handoff preserves my plan, its assumptions, and unresolved issues."
+    },
+    {
+      "startMs": 80053,
+      "endMs": 88748,
+      "text": "This is evidence of decisions inside a simulation, not a claim that parcels were delivered or that I am ready for a job."
+    },
+    {
+      "startMs": 88748,
+      "endMs": 93039,
+      "text": "A linked replay changes the opening stock and customer terms."
+    },
+    {
+      "startMs": 93039,
+      "endMs": 96817,
+      "text": "It starts with a clean board and keeps its own help history."
+    },
+    {
+      "startMs": 96817,
+      "endMs": 104360,
+      "text": "The report compares the saved decisions, rather than treating a repeated answer as proof of learning."
+    },
+    {
+      "startMs": 104360,
+      "endMs": 110898,
+      "text": "Amazon Bedrock Nova Two Lite interprets a typed request into one bounded allocation proposal."
+    },
+    {
+      "startMs": 110898,
+      "endMs": 114958,
+      "text": "I see the exact edit, choose Apply, and can Undo."
+    },
+    {
+      "startMs": 114958,
+      "endMs": 119561,
+      "text": "The application still owns the facts and checks."
+    },
+    {
+      "startMs": 119561,
+      "endMs": 124112,
+      "text": "This Alexa Plus style web simulation runs on AWS."
+    },
+    {
+      "startMs": 124112,
+      "endMs": 126787,
+      "text": "Browser voice remains a prototype."
+    },
+    {
+      "startMs": 126787,
+      "endMs": 130453,
+      "text": "Next comes practitioner review and a learner pilot."
+    },
+    {
+      "startMs": 130453,
+      "endMs": 135000,
+      "text": "LearnSprint: practice the work before the first job."
+    }
+  ]
+}

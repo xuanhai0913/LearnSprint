@@ -8,6 +8,8 @@ Mã nguồn công khai: [GitHub](https://github.com/xuanhai0913/LearnSprint), gi
 
 **For judges / English:** [Reviewer guide](docs/hackathon/REVIEWER-GUIDE.md) · [submission story](docs/hackathon/SUBMISSION-WORKBOOK.md) · [demo script](docs/hackathon/DEMO-SCRIPT.md) · [current evidence](docs/hackathon/JUDGING-EVIDENCE.md).
 
+Bộ sản xuất video dự thi: [shot list, giọng đọc tiếng Anh, phụ đề và Remotion](video/README.md). Cảnh thao tác ứng dụng thật cần quay khi Chrome mở được bản AWS.
+
 ## Kế hoạch hiện tại
 
 | Nội dung | Tài liệu |
