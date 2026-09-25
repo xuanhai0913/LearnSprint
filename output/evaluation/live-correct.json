@@ -1,0 +1,50 @@
+{
+  "case": "correct",
+  "elapsedMs": 2344,
+  "session": {
+    "sessionId": "4667c7d4-4ec6-4584-83f6-039cd59277ee",
+    "packVersion": "0.2.0-draft",
+    "status": "active",
+    "revision": 2,
+    "timeBudgetMinutes": 5,
+    "questionLimit": 2,
+    "currentQuestion": {
+      "questionId": "access-q03",
+      "prompt": "An OAuth API accepts Linh's bearer token, but it contains only notes:read. DELETE /notes/7 needs notes:write. Choose the recommended HTTP status and bearer error. Would retrying the same token solve this?",
+      "conceptIds": [
+        "http-auth-errors"
+      ]
+    },
+    "answers": [
+      {
+        "answerId": "14cc9f79-7857-42fa-9fb9-15ab2132f841",
+        "question": {
+          "questionId": "access-q02",
+          "prompt": "GET /practice is protected by an HTTP authentication scheme. A client sends no credentials. Choose 401 or 403 and name the required response header.",
+          "conceptIds": [
+            "http-auth-errors"
+          ]
+        },
+        "text": "401, because valid credentials are missing. Include a WWW-Authenticate header with the authentication challenge.",
+        "outcome": "correct",
+        "rationale": "The learner correctly identifies that a 401 status should be used when valid credentials are missing, aligning with the required idea that '401, because valid credentials are absent.' They also correctly state that the WWW-Authenticate header must be included to supply the authentication challenge, matching the required idea 'WWW-Authenticate must supply an applicable challenge.' This response avoids the misconception that 403 always means missing credentials. The passage 'access-p02' supports this reasoning by stating that a 401 response indicates missing authentication credentials and requires a WWW-Authenticate challenge.",
+        "passages": [
+          {
+            "passageId": "access-p02",
+            "title": "401 needs valid credentials",
+            "text": "A 401 response indicates that valid authentication credentials are missing for the target resource. The server must include a WWW-Authenticate challenge.",
+            "sourceTitle": "RFC 9110 — HTTP Semantics",
+            "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.2"
+          }
+        ],
+        "savedAt": "2026-09-23T04:56:27.297Z",
+        "mode": "bedrock"
+      }
+    ],
+    "createdAt": "2026-09-23T04:56:24.950Z",
+    "updatedAt": "2026-09-23T04:56:27.297Z",
+    "recommendation": "Build on this with the next concept.",
+    "mode": "bedrock"
+  },
+  "requestId": "addebc3c-8fd4-4482-9891-5402b88bb654"
+}

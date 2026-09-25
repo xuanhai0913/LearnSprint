@@ -1,0 +1,79 @@
+{
+  "checkedOn": "2026-09-23",
+  "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+  "publicationDate": "2026-09-22T21:21:39Z",
+  "region": "us-east-1",
+  "rates": [
+    {
+      "sku": "HT8JPJ5DKMYD9TA6",
+      "model": "Nova Sonic 2.0",
+      "usageType": "USE1-NovaSonic2.0-speech-output-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0120000000"
+    },
+    {
+      "sku": "UEBA4FEJ7GCENDP4",
+      "model": "Nova Sonic",
+      "usageType": "USE1-NovaSonic-speech-output-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0136000000"
+    },
+    {
+      "sku": "88T54VJGNNQG5R53",
+      "model": "Nova Sonic 2.0",
+      "usageType": "USE1-NovaSonic2.0-text-input-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0003300000"
+    },
+    {
+      "sku": "CB7ENY8J6652YQA9",
+      "model": "Nova Sonic",
+      "usageType": "USE1-NovaSonic-text-output-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0002400000"
+    },
+    {
+      "sku": "C45RS4T6DNQCCEBW",
+      "model": "Nova Sonic 2.0",
+      "usageType": "USE1-NovaSonic2.0-speech-input-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0030000000"
+    },
+    {
+      "sku": "EPMQ24NAG4R6FPX8",
+      "model": "Nova 2.0 Lite",
+      "usageType": "USE1-Nova2.0Lite-input-tokens-cross-region-global",
+      "unit": "1K tokens",
+      "usd": "0.0003000000"
+    },
+    {
+      "sku": "T2ZZEYJ6HBSGHATR",
+      "model": "Nova Sonic",
+      "usageType": "USE1-NovaSonic-text-input-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0000600000"
+    },
+    {
+      "sku": "7RN7V9VZB66QFXM9",
+      "model": "Nova Sonic 2.0",
+      "usageType": "USE1-NovaSonic2.0-text-output-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0027500000"
+    },
+    {
+      "sku": "PT8HC9XDED4UMEZX",
+      "model": "Nova 2.0 Lite",
+      "usageType": "USE1-Nova2.0Lite-output-tokens-cross-region-global",
+      "unit": "1K tokens",
+      "usd": "0.0025000000"
+    },
+    {
+      "sku": "UAHQDXPQ6PRJB6PU",
+      "model": "Nova Sonic",
+      "usageType": "USE1-NovaSonic-speech-input-tokens",
+      "unit": "1K tokens",
+      "usd": "0.0034000000"
+    }
+  ],
+  "note": "Public price-list snapshot, not an account bill, service availability check or credit eligibility check."
+}

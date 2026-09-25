@@ -1,0 +1,20 @@
+{
+  "enabled": false,
+  "awsProfile": "learnsprint",
+  "region": "us-east-1",
+  "text": {
+    "batchId": "career-lite-c06-2026-09-24",
+    "modelId": "us.amazon.nova-2-lite-v1:0",
+    "maxInvocations": 10,
+    "budgetUsd": 0.2,
+    "reserveUsd": 0.02
+  },
+  "voice": {
+    "batchId": "career-sonic-c06-2026-09-24",
+    "modelId": "amazon.nova-2-sonic-v1:0",
+    "maxInvocations": 4,
+    "budgetUsd": 1,
+    "reserveUsd": 0.25,
+    "maxDurationSeconds": 60
+  }
+}

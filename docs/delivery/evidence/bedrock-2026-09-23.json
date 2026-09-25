@@ -1,0 +1,37 @@
+{
+  "model": "global.amazon.nova-2-lite-v1:0",
+  "region": "ap-southeast-2",
+  "calls": [
+    {
+      "state": "reserved",
+      "input_tokens": 317,
+      "output_tokens": 143
+    },
+    {
+      "state": "complete",
+      "input_tokens": 317,
+      "output_tokens": 141
+    },
+    {
+      "state": "complete",
+      "input_tokens": 306,
+      "output_tokens": 97
+    },
+    {
+      "state": "reserved",
+      "input_tokens": 306,
+      "output_tokens": 77
+    },
+    {
+      "state": "complete",
+      "input_tokens": 305,
+      "output_tokens": 107
+    }
+  ],
+  "ratesUsdPerMillion": {
+    "input": 0.32,
+    "output": 2.63
+  },
+  "estimatedUsd": 0.00198227,
+  "invoiceVerified": false
+}

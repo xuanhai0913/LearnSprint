@@ -1,0 +1,60 @@
+{
+  "version": "0.1.0",
+  "activities": [
+    {
+      "id": "stock-timing",
+      "title": "Follow the stock through time.",
+      "objective": "Separate stock that is on hand from stock expected before a departure.",
+      "steps": [
+        "Read the departures from earliest to latest. Carry earlier allocations forward instead of starting with a fresh stock count each time.",
+        "At each departure, compare the cumulative kits allocated with stock projected to be available by that time.",
+        "Identify the first shortage, if any. Investigate the current ETA and the affected commitments before choosing a change."
+      ],
+      "prompt": "Which part of your projection would change if the expected stock arrived after that departure?"
+    },
+    {
+      "id": "dispatch-fit",
+      "title": "Check the load as a whole.",
+      "objective": "Reconcile each order total with the shared space on a departure.",
+      "steps": [
+        "Read across each order: its allocations must add up to the ordered quantity.",
+        "Read down each departure: every order on that trip shares the same vehicle capacity.",
+        "After changing one cell, check both its order total and its departure load before reviewing the plan again."
+      ],
+      "prompt": "Does your proposed change create a quantity mismatch or move the capacity problem to another trip?"
+    },
+    {
+      "id": "customer-promises",
+      "title": "Read the promise before changing the plan.",
+      "objective": "Distinguish a scheduled arrival, a cumulative deadline and a recorded customer agreement.",
+      "steps": [
+        "For each recorded milestone, count only kits on departures that arrive by its deadline.",
+        "A later cumulative milestone includes earlier deliveries; do not add its quantity as a second separate order.",
+        "Check any no-split condition. If a promise may need to change, ask the relevant customer what is permitted and record a supported agreement before using new terms."
+      ],
+      "prompt": "Which deadline or condition is currently unmet, and what source would authorize a different promise?"
+    },
+    {
+      "id": "budget-check",
+      "title": "Count the trips you actually use.",
+      "objective": "Distinguish a shared departure fee from a fee per order or kit.",
+      "steps": [
+        "Mark each departure that carries at least one kit.",
+        "Add its flat fee once, even when several orders share the trip. An empty departure contributes no fee.",
+        "Compare that sum with the budget. Any change to reduce cost still needs stock, capacity and promise checks."
+      ],
+      "prompt": "Which fees are included in this review, and what would need rechecking if a departure became unused?"
+    },
+    {
+      "id": "handoff-clarity",
+      "title": "Leave a trace someone can follow.",
+      "objective": "Separate known facts, projections and unresolved work in the handoff.",
+      "steps": [
+        "Identify the reviewed plan and facts it uses, including any customer agreement that was actually recorded.",
+        "Keep expected replenishment visible as an assumption. A feasible projection is not proof of receipt or delivery.",
+        "Check that unresolved observations remain in the handoff so the next person can see what still needs attention."
+      ],
+      "prompt": "What does this record establish, and what would the next shift still need to confirm?"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "learnsprint",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=26.6.0 <27"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others -n api,web \"pnpm --filter @learnsprint/api dev\" \"pnpm --filter @learnsprint/web dev\"",
+    "build": "pnpm --filter @learnsprint/api build && pnpm --filter @learnsprint/web build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter @learnsprint/api build && node --test tests/*.test.mjs",
+    "demo:reset": "node scripts/reset-demo.mjs",
+    "start": "node apps/api/dist/main.js"
+  },
+  "devDependencies": {
+    "concurrently": "10.0.5",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,68 @@
+.cr-contacts { margin:32px 0; scroll-margin-top:24px; }
+.cr-contact-directory { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:24px 0 0; }
+.career-app .cr-contact-directory button { display:flex; align-items:center; gap:13px; text-align:left; min-height:92px; padding:17px; border-radius:6px 6px 0 0; background:#f0ede5; border:1px solid var(--cr-line); }
+.career-app .cr-contact-directory button[aria-pressed=true] { background:#fcfbf6; border-color:var(--cr-ink); border-bottom:3px solid var(--cr-ink); }
+.cr-contact-directory strong { font-size:19px; display:block; }
+.cr-contact-directory small { display:block; font-size:12px; font-weight:500; margin-top:5px; line-height:1.4; }
+.cr-contact-initial { display:grid; place-items:center; flex:0 0 43px; height:46px; font:italic 30px Georgia,serif; border:1px solid #9caa99; border-radius:50% 50% 4px 4px; color:#2c4a3b; background:#dee5d7; }
+.cr-contact-customer-b { background:#efdabc; border-color:#baa67e; color:#624a2c; }
+.cr-contact-shift-lead { background:#dee2e5; border-color:#9faeb6; color:#3a4c5a; }
+.cr-contact-indicator { margin-left:auto; font-size:22px; }
+.cr-contact-workspace { display:grid; grid-template-columns:minmax(220px,.8fr) minmax(0,1.7fr); background:#fcfbf6; border:1px solid var(--cr-line); border-top:0; }
+.cr-contact-questions { padding:28px; border-right:1px solid var(--cr-line); }
+.cr-contact-questions>p:not(.cr-eyebrow) { font-size:14px; line-height:1.65; }
+.cr-question-list { display:grid; gap:10px; margin:24px 0; }
+.career-app .cr-question-list button { display:flex; align-items:center; justify-content:space-between; gap:15px; text-align:left; line-height:1.5; padding:12px 15px; background:transparent; min-height:54px; }
+.cr-question-list button>span:last-child { font-size:20px; }
+.cr-contact-conversation { padding:28px; min-width:0; }
+.cr-contact-empty { padding:25px 12px 40px; max-width:490px; }
+.cr-contact-empty>span { font:82px/.7 Georgia,serif; color:#8d9f8c; }
+.cr-contacts .cr-contact-empty h3 { font:28px/1.3 Georgia,serif; margin:12px 0; }
+.cr-contacts .cr-contact-empty p { color:var(--cr-muted); font-size:15px; line-height:1.7; }
+.cr-contacts .cr-contact-question { display:flex; flex-direction:column; gap:8px; padding:14px 18px; background:#efeee7; margin:0 0 25px; font-size:15px; line-height:1.5; border-left:2px solid #9ca891; }
+.cr-contact-question span { font-size:10px; letter-spacing:1.5px; color:var(--cr-muted); font-weight:700; }
+.cr-contact-reply>header { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px 10px; }
+.cr-contact-reply>header>strong { font:24px Georgia,serif; }
+.cr-contact-reply>header>span { font-size:12px; }
+.cr-contact-reply>header>span:last-child { margin-left:auto; padding:4px 8px; font-size:11px; border-radius:3px; }
+.cr-reply-current { background:#e3ebdc; color:#2e543c; }
+.cr-reply-historical { background:#f2e2cb; color:#775125; }
+.cr-contact-reply blockquote { margin:15px 0 21px; font-size:17px; line-height:1.75; }
+.cr-reply-note { padding:10px 13px; border-left:3px solid #b08749; background:#f6edde; font-size:13px; line-height:1.6; }
+.cr-source-facts { list-style:none; margin:18px 0; padding:0; border-top:1px solid var(--cr-line); }
+.cr-source-facts li { padding:13px 0; border-bottom:1px solid var(--cr-line); }
+.cr-source-facts strong { font-size:13px; }
+.cr-contacts .cr-source-facts p { margin:7px 0; font-size:14px; line-height:1.6; }
+.cr-source-facts small { font-size:11px; color:var(--cr-muted); display:block; }
+.career-app .cr-source-facts a { display:inline-flex; align-items:center; min-height:44px; font-size:12px; font-weight:600; }
+.cr-reply-receipt { font-size:12px; margin:8px 0; }
+.cr-reply-receipt summary { cursor:pointer; padding:12px 0; min-height:44px; }
+.cr-reply-receipt dl { margin:0; padding:15px; border:1px dashed var(--cr-line); background:#f5f3ea; }
+.cr-reply-receipt dt { font-weight:700; margin:10px 0 4px; }
+.cr-reply-receipt dt:first-child { margin-top:0; }
+.cr-reply-receipt dd { margin:0 0 12px; overflow-wrap:anywhere; color:var(--cr-muted); line-height:1.5; }
+.cr-contact-agreement { padding:21px; margin-top:24px; background:#edf0e4; border:1px solid #b9c6a8; }
+.cr-contact-agreement ul { padding-left:20px; font-size:15px; line-height:1.8; }
+.cr-contacts .cr-contact-agreement p { font-size:14px; line-height:1.6; }
+.cr-contact-agreement .cr-eyebrow { font-size:10px; }
+.cr-past-conversations { margin-top:26px; }
+.cr-past-conversations .cr-contact-reply { margin:25px 0; padding-top:20px; border-top:1px solid var(--cr-line); }
+#cr-inventory,#cr-departures,#cr-order-b,#cr-handoff { scroll-margin-top:24px; }
+@media (max-width:800px) {
+  .cr-contacts>.cr-section-heading { align-items:flex-start; flex-direction:column; gap:12px; }
+  .cr-contact-directory { gap:6px; }
+  .career-app .cr-contact-directory button { padding:13px 10px; flex-direction:column; align-items:flex-start; gap:10px; }
+  .cr-contact-initial { flex-basis:46px; width:43px; }
+  .cr-contact-indicator { display:none; }
+  .cr-contact-workspace { grid-template-columns:1fr; }
+  .cr-contact-questions { border-right:0; border-bottom:1px solid var(--cr-line); }
+  .cr-contact-questions,.cr-contact-conversation { padding:21px; }
+  .cr-contact-empty { padding-top:15px; padding-bottom:15px; }
+}
+@media (max-width:500px) {
+  .cr-contact-directory strong { font-size:17px; }
+  .cr-contact-directory small { font-size:11px; }
+  .cr-contact-questions,.cr-contact-conversation { padding:18px; }
+  .cr-contact-reply blockquote { font-size:16px; }
+  .cr-contact-agreement { padding:16px; }
+}

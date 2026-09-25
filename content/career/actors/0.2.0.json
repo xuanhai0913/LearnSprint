@@ -1,0 +1,70 @@
+{
+  "version": "0.2.0",
+  "packVersion": "0.2.0",
+  "actors": [
+    {
+      "id": "warehouse",
+      "name": "Alex",
+      "role": "Warehouse colleague",
+      "scope": "Confirmed stock, the latest supplier ETA and dispatch cutoffs.",
+      "questions": [
+        {
+          "id": "stock",
+          "label": "What stock is available right now?",
+          "response": "We have {onHand} study kits on hand. The additional {replenishment} are expected stock; I have not recorded them as received."
+        },
+        {
+          "id": "eta",
+          "label": "When is the replenishment expected?",
+          "response": "Our latest supplier notice says {eta} for the {replenishment} kits. That is an expected arrival, not a receipt. Each departure can use them only if they arrive by its staging cutoff."
+        },
+        {
+          "id": "departures",
+          "label": "What are the dispatch cutoffs?",
+          "response": "Here is the dispatch schedule. Each departure has one shared capacity across all orders. Kits need to be available by its cutoff; the arrival time determines which delivery promise it can meet."
+        }
+      ]
+    },
+    {
+      "id": "customer-b",
+      "name": "Jordan",
+      "role": "Customer B \u00b7 Training office",
+      "scope": "Our own order and delivery arrangements we can accept.",
+      "questions": [
+        {
+          "id": "commitment",
+          "label": "What delivery promise is currently recorded?",
+          "response": "For our {quantity} kits, the recorded commitment is: {commitment}. Please use those terms when you review the plan."
+        },
+        {
+          "id": "split",
+          "label": "Could you accept a split delivery?",
+          "response": "{offer}"
+        }
+      ]
+    },
+    {
+      "id": "shift-lead",
+      "name": "Sam",
+      "role": "Shift lead",
+      "scope": "Shipping budget, escalation boundaries and a clear handoff.",
+      "questions": [
+        {
+          "id": "budget",
+          "label": "What shipping budget can I use?",
+          "response": "This shift has {budget} shipping units. A departure is charged once when it is used, even if several orders share it. I cannot increase the budget in this exercise."
+        },
+        {
+          "id": "handoff",
+          "label": "What needs to be in my handoff?",
+          "response": "Leave the recorded plan, current stock assumptions, accepted customer changes and unresolved commitments visible. A handoff can be complete while a delivery problem is still open; make that distinction clear."
+        },
+        {
+          "id": "escalation",
+          "label": "What if I cannot meet a customer promise?",
+          "response": "Keep the original promise unless the customer accepts a supported change. Record any remaining problem for the next shift. I cannot accept different terms on a customer's behalf or treat expected stock as received."
+        }
+      ]
+    }
+  ]
+}

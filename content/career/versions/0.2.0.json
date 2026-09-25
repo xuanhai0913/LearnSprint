@@ -1,0 +1,102 @@
+{
+  "brief": {
+    "id": "first-shift",
+    "version": "0.2.0",
+    "title": "Next shift: a tighter promise",
+    "company": "Fieldnote Supply",
+    "role": "Operations coordinator",
+    "description": "The supplier delay is already known. You have a different stock balance and a customer with different needs. Investigate the current facts and leave a new handoff.",
+    "onHand": 50,
+    "replenishmentQuantity": 30,
+    "initialEta": 660,
+    "budget": 200,
+    "orders": [
+      {
+        "id": "a",
+        "customer": "Workshop organizer",
+        "quantity": 30,
+        "deadline": 840,
+        "purpose": "All kits are needed for the workshop. A partial delivery cannot support the event.",
+        "allowSplit": false
+      },
+      {
+        "id": "b",
+        "customer": "Training office",
+        "quantity": 30,
+        "deadline": 1080,
+        "purpose": "The recorded promise is all 30 kits today. A different deadline needs the customer's agreement.",
+        "allowSplit": true
+      },
+      {
+        "id": "c",
+        "customer": "Community club",
+        "quantity": 20,
+        "deadline": 2160,
+        "purpose": "The club needs every kit before noon tomorrow. Earlier delivery is optional.",
+        "allowSplit": true
+      }
+    ],
+    "departures": [
+      {
+        "id": "express",
+        "name": "Express today",
+        "departure": 720,
+        "arrival": 840,
+        "capacity": 40,
+        "fee": 120
+      },
+      {
+        "id": "standard",
+        "name": "Standard today",
+        "departure": 960,
+        "arrival": 1080,
+        "capacity": 80,
+        "fee": 40
+      },
+      {
+        "id": "tomorrow",
+        "name": "Standard tomorrow",
+        "departure": 1980,
+        "arrival": 2100,
+        "capacity": 80,
+        "fee": 40
+      }
+    ],
+    "objectives": [
+      "Separate available stock from an expected arrival.",
+      "Make a delivery plan that respects resources and promises.",
+      "Ask before changing a customer commitment.",
+      "Adapt to a change and leave an accurate handoff."
+    ],
+    "assumptions": [
+      "Original fictional exercise; no real orders, customers, carrier bookings or money.",
+      "One kit is indivisible. There is one SKU and one replenishment.",
+      "Fees are scenario units per used departure, shared by its orders.",
+      "Stock must be available by departure. Arrival exactly on a deadline meets it.",
+      "This is a projected plan, not evidence that goods were physically delivered.",
+      "Time advances only through the scenario's explicit actions. Reading does not use up a deadline.",
+      "The scenario has not yet been reviewed by an operations practitioner.",
+      "This short replay begins at 10:30 with the supplier delay already known. No earlier plan or customer agreement carries over."
+    ]
+  },
+  "privateScenario": {
+    "incidentMinute": 630,
+    "delayedEta": 1020,
+    "splitPolicy": {
+      "version": "customer-b-0.2",
+      "orderId": "b",
+      "actor": "Training office",
+      "terms": [
+        {
+          "quantity": 20,
+          "by": 1080
+        },
+        {
+          "quantity": 30,
+          "by": 2160
+        }
+      ],
+      "message": "Our larger training group needs 20 kits by 18:00 today. We can accept the remaining 10 by noon tomorrow. Please record this arrangement before changing the commitment."
+    }
+  }
+}

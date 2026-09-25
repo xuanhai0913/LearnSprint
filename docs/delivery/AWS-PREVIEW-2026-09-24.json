@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-24",
+  "url": "https://d2g4a2ezl5lw7r.cloudfront.net/career",
+  "region": "ap-southeast-2",
+  "cloudfrontStatus": "Deployed",
+  "build": {
+    "status": "Success",
+    "sourceSha256": "53c4ec098d7234422eeaa149b30d88f8d63d8e7cc2ced89847e807d3ef699101",
+    "image": "learnsprint:preview-c09-public-20260924",
+    "imageId": "sha256:1cf8d7c61ca2e6a68c12162686a571182753c410883ad502389326cc958f3519",
+    "nodeImage": "node@sha256:81502e860176e63695d769d3d1a2d3a403abc1c27c6a02169b765f3e43b60ede",
+    "caddyImage": "caddy@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d",
+    "testsRun": false,
+    "sourceArchive": "release/learnsprint-preview-c09-public-20260924.tar.gz",
+    "cloudBuildStatus": "Success",
+    "appHealth": "healthy"
+  },
+  "checks": [
+    {
+      "name": "unauthenticated",
+      "status": 401
+    },
+    {
+      "name": "health",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cache": "no-store",
+      "body": "{\"status\":\"ready\"}"
+    },
+    {
+      "name": "entry",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cache": "no-store",
+      "title": [
+        "LearnSprint \u2014 A little time. A clearer mind."
+      ],
+      "assets": [
+        {
+          "path": "/assets/index-BzaVGsxZ.js",
+          "status": 200,
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "name": "career-home",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cache": "no-store",
+      "keys": [
+        "brief",
+        "access",
+        "sessions"
+      ],
+      "access": "browser-preview",
+      "cookieSecure": true
+    }
+  ],
+  "localTestsRun": false,
+  "careerInferenceEnabled": true,
+  "browserObservation": "Direct native Chrome UI loaded First Shift page without sign-in; footer says Hackathon demo. Browser-control tab creation separately returned ERR_BLOCKED_BY_CLIENT.",
+  "baseEstimateUsdPer730Hours": 25.802,
+  "initialBuild": {
+    "status": "Success",
+    "sourceSha256": "6c68e36a3cba89092de23f0a630e5f2ba9fd84bdb457977b83e49fecc9cc9258",
+    "image": "learnsprint:preview-c09-cloud-20260924",
+    "imageId": "sha256:2e1c98991f9c38d070a478bff63ea803308d7eb10b5886eb91f5488824348a91",
+    "nodeImage": "node@sha256:81502e860176e63695d769d3d1a2d3a403abc1c27c6a02169b765f3e43b60ede",
+    "caddyImage": "caddy@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d",
+    "testsRun": false
+  },
+  "careerLive": {
+    "batchId": "career-lite-aws-preview-2026-09-24",
+    "region": "us-east-1",
+    "modelId": "us.amazon.nova-2-lite-v1:0",
+    "reservations": 5,
+    "completed": 1,
+    "closedOrUncertain": 4,
+    "remaining": 5,
+    "successfulRequestId": "404fa945-110b-4766-9dcb-d5485ebc979b",
+    "successfulOperation": "ask_actor",
+    "successfulUsage": {
+      "inputTokens": 1639,
+      "outputTokens": 75
+    },
+    "authoredAnswer": "We have 40 study kits on hand. The additional 40 are expected stock; I have not recorded them as received.",
+    "sonicReservations": 0,
+    "sonicRemaining": 4,
+    "noLocalApplicationTests": true
+  },
+  "priorAiBuild": {
+    "status": "Success",
+    "sourceSha256": "291d10cf7a58c729c886507de32a6f39f28badaba4ebd8f0242d69fca3a4c09b",
+    "image": "learnsprint:preview-c09-ai4-20260924",
+    "imageId": "sha256:85acd198204c130a7efe15351fa9d47547fe2c7ba3f6229a1073c04268233f9d",
+    "nodeImage": "node@sha256:81502e860176e63695d769d3d1a2d3a403abc1c27c6a02169b765f3e43b60ede",
+    "caddyImage": "caddy@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d",
+    "testsRun": false,
+    "sourceArchive": "release/learnsprint-preview-c09-ai4-20260924.tar.gz",
+    "cloudBuildStatus": "Success",
+    "appHealth": "healthy"
+  },
+  "publicAccess": true,
+  "reviewerBasicAuth": false,
+  "publicChecks": [
+    {
+      "path": "/healthz",
+      "status": 200,
+      "credentials": false
+    },
+    {
+      "path": "/career",
+      "status": 200,
+      "credentials": false
+    },
+    {
+      "path": "/api/career/home",
+      "status": 200,
+      "credentials": false,
+      "cookieSecure": true
+    },
+    {
+      "path": "/assets/index-CwyztnC3.js",
+      "status": 200,
+      "credentials": false
+    }
+  ],
+  "chromeObservation": "Direct native Chrome UI loaded First Shift page without sign-in; footer says Hackathon demo. Browser-control tab creation separately returned ERR_BLOCKED_BY_CLIENT.",
+  "originWithoutSecretStatus": 403
+}

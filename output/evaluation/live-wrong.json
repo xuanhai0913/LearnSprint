@@ -1,0 +1,50 @@
+{
+  "case": "wrong",
+  "elapsedMs": 2257,
+  "session": {
+    "sessionId": "33473968-7a12-456f-9fc3-8a13082ae5b7",
+    "packVersion": "0.2.0-draft",
+    "status": "active",
+    "revision": 2,
+    "timeBudgetMinutes": 5,
+    "questionLimit": 2,
+    "currentQuestion": {
+      "questionId": "access-q04",
+      "prompt": "An OAuth bearer token has expired. The learner says, 'The token exists, so the failure must be 403.' Give the recommended status and bearer error, and explain the mistake.",
+      "conceptIds": [
+        "http-auth-errors"
+      ]
+    },
+    "answers": [
+      {
+        "answerId": "43b19dad-fbe7-4689-a5c9-78f791eb1003",
+        "question": {
+          "questionId": "access-q02",
+          "prompt": "GET /practice is protected by an HTTP authentication scheme. A client sends no credentials. Choose 401 or 403 and name the required response header.",
+          "conceptIds": [
+            "http-auth-errors"
+          ]
+        },
+        "text": "403. No authentication challenge is required.",
+        "outcome": "incorrect",
+        "rationale": "The learner incorrectly selected 403 instead of 401. According to passage access-p02, a 401 response is used when valid authentication credentials are missing, and the server must include a WWW-Authenticate challenge. The learner's statement that 'No authentication challenge is required' contradicts the requirement for the WWW-Authenticate header.",
+        "passages": [
+          {
+            "passageId": "access-p02",
+            "title": "401 needs valid credentials",
+            "text": "A 401 response indicates that valid authentication credentials are missing for the target resource. The server must include a WWW-Authenticate challenge.",
+            "sourceTitle": "RFC 9110 — HTTP Semantics",
+            "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.2"
+          }
+        ],
+        "savedAt": "2026-09-23T04:56:41.190Z",
+        "mode": "bedrock"
+      }
+    ],
+    "createdAt": "2026-09-23T04:56:38.932Z",
+    "updatedAt": "2026-09-23T04:56:41.190Z",
+    "recommendation": "Try a different example of the concept you marked for review.",
+    "mode": "bedrock"
+  },
+  "requestId": "5d1d2f10-db52-4047-bc36-f5f1874fce4a"
+}

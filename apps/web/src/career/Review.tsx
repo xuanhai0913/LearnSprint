@@ -1,0 +1,19 @@
+import type { CareerBrief, CareerEvaluation } from '@learnsprint/contracts';
+import { shiftTime } from './api';
+
+export default function Review({ brief, review, stale }: { brief: CareerBrief; review: CareerEvaluation; stale: boolean }) {
+  const r = review.outcome;
+  return <section className="cr-review" aria-labelledby="cr-review-title">
+    <div className="cr-section-heading"><div><p className="cr-eyebrow">REVIEW {String(review.number).padStart(2, '0')} / PLAN {review.artifactRevision}</p><h2 id="cr-review-title">{stale ? 'A record of an earlier plan.' : r.feasible ? 'The commitments line up.' : 'Some promises need attention.'}</h2></div><span className={`cr-stamp ${stale || !r.feasible ? 'cr-stamp-warn' : ''}`}>{stale ? 'OUTDATED' : r.feasible ? 'PROJECTED FIT' : 'TO RESOLVE'}</span></div>
+    <p className="cr-muted">{stale ? 'The plan or known facts have changed. Review again before recording a commitment.' : 'This is a projection against recorded facts and agreements. It is not confirmation that any delivery occurred.'}</p>
+    <p className="cr-review-assistance">{review.assistance ? `At this review: ${review.assistance.helpCount} guidance requests, ${review.assistance.aiFocusCount} AI-selected focuses, ${review.assistance.guidedVoiceCount} guided voice starts. ${review.assistance.history === 'unknown-before-tracking' ? 'Earlier assistance is unknown.' : `Tracked from its start; mode at this review: ${review.assistance.mode}.`}` : 'This review predates assistance tracking. Its help history is unknown.'}</p>
+    <div className="cr-checks">{[
+      ['Stock by departure', r.inventoryMet], ['Vehicle capacity', r.capacityMet], ['Order quantities', r.quantitiesMet], ['Customer promises', r.commitmentsMet], ['Shipping budget', r.budgetMet],
+    ].map(([label, met]) => <span key={String(label)} className={met ? 'cr-check-ok' : 'cr-check-miss'}><b aria-hidden="true">{met ? '✓' : '!'}</b>{label}<small>{met ? 'Met' : 'Not met'}</small></span>)}</div>
+    {r.issues.length ? <ul className="cr-issues">{r.issues.map((issue, i) => <li key={`${issue.code}-${i}`}>{issue.message}</li>)}</ul> : null}
+    <div id="cr-review-budget" className="cr-review-budget"><span>Shipping for used departures</span><strong>{r.cost} <small>/ {r.budget} units</small></strong><span>One fee per departure, shared across orders.</span></div>
+    <div id="cr-review-stock" className="cr-table-scroll" role="region" tabIndex={0} aria-label="Projected stock by departure"><table className="cr-review-table"><caption>Stock projection · facts v{review.worldRevision} · replenishment expected {shiftTime(review.eta)}</caption><thead><tr><th>Departure</th><th>On this trip</th><th>Allocated so far</th><th>Available by then</th><th>Balance / short</th></tr></thead><tbody>{r.departures.map(row => <tr key={row.departureId}><th scope="row">{brief.departures.find(d => d.id === row.departureId)?.name}</th><td>{row.load}</td><td>{row.cumulativeAllocated}</td><td>{row.availableByDeparture}</td><td className={row.shortage ? 'cr-danger-text' : ''}>{row.shortage ? `${row.shortage} short` : `${row.projectedBalance} remaining`}</td></tr>)}</tbody></table></div>
+    <details id="cr-review-orders" className="cr-details"><summary>Inspect the recorded customer deadlines</summary><ul>{r.orders.flatMap(order => order.terms.map(term => <li key={`${order.orderId}-${term.by}`}><strong>Order {order.orderId.toUpperCase()}:</strong> {term.scheduledBy} scheduled by {shiftTime(term.by)}; {term.quantity} required. <b>{term.met ? 'Deadline met.' : 'Deadline not met.'}</b></li>))}</ul><p className="cr-small">{review.agreement ? 'Includes the recorded customer B agreement.' : 'Uses the original customer commitments.'} Arrival on a deadline meets it.</p></details>
+    {r.dependsOnExpectedStock ? <p className="cr-stock-note">This plan relies on expected replenishment. Its arrival is an assumption, not confirmed on-hand stock.</p> : null}
+  </section>;
+}

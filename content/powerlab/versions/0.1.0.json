@@ -1,0 +1,53 @@
+{
+  "id": "powerlab",
+  "version": "0.1.0",
+  "oracleVersion": "powerlab-reference-0.1",
+  "title": "PowerLab · The study hub",
+  "objectives": [
+    { "id": "L1", "text": "Distinguish power at one moment (W) from energy used over time (Wh)." },
+    { "id": "L2", "text": "Calculate energy from device power and operating time." },
+    { "id": "L3", "text": "Meet people's needs within both energy and power limits." }
+  ],
+  "sources": [
+    {
+      "id": "eia-units",
+      "title": "EIA · Measuring electricity",
+      "url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
+      "note": "Reference for power and energy units. All device ratings, scenarios, wording and illustrations in this lab are original fictional teaching material. Source reviewed 2026-09-23."
+    }
+  ],
+  "assumptions": [
+    "Each device draws its stated power for the entire selected hour, and zero when off.",
+    "The battery capacity is usable energy; no additional efficiency discount is applied.",
+    "The model evaluates requested demand. It does not simulate electrical delivery after a limit is exceeded.",
+    "Starting surges, voltage, wiring, temperature and battery aging are outside this lesson.",
+    "These are fictional devices for learning, not equipment specifications or installation advice."
+  ],
+  "scenarios": [
+    {
+      "id": "practice-a",
+      "title": "Keep the study hub open",
+      "brief": "A campus study hub needs four hours of backup power. Keep the light and internet on, make time for cooling, and charge a laptop. Build a schedule that meets every need using one limited battery.",
+      "capacityWh": 240,
+      "maxPowerW": 120,
+      "slots": [
+        { "id": "h1", "label": "Hour 1", "start": "14:00", "end": "15:00", "minutes": 60 },
+        { "id": "h2", "label": "Hour 2", "start": "15:00", "end": "16:00", "minutes": 60 },
+        { "id": "h3", "label": "Hour 3", "start": "16:00", "end": "17:00", "minutes": 60 },
+        { "id": "h4", "label": "Hour 4", "start": "17:00", "end": "18:00", "minutes": 60 }
+      ],
+      "devices": [
+        { "id": "lamp", "name": "Desk lamp", "kind": "lamp", "watts": 12, "requiredMinutes": 240, "service": "every_slot", "purpose": "Keep the desk lit for all four hours." },
+        { "id": "router", "name": "Wi-Fi router", "kind": "router", "watts": 8, "requiredMinutes": 240, "service": "every_slot", "purpose": "Keep the study hub connected for all four hours." },
+        { "id": "fan", "name": "Desk fan", "kind": "fan", "watts": 24, "requiredMinutes": 120, "service": "minimum_duration", "purpose": "Provide at least two hours of cooling." },
+        { "id": "laptop", "name": "Laptop charger", "kind": "laptop", "watts": 60, "requiredMinutes": 60, "service": "minimum_duration", "purpose": "Charge the laptop for at least one hour." }
+      ],
+      "initialSchedule": {
+        "lamp": ["h1", "h2", "h3", "h4"],
+        "router": ["h1", "h2", "h3", "h4"],
+        "fan": ["h1", "h2", "h3", "h4"],
+        "laptop": ["h1", "h2", "h3", "h4"]
+      }
+    }
+  ]
+}

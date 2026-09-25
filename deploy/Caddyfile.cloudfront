@@ -1,0 +1,22 @@
+{
+    admin off
+    auto_https off
+}
+
+:8080 {
+    route {
+        @unauthorizedOrigin not header X-LearnSprint-Origin {$LEARNSPRINT_PROXY_TOKEN}
+        respond @unauthorizedOrigin 403
+        header {
+            Strict-Transport-Security "max-age=86400"
+            X-Robots-Tag "noindex, nofollow"
+            Cache-Control "no-store"
+        }
+        reverse_proxy app:3001 {
+            header_up Host {$LEARNSPRINT_DEMO_DOMAIN}
+            header_up X-LearnSprint-Proxy {$LEARNSPRINT_PROXY_TOKEN}
+            header_up -X-LearnSprint-Origin
+            header_up -Authorization
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    admin off
+}
+
+{$LEARNSPRINT_DEMO_DOMAIN} {
+    route {
+        header {
+            Strict-Transport-Security "max-age=86400"
+            X-Robots-Tag "noindex, nofollow"
+            Cache-Control "no-store"
+        }
+        # Required private file contains a complete basic_auth directive.
+        import /run/secrets/access.caddy
+        reverse_proxy app:3001 {
+            header_up Host {$LEARNSPRINT_DEMO_DOMAIN}
+            header_up X-LearnSprint-Proxy {$LEARNSPRINT_PROXY_TOKEN}
+            header_up -Authorization
+        }
+    }
+}

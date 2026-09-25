@@ -1,0 +1,32 @@
+{
+  "version": "powerlab-reference-0.1",
+  "status": "Author arithmetic reviewed; independent educator review and application acceptance execution pending.",
+  "packVersion": "0.1.0",
+  "scenarioId": "practice-a",
+  "cases": [
+    {
+      "name": "All on",
+      "schedule": { "lamp": ["h1", "h2", "h3", "h4"], "router": ["h1", "h2", "h3", "h4"], "fan": ["h1", "h2", "h3", "h4"], "laptop": ["h1", "h2", "h3", "h4"] },
+      "slotPowerW": [104, 104, 104, 104], "energyWh": 416, "peakPowerW": 104,
+      "energyWithinLimit": false, "powerWithinLimit": true, "servicesSatisfied": true, "feasible": false
+    },
+    {
+      "name": "All off",
+      "schedule": { "lamp": [], "router": [], "fan": [], "laptop": [] },
+      "slotPowerW": [0, 0, 0, 0], "energyWh": 0, "peakPowerW": 0,
+      "energyWithinLimit": true, "powerWithinLimit": true, "servicesSatisfied": false, "feasible": false
+    },
+    {
+      "name": "Shorter operating time",
+      "schedule": { "lamp": ["h1", "h2", "h3", "h4"], "router": ["h1", "h2", "h3", "h4"], "fan": ["h1", "h2"], "laptop": ["h1"] },
+      "slotPowerW": [104, 44, 20, 20], "energyWh": 188, "peakPowerW": 104,
+      "energyWithinLimit": true, "powerWithinLimit": true, "servicesSatisfied": true, "feasible": true
+    },
+    {
+      "name": "Same energy, lower peak",
+      "schedule": { "lamp": ["h1", "h2", "h3", "h4"], "router": ["h1", "h2", "h3", "h4"], "fan": ["h1", "h2"], "laptop": ["h3"] },
+      "slotPowerW": [44, 44, 80, 20], "energyWh": 188, "peakPowerW": 80,
+      "energyWithinLimit": true, "powerWithinLimit": true, "servicesSatisfied": true, "feasible": true
+    }
+  ]
+}

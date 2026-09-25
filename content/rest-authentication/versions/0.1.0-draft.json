@@ -1,0 +1,152 @@
+{
+  "packId": "rest-authentication",
+  "version": "0.1.0-draft",
+  "title": "Who are you, and what may you do?",
+  "language": "en",
+  "status": "draft",
+  "reviewedByOwner": false,
+  "topicId": "api-access-basics",
+  "conceptIds": ["identity-and-permissions", "http-auth-errors", "server-access-checks"],
+  "sourceReferences": [
+    {
+      "sourceId": "http-semantics",
+      "title": "RFC 9110 — HTTP Semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.2",
+      "sections": ["15.5.2", "15.5.4"],
+      "consultedAt": "2026-09-23"
+    },
+    {
+      "sourceId": "bearer-errors",
+      "title": "RFC 6750 — OAuth 2.0 Bearer Token Usage",
+      "url": "https://www.rfc-editor.org/rfc/rfc6750.html#section-3.1",
+      "sections": ["3.1"],
+      "consultedAt": "2026-09-23"
+    },
+    {
+      "sourceId": "authorization",
+      "title": "OWASP Authorization Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "sections": ["Introduction", "Validate the Permissions on Every Request", "Verify that Authorization Checks are Performed in the Right Location"],
+      "consultedAt": "2026-09-23"
+    }
+  ],
+  "passages": [
+    {
+      "passageId": "access-p01",
+      "conceptIds": ["identity-and-permissions"],
+      "title": "Identity and permission",
+      "text": "Authentication establishes identity. Authorization decides whether a requested action is allowed. A successful sign-in does not grant access to every resource.",
+      "sourceId": "authorization"
+    },
+    {
+      "passageId": "access-p02",
+      "conceptIds": ["http-auth-errors"],
+      "title": "401 needs valid credentials",
+      "text": "A 401 response indicates that valid authentication credentials are missing for the target resource. The server must include a WWW-Authenticate challenge.",
+      "sourceId": "http-semantics"
+    },
+    {
+      "passageId": "access-p03",
+      "conceptIds": ["http-auth-errors"],
+      "title": "403 refuses the request",
+      "text": "A 403 response means the server understood the request but refuses it. Insufficient permission is one cause; 403 does not itself prove that the caller is authenticated. Repeating identical credentials need not resolve it.",
+      "sourceId": "http-semantics"
+    },
+    {
+      "passageId": "access-p04",
+      "conceptIds": ["http-auth-errors"],
+      "title": "Two bearer-token failures",
+      "text": "For OAuth bearer tokens, an expired token is invalid_token and should receive 401. Insufficient token privileges are insufficient_scope and should receive 403. Token renewal and permission changes address different problems.",
+      "sourceId": "bearer-errors"
+    },
+    {
+      "passageId": "access-p05",
+      "conceptIds": ["server-access-checks", "identity-and-permissions"],
+      "title": "Enforce access beyond the interface",
+      "text": "Validate permission for each request and the specific resource. Hiding a button can guide a user but cannot enforce access. The authoritative check belongs on the server, gateway or serverless function.",
+      "sourceId": "authorization"
+    }
+  ],
+  "questions": [
+    {
+      "questionId": "access-q01",
+      "conceptIds": ["identity-and-permissions"],
+      "prompt": "Mai signs in to LearnSprint. The policy allows each learner to edit only their own notes. Does sign-in let Mai edit Bao's notes? Name the separate decision the API needs.",
+      "passageIds": ["access-p01", "access-p05"],
+      "rubric": {
+        "requiredIdeas": ["No; sign-in establishes identity.", "Authorize the edit against the note's ownership policy."],
+        "misconceptions": ["Being signed in permits all edits."]
+      },
+      "nextQuestionByOutcome": {"correct": "access-q02", "partial": "access-q05", "incorrect": "access-q05", "unable_to_assess": "access-q01"}
+    },
+    {
+      "questionId": "access-q02",
+      "conceptIds": ["http-auth-errors"],
+      "prompt": "GET /practice is protected by an HTTP authentication scheme. A client sends no credentials. Choose 401 or 403 and name the required response header.",
+      "passageIds": ["access-p02"],
+      "rubric": {
+        "requiredIdeas": ["401, because valid credentials are absent.", "WWW-Authenticate must supply an applicable challenge."],
+        "misconceptions": ["403 always means missing credentials."]
+      },
+      "nextQuestionByOutcome": {"correct": "access-q03", "partial": "access-q04", "incorrect": "access-q04", "unable_to_assess": "access-q02"}
+    },
+    {
+      "questionId": "access-q03",
+      "conceptIds": ["http-auth-errors"],
+      "prompt": "An OAuth API accepts Linh's bearer token, but it contains only notes:read. DELETE /notes/7 needs notes:write. Choose the recommended HTTP status and bearer error. Would retrying the same token solve this?",
+      "passageIds": ["access-p03", "access-p04"],
+      "rubric": {
+        "requiredIdeas": ["403 with insufficient_scope.", "No; the token lacks the required privilege."],
+        "misconceptions": ["Every failure involving a token requires token renewal."]
+      },
+      "nextQuestionByOutcome": {"correct": "access-q05", "partial": "access-q06", "incorrect": "access-q06", "unable_to_assess": "access-q03"}
+    },
+    {
+      "questionId": "access-q04",
+      "conceptIds": ["http-auth-errors"],
+      "prompt": "An OAuth bearer token has expired. The learner says, 'The token exists, so the failure must be 403.' Give the recommended status and bearer error, and explain the mistake.",
+      "passageIds": ["access-p02", "access-p04"],
+      "rubric": {
+        "requiredIdeas": ["401 with invalid_token.", "An existing token can be expired and invalid."],
+        "misconceptions": ["Possessing any token proves valid authentication."]
+      },
+      "nextQuestionByOutcome": {"correct": "access-q03", "partial": "access-q06", "incorrect": "access-q06", "unable_to_assess": "access-q04"}
+    },
+    {
+      "questionId": "access-q05",
+      "conceptIds": ["server-access-checks", "identity-and-permissions"],
+      "prompt": "A page hides the Edit button for another learner's note. Mai can still send a direct API request. What must the API decide before changing that note?",
+      "passageIds": ["access-p01", "access-p05"],
+      "rubric": {
+        "requiredIdeas": ["Check this caller's permission to edit this specific note.", "A hidden button does not enforce the ownership rule."],
+        "misconceptions": ["The backend can trust the button's visibility."]
+      },
+      "nextQuestionByOutcome": {"correct": null, "partial": null, "incorrect": null, "unable_to_assess": "access-q05"}
+    },
+    {
+      "questionId": "access-q06",
+      "conceptIds": ["http-auth-errors"],
+      "prompt": "Two OAuth requests fail: A uses an expired token; B uses a valid token without the required scope. Match each to 401 or 403 and explain why the fixes differ.",
+      "passageIds": ["access-p04"],
+      "rubric": {
+        "requiredIdeas": ["A: 401; valid replacement credentials may help.", "B: 403; required privileges are missing."],
+        "misconceptions": ["Replacing a token with unchanged privileges necessarily fixes B."]
+      },
+      "nextQuestionByOutcome": {"correct": "access-q05", "partial": "access-q05", "incorrect": "access-q05", "unable_to_assess": "access-q06"}
+    }
+  ],
+  "assessmentPolicy": {
+    "correct": "All required ideas are supported without a material contradiction.",
+    "partial": "Some required ideas are supported, but the explanation is incomplete or contains a limited error.",
+    "incorrect": "A substantive answer conflicts with the core concept.",
+    "unable_to_assess": "The response is blank, irrelevant or too unclear for a supported assessment; do not score it as incorrect.",
+    "acceptParaphrases": true,
+    "exposeRubricBeforeSubmission": false
+  },
+  "starterSession": {
+    "firstQuestionId": "access-q02",
+    "maxScoredQuestions": 4,
+    "selectionRule": "Use the outcome mapping within the remaining time and question budget. Avoid repeating completed questions. A null or exhausted candidate ends this starter branch with a saved recap.",
+    "continuityRule": "Resume the saved pending question. A later session may begin with an unanswered follow-up for an unresolved concept; never infer progress from client text."
+  }
+}

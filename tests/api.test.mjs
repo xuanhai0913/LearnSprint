@@ -1,0 +1,21 @@
+import { test, before, after } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { randomUUID } from 'node:crypto';
+import { once } from 'node:events';
+const dir=mkdtempSync(join(tmpdir(),'learnsprint-api-test-'));
+const base='http://127.0.0.1:3002';let child;
+before(async()=>{
+ child=spawn(process.execPath,['apps/api/dist/main.js'],{env:{...process.env,LEARNSPRINT_PORT:'3002',LEARNSPRINT_DATA_DIR:dir,LEARNSPRINT_ASSESSMENT_MODE:'fixture'},stdio:['ignore','pipe','pipe']});
+ await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('API startup timeout')),10000);child.stdout.on('data',chunk=>{if(chunk.toString().includes('Nest application successfully started')){clearTimeout(timer);resolve()}});child.once('exit',code=>{clearTimeout(timer);reject(Error(`API exited ${code}`))});});
+});
+after(async()=>{if(child&&child.exitCode===null){child.kill('SIGTERM');await once(child,'exit');}rmSync(dir,{recursive:true,force:true});});
+const post=(path,body,headers={})=>fetch(base+path,{method:'POST',headers:{'Content-Type':'application/json',...headers},body:typeof body==='string'?body:JSON.stringify(body)});
+test('HTTP validates input and rejects extra fields',async()=>{const r=await post('/api/sessions',{requestId:randomUUID(),timeBudgetMinutes:7,extra:true});assert.equal(r.status,400);assert.equal((await r.json()).code,'INVALID_INPUT');});
+test('HTTP rejects malformed JSON and oversized payload with safe errors',async()=>{let r=await post('/api/sessions','{oops');assert.equal(r.status,400);assert.equal((await r.json()).code,'INVALID_INPUT');r=await post('/api/sessions',JSON.stringify({text:'a'.repeat(20000)}));assert.equal(r.status,413);assert.equal((await r.json()).code,'INVALID_INPUT');});
+test('HTTP rejects foreign origins and unsupported content types',async()=>{let r=await post('/api/sessions',{}, {Origin:'https://untrusted.example'});assert.equal(r.status,403);r=await post('/api/sessions','text',{'Content-Type':'text/plain'});assert.equal(r.status,415);});
+test('HTTP saves answer, accepts retry once and restores selected question',async()=>{let r=await post('/api/sessions',{requestId:randomUUID(),timeBudgetMinutes:5});assert.equal(r.status,201);let s=await r.json();r=await post(`/api/sessions/${s.sessionId}/start`,{requestId:randomUUID(),expectedRevision:s.revision});s=await r.json();const body={requestId:randomUUID(),expectedRevision:s.revision,questionId:s.currentQuestion.questionId,text:'403',fixtureOutcome:'incorrect'};r=await post(`/api/sessions/${s.sessionId}/answers`,body);assert.equal(r.status,201);const saved=await r.json();r=await post(`/api/sessions/${s.sessionId}/answers`,body);assert.deepEqual(await r.json(),saved);r=await fetch(`${base}/api/sessions/${s.sessionId}`);const restored=await r.json();assert.equal(restored.currentQuestion.questionId,'access-q04');assert.equal(restored.answers.length,1);assert.equal(r.headers.get('cache-control'),'no-store');});
+test('HTTP unknown session and unknown route are safe errors',async()=>{assert.equal((await fetch(`${base}/api/sessions/${randomUUID()}`)).status,404);const r=await fetch(`${base}/api/no-such-route`);assert.equal(r.status,404);assert.equal((await r.json()).code,'INVALID_INPUT');});

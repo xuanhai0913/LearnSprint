@@ -1,0 +1,69 @@
+name: learnsprint-preview
+services:
+  app:
+    image: ${LEARNSPRINT_IMAGE:?Set an immutable release image tag}
+    build:
+      context: ..
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 768m
+    stop_grace_period: 30s
+    environment:
+      LEARNSPRINT_DEPLOYMENT: preview
+      LEARNSPRINT_PUBLIC_ORIGIN: https://${LEARNSPRINT_DEMO_DOMAIN:?Set a public DNS name}
+      LEARNSPRINT_PORT: '3001'
+      LEARNSPRINT_DATA_DIR: /data
+      LEARNSPRINT_PROXY_TOKEN_FILE: /run/secrets/proxy-token
+      AWS_REGION: us-east-1
+    volumes:
+      - type: bind
+        source: ${LEARNSPRINT_DATA_PATH:?Set an existing persistent directory}
+        target: /data
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${LEARNSPRINT_SECRETS_PATH:?Set an existing private directory}/proxy-token
+        target: /run/secrets/proxy-token
+        read_only: true
+        bind:
+          create_host_path: false
+    tmpfs: ['/tmp:size=16m,mode=1777']
+    logging:
+      driver: json-file
+      options: {max-size: '5m', max-file: '2'}
+  gateway:
+    image: ${LEARNSPRINT_CADDY_IMAGE:?Set the pinned Caddy image}
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    read_only: true
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 256m
+    ports: ['${LEARNSPRINT_GATEWAY_HTTP_PORT:-80}:${LEARNSPRINT_GATEWAY_HTTP_PORT:-80}', '${LEARNSPRINT_GATEWAY_HTTPS_PORT:-443}:443']
+    environment:
+      LEARNSPRINT_DEMO_DOMAIN: ${LEARNSPRINT_DEMO_DOMAIN}
+    entrypoint: [/bin/sh, /etc/caddy/start.sh]
+    volumes:
+      - ./${LEARNSPRINT_CADDY_CONFIG:-Caddyfile}:/etc/caddy/Caddyfile:ro
+      - ./gateway-start.sh:/etc/caddy/start.sh:ro
+      - type: bind
+        source: ${LEARNSPRINT_SECRETS_PATH}/proxy-token
+        target: /run/secrets/proxy-token
+        read_only: true
+        bind:
+          create_host_path: false
+      - caddy-data:/data
+      - caddy-config:/config
+    tmpfs: ['/tmp:size=16m,mode=1777']
+    logging:
+      driver: json-file
+      options: {max-size: '5m', max-file: '2'}
+volumes:
+  caddy-data:
+  caddy-config:
