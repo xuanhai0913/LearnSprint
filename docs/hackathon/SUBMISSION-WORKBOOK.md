@@ -2,6 +2,8 @@
 
 Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has been submitted. Recheck live Devpost fields and official rules before entry. [Requirements](REQUIREMENTS.md) · [Observed status](../delivery/STATUS.md).
 
+The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 2026-09-25; the form shows **2/5 steps done**. See the [field-by-field draft](DEVPOST-FIELDS.md) for the exact live fields and pending identity/eligibility checks.
+
 ## Entry and exact claim
 
 | Field | Current draft / gate |

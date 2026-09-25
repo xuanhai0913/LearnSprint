@@ -33,7 +33,7 @@ The owner already reports receiving the $150 code; no duplicate credit form is n
 
 ## Repository and judge access
 
-Public GitHub with an open-source license is the proposed simplest review path; visibility/license remain a release decision. For private access, the current [FAQ](https://amazonappdev2026.devpost.com/details/faqs) names `testing@devpost.com`, `chris-trag`, `knmeiss`, `giolaq`, `anishamalde`, `mosesroth`, and `emersonsklar`. Invitations require acceptance and expire after seven days, so refresh near submission as necessary.
+The owner selected public GitHub with MIT, and the [LearnSprint repository](https://github.com/xuanhai0913/LearnSprint) is now live. The live form also asks that the license be detectable in GitHub's About section; the repository license endpoint reported MIT on 2026-09-25, but check the displayed About section again at submission. For private access, the current [FAQ](https://amazonappdev2026.devpost.com/details/faqs) names `testing@devpost.com`, `chris-trag`, `knmeiss`, `giolaq`, `anishamalde`, `mosesroth`, and `emersonsklar`. Invitations require acceptance and expire after seven days, so refresh near submission as necessary.
 
 The FAQ permits a locally runnable repository plus video. Hosted access is our convenience target, not an official hosting requirement. Gated native Alexa+ preview tools are unavailable to ordinary entrants; use the permitted simulation path. Reviewers never receive the owner's AWS credentials.
 
@@ -41,4 +41,4 @@ The FAQ permits a locally runnable repository plus video. Hosted access is our c
 
 Four equal criteria are mapped to the current career workflow in the [R4 delivery plan](../career/DELIVERY-PLAN.md); the earlier [judging map](JUDGING-EVIDENCE.md) is historical. “Covers every criterion” means preparing credible evidence across those criteria; it does not mean entering every track or guaranteeing maximum points.
 
-Last private observation: Devpost entry remained an Untitled draft, 1/5 steps complete. This research revision has not edited/submitted that form or verified a new account balance. The current [R4 submission workbook](SUBMISSION-WORKBOOK.md) is a draft to check against the live form and actual release.
+Last private observation on 2026-09-25: the Devpost entry was named LearnSprint and its elevator pitch saved; it remains a **draft, 2/5 steps complete**. The live additional-info form includes individual/team type, country, age/eligibility attestations, Alexa+ primary track, AWS Builder question, an existing-work declaration, five required product-feedback answers and an optional friction-log URL. The project-details step requires the story, built-with tags and a public video URL. Nothing has been submitted; no new account balance was verified. Use the [R4 submission workbook](SUBMISSION-WORKBOOK.md) and [live-form field draft](DEVPOST-FIELDS.md).

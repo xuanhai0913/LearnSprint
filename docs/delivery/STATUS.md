@@ -220,3 +220,8 @@ Implemented an explicit `request_help` command for practice A. It requires the l
 This was partial R04 assistance recording plus an authored fallback, not full attempt/phase tracking or R05 live coaching. Its planned continuation was superseded by the R4 career direction above.
 
 Latest voice ledger observation: two reservations consumed, two remain. The second connection stopped after about 2.6 seconds, with no audio bytes/tools or usage report. Its initiator is not established by this ledger; missing usage is not a zero-cost claim.
+## 2026-09-25 — public repository and Devpost draft
+
+- The owner selected public GitHub with MIT. The standalone [LearnSprint repository](https://github.com/xuanhai0913/LearnSprint) is public on `main` with source, content, setup guidance and an MIT license. Tracked-file scanning found no obvious credentials or private keys; `.data/`, `deploy/private/` and release artifacts are ignored. GitHub's license API reported MIT. A clean-clone setup run has not been performed under the owner's request to avoid local builds.
+- The signed-in Devpost draft was renamed LearnSprint and its elevator pitch saved. The UI showed **DRAFT, 2/5 steps done**. The live form was inspected and mapped in [DEVPOST-FIELDS](../hackathon/DEVPOST-FIELDS.md); no final submission was made.
+- Added an English [reviewer guide](../hackathon/REVIEWER-GUIDE.md) and a field-ready [product feedback draft](../hackathon/PRODUCT-FEEDBACK.md). Project story, thumbnail and public video remain unsaved. Age, eligibility, residency, team and project-history declarations require accurate entrant confirmation. The final deadline remains October 24 at 02:00 VN per the live competition UI; target October 22 evening VN.
