@@ -35,6 +35,7 @@ The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 20
 - Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and [reviewer guide](REVIEWER-GUIDE.md). The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. A clean clone/setup remains unverified.
 - Public YouTube/Vimeo video under three minutes: **pending**. Use the [current R4 script](DEMO-SCRIPT.md).
 - Thumbnail/screenshots: **pending**. Capture the deployed R4 experience with synthetic data and no AWS account details.
+- Optional friction log: [public-ready draft](FRICTION-SUBMISSION.md), with account details removed and attribution limits stated.
 - Open Source additional challenge: **do not select by default**. Publishing the main repo alone does not satisfy a distinct open-source contribution.
 
 ## Devpost form checklist

@@ -29,7 +29,7 @@ Observed in the signed-in Devpost draft on 2026-09-25. This is a preparation she
 | AWS Builder | Yes. Explain Bedrock Nova 2 Lite request interpretation and guidance focus, Sonic prototype limits, EC2/CloudFront hosting, private S3 deployment archive and SSM operations. |
 | Open Source mini challenge | No by default. This field demands a **separate** new open-source project or contribution alongside the primary entry, plus contribution URL, project URL, username and description. |
 | Optional project testing link | <https://d2g4a2ezl5lw7r.cloudfront.net/career>. |
-| Optional friction log URL | Pending curation of one or more reproducible, redacted entries; see [internal log](../research/FRICTION-LOG.md). The form says an actionable log can earn up to a 10% judging bonus. |
+| Optional friction log URL | <https://github.com/xuanhai0913/LearnSprint/blob/main/docs/hackathon/FRICTION-SUBMISSION.md>. Two redacted observations; confirm the final text before using. The form says an actionable log can earn up to a 10% judging bonus. |
 | Feedback questions 1–5 | Use [actual-tool draft](PRODUCT-FEEDBACK.md); split into the five prompts: tools/purpose; what worked; what needs work; onboarding; would use again. |
 
 The page also asks the entrant to attest age of majority, eligible jurisdiction and no employment/agency relationship with the promotion entities. These facts belong to the human entrant. The final Submit step may contain additional terms; read it at action time.
