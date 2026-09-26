@@ -6,7 +6,7 @@ Type: reference. Rechecked against the official rules, FAQ and schedule on 2026-
 
 **Build, Ship, Shape: Amazon Developer Hackathon.** Choose **Alexa+ experience simulation** as the primary route and **AWS Builder** as the mini challenge. No global subject or learner demographic is mandated. Education is our product decision.
 
-The [rules](https://amazonappdev2026.devpost.com/rules) permit an Alexa+ simulation using the entrant's own AI/agentic tools without a mandatory MCP interface. Its source and functioning simulated experience must be shown. We must label the simulation accurately; a web app calling AWS alone does not explain primary-track fit.
+**Correction, 2026-09-26:** The [current official rules](https://amazonappdev2026.devpost.com/rules) require a working Agent Skill or self-hosted MCP server (minimum MCP specification 2025-11-25) for Alexa+. They describe the simulated web experience as optional. Our earlier statement that no MCP/Skill interface was required was an overbroad interpretation and must not be relied on. The current app has bounded Bedrock tools but no MCP server or Agent Skill was found in source. Primary-track readiness is therefore **open**, and final submission must wait for a working qualifying integration and documented evidence. The web simulation and AWS Builder integration remain useful components.
 
 Other primary routes are Fire TV, Bee and Ring, each with its own technology conditions. We do not need to implement every track to meet the judging criteria for our chosen entry. Open Source is a separate additional-contribution challenge; publishing the main repo alone does not establish that entry. Focus this release on Alexa+ and AWS Builder. [Overview](https://amazonappdev2026.devpost.com/).
 

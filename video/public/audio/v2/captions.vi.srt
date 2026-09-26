@@ -1,0 +1,111 @@
+1
+00:00:00,350 --> 00:00:08,774
+Đây là LearnSprint, do Nguyễn Xuân Hải phát triển, sử dụng Amazon Bedrock và Nova, triển khai trên AWS.
+
+2
+00:00:09,892 --> 00:00:17,404
+Ba khách hàng. Tám mươi bộ hàng. Một chuyến hàng không đến kịp.
+
+3
+00:00:17,504 --> 00:00:19,808
+Bạn sẽ cam kết điều gì?
+
+4
+00:00:20,933 --> 00:00:27,605
+LearnSprint giúp sinh viên và người tìm việc lần đầu luyện ra quyết định trong công việc vận hành.
+
+5
+00:00:27,705 --> 00:00:31,545
+Bạn trực tiếp xử lý một ca làm việc mô phỏng.
+
+6
+00:00:32,683 --> 00:00:39,187
+Tìm dữ kiện. Lập kế hoạch. Xử lý tình huống bất ngờ.
+
+7
+00:00:39,287 --> 00:00:42,767
+Rồi thử lại với những điều kiện khác.
+
+8
+00:00:43,892 --> 00:00:51,644
+Tôi hỏi Alex ở kho: có sẵn 40 bộ; 40 bộ còn lại mới là dự kiến.
+
+9
+00:00:51,744 --> 00:00:56,832
+Mỗi câu trả lời có nguồn để tôi lập kế hoạch dựa trên dữ kiện.
+
+10
+00:00:57,933 --> 00:01:01,725
+Tôi phân bổ ba đơn hàng rồi xem kết quả kiểm tra.
+
+11
+00:01:01,825 --> 00:01:08,521
+Hệ thống kiểm tra tồn kho theo thời điểm, cam kết giao, sức chứa và chi phí.
+
+12
+00:01:09,642 --> 00:01:12,954
+Nhà cung cấp báo lùi thời gian đến 17 giờ.
+
+13
+00:01:13,054 --> 00:01:19,630
+Kế hoạch cũ thiếu 20 bộ ở chuyến hôm nay. Tôi phải quyết định lại.
+
+14
+00:01:20,767 --> 00:01:24,895
+Jordan đồng ý nhận 10 bộ hôm nay và 20 bộ ngày mai.
+
+15
+00:01:24,995 --> 00:01:30,755
+Tôi phải ghi nhận thỏa thuận trước khi thay đổi cam kết giao hàng.
+
+16
+00:01:31,892 --> 00:01:38,540
+Tôi nhờ Nova đặt đơn B giao 10 bộ hôm nay. AI đề xuất một thay đổi cụ thể.
+
+17
+00:01:38,640 --> 00:01:43,488
+Tôi xem trước, bấm Apply và vẫn là người quyết định trên bảng kế hoạch.
+
+18
+00:01:44,600 --> 00:01:47,720
+Hai mươi bộ còn lại được chuyển sang ngày mai.
+
+19
+00:01:47,820 --> 00:01:53,916
+Lần kiểm tra mới xét cả kế hoạch, thỏa thuận và hàng dự kiến về.
+
+20
+00:01:55,017 --> 00:02:00,873
+Bản bàn giao lưu những thay đổi, dữ kiện nguồn và sự trợ giúp đã dùng.
+
+21
+00:02:00,973 --> 00:02:05,077
+Đây là hồ sơ quyết định trong mô phỏng, không phải chứng chỉ.
+
+22
+00:02:06,183 --> 00:02:10,455
+Ca tiếp theo thay đổi cả lượng tồn kho và nhu cầu khách hàng.
+
+23
+00:02:10,555 --> 00:02:15,283
+Người học thử lại trên bảng mới, với lịch sử trợ giúp được lưu riêng.
+
+24
+00:02:16,392 --> 00:02:21,888
+Phía sau trải nghiệm, CloudFront kết nối đến ứng dụng EC2 trong mạng riêng.
+
+25
+00:02:21,988 --> 00:02:30,652
+Bộ mô phỏng kiểm tra cam kết. Bedrock Nova hiểu yêu cầu; người học xác nhận thay đổi.
+
+26
+00:02:30,752 --> 00:02:33,728
+SQLite lưu lại hồ sơ quyết định.
+
+27
+00:02:34,850 --> 00:02:42,602
+Tiếp theo: chuyên gia góp ý tình huống và thử nghiệm với người học. Voice vẫn là nguyên mẫu.
+
+28
+00:02:42,702 --> 00:02:46,686
+LearnSprint: luyện làm việc trước ngày đi làm đầu tiên.

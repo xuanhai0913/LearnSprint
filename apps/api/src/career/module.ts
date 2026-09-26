@@ -1,3 +1,4 @@
+import { CareerMcpController } from './mcp.js';
 import { Module } from '@nestjs/common';
 import { CareerAiService } from './ai/service.js';
 import { CareerAiLedger } from './ai/ledger.js';
@@ -10,5 +11,5 @@ import { CareerService } from './service.js';
 import { CareerActors } from './actors.js';
 import { CareerCoaching } from './coaching.js';
 import { CareerRepository, SqliteCareerRepository } from './repository.js';
-@Module({ controllers: [CareerController, CareerAiController], providers: [CareerAiService, CareerAiLedger, CareerVoiceService, CareerVoiceGateway, CareerContent, CareerActors, CareerCoaching, CareerService, { provide: CareerRepository, useClass: SqliteCareerRepository }] })
+@Module({ controllers: [CareerController, CareerAiController, CareerMcpController], providers: [CareerAiService, CareerAiLedger, CareerVoiceService, CareerVoiceGateway, CareerContent, CareerActors, CareerCoaching, CareerService, { provide: CareerRepository, useClass: SqliteCareerRepository }] })
 export class CareerModule {}

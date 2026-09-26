@@ -1,5 +1,12 @@
 # Devpost live-form field draft
 
+## Publication and submission gate — 2026-09-26
+
+The owner approved the final branded cut and explicitly authorized YouTube upload/publication after its terms notice. YouTube displayed “Đã đăng video” on channel Hải Làm Dev Dạo: https://www.youtube.com/watch?v=gXUtlRcYEUE . Automated copyright/community checks were still in progress at publication; no clean-check result is claimed. Devpost saved the video URL and shows **4/5 steps done**, DRAFT. Preview: https://devpost.com/software/learnsprint . Final terms checkbox remains unchecked and Submit project has not been pressed.
+
+**New release gate:** a fresh official-rules read requires a working Agent Skill or self-hosted MCP server, minimum spec 2025-11-25, while web simulation is optional. Prior planning incorrectly treated simulation alone as sufficient. No MCP/Agent Skill was found in current app source/dependencies. Corrected `docs/hackathon/REQUIREMENTS.md`; do not claim complete primary-track compliance. Next implementation: expose existing career actions through a qualifying MCP adapter, retain ownership/revision/confirmation boundaries, deploy, demonstrate the MCP path and update submission/video evidence. No new code or paid inference was performed during this publication step.
+
+
 Observed in the signed-in Devpost draft on 2026-09-25. This is a preparation sheet, **not a submission confirmation**. Draft ID 1191831, name LearnSprint, **3/5 steps done** after Additional info was saved. The entrant confirmed the age, residency, jurisdiction, non-affiliation, individual entry and project-history facts before those form fields were saved. The final rules/terms checkbox on Submit remains untouched.
 
 ## Project overview — saved

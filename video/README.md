@@ -1,6 +1,34 @@
 # LearnSprint demo production
 
-The submission cut is `out/learnsprint-demo-live.mp4`: 150 seconds of edited **real screen recording** from the deployed AWS application in Chrome, with Amazon Polly narration and burned-in English captions. It shows the first shift, supplier delay, source-backed customer conversation, Nova 2 Lite proposal, handoff, and changed-condition replay. The first nine seconds and final fifteen seconds use promotional art. The earlier `out/learnsprint-demo.mp4` is a screenshot storyboard reference and must not be submitted.
+Published owner-approved v3: https://www.youtube.com/watch?v=gXUtlRcYEUE. Devpost video URL saved on 2026-09-26. Final competition submission remains blocked by the newly identified MCP/Agent Skill track requirement; see `../docs/hackathon/REQUIREMENTS.md`. Earlier review gates below describe production history.
+
+## Current review cut — v3 (branded opening)
+
+`out/learnsprint-demo-v3-branded.mp4` adds a 9.54-second animated opening naming **Nguyễn Xuân Hải**, with official AWS Cloud, Amazon Bedrock, Amazon Nova, Amazon EC2 and Amazon CloudFront icons and their roles. Total: approximately **2:50.46**, Full HD, bilingual captions and male English narration. The original v2 export is preserved. Source attribution is in `public/brand/aws/SOURCES.md`. The current script and timeline retain their v2 filenames; the renderer now exports v3. Owner review is still required before publication.
+
+## Previous review cut — v2
+
+`out/learnsprint-demo-v2-bilingual.mp4` is the current owner-review export: approximately 2:41, 1920×1080, 24 fps, H.264/AAC. It combines the original three real AWS screen recordings with animated problem cards, a learning-flow diagram, a stock-delay explanation and an AWS architecture diagram. Camera framing moves toward the relevant source facts, customer agreement and human Apply action.
+
+Narration uses **en-SG-WayneNeural**, a male Singapore English voice. It is not presented as a Vietnamese accent. English and Vietnamese subtitles are burned into the video; separate SRT files are in `public/audio/v2/`. The script, translations and source edit ranges are in `production-v2.json`; aligned timing is in `src/production-v2-timeline.json`.
+
+This version is **awaiting owner review**. Do not upload to YouTube or submit to Devpost until the owner approves the revised cut. Earlier screenshot and live v1 edits remain references.
+
+### Reproduce v2
+
+From the repository root, with Python, Pillow, edge-tts and FFmpeg available:
+
+```sh
+python3 video/scripts/prepare-v2.py
+python3 video/scripts/render-v2.py --preview
+python3 video/scripts/render-v2.py
+```
+
+Audio preparation reuses existing MP3 segments. Generating missing audio sends only the public fictional narration to the Edge TTS service. The renderer uses two encoding threads and does not build or launch the web app. After changing an existing scene, use `--force` to refresh cached segments (or `--scene SCENE_ID` before the full export). Raw recordings and final videos remain local under ignored directories. See [v2 editorial notes](PRODUCTION-V2.md).
+
+## Previous live edit — v1
+
+The previous v1 cut is `out/learnsprint-demo-live.mp4`: 150 seconds of edited **real screen recording** from the deployed AWS application in Chrome, with Amazon Polly narration and burned-in English captions. It shows the first shift, supplier delay, source-backed customer conversation, Nova 2 Lite proposal, handoff, and changed-condition replay. The first nine seconds and final fifteen seconds use promotional art. The earlier `out/learnsprint-demo.mp4` is a screenshot storyboard reference and must not be submitted.
 
 ## Finished assets
 

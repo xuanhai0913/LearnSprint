@@ -1,5 +1,38 @@
 # LearnSprint status
 
+## MCP deployed and demonstrated — 2026-09-26
+
+AWS release `preview-c12-mcp-20260926` built successfully and replaced the existing app in the same Compose project; app health passed. The official MCP SDK client connected through public CloudFront HTTPS, listed five tools, created one fictional shift and saved an authored warehouse answer with stock-register/supplier-notice source receipts. No Bedrock inference was used. Evidence: `MCP-DEMO-2026-09-26.json`. Existing data mounts and inference ledgers were retained. No local app builds or tests were run. Negative cases and broader interoperability remain unverified.
+
+Next: update the public reviewer/source package and Devpost story with accurate MCP evidence; revise the demo to show MCP within the three-minute limit. Current YouTube video predates MCP. Final Devpost terms/submission are still pending.
+
+## MCP implementation — 2026-09-26
+
+Added the official MCP TypeScript SDK 1.30.1, a stateless Streamable HTTP Nest controller at `/api/career/mcp`, and five domain-backed tools: home, workspace, open shift, authored actor question and deterministic review. The adapter derives ownership from the existing cookie and preserves the current proxy/host/Origin checks. No tool applies allocations or customer commitments. Added an SDK client demonstration and `docs/career/MCP.md`. Source package prepared; cloud build/deployment in progress. No local application build or tests were run. AWS CLI session was refreshed successfully. Existing model allowances/data are unchanged.
+
+## Publication and submission gate — 2026-09-26
+
+The owner approved the final branded cut and explicitly authorized YouTube upload/publication after its terms notice. YouTube displayed “Đã đăng video” on channel Hải Làm Dev Dạo: https://www.youtube.com/watch?v=gXUtlRcYEUE . Automated copyright/community checks were still in progress at publication; no clean-check result is claimed. Devpost saved the video URL and shows **4/5 steps done**, DRAFT. Preview: https://devpost.com/software/learnsprint . Final terms checkbox remains unchecked and Submit project has not been pressed.
+
+**New release gate:** a fresh official-rules read requires a working Agent Skill or self-hosted MCP server, minimum spec 2025-11-25, while web simulation is optional. Prior planning incorrectly treated simulation alone as sufficient. No MCP/Agent Skill was found in current app source/dependencies. Corrected `docs/hackathon/REQUIREMENTS.md`; do not claim complete primary-track compliance. Next implementation: expose existing career actions through a qualifying MCP adapter, retain ownership/revision/confirmation boundaries, deploy, demonstrate the MCP path and update submission/video evidence. No new code or paid inference was performed during this publication step.
+
+
+## Owner video approval — 2026-09-26
+
+Owner approved the branded v3 video and requested continuation. YouTube Studio was opened on “Hải Làm Dev Dạo”; its upload dialog explicitly treats uploading as acceptance of Terms and Community Guidelines. Action-time confirmation was requested before selecting the file. No upload or publication yet. Publication metadata is prepared in `video/YOUTUBE-PUBLISH.md`.
+
+## Branded opening — 2026-09-26
+
+Owner requested technology logos and author identification at the opening. The v3 edit adds Nguyen Xuan Hai / Nguyễn Xuân Hải, an English introduction with Vietnamese translation, and official AWS Architecture Icons for AWS Cloud, Bedrock, Nova, EC2 and CloudFront. Each service has a role label. The export is `video/out/learnsprint-demo-v3-branded.mp4`, verified export duration 170.458 seconds (ffprobe); the rendered opening was visually inspected. Existing v2 is preserved. Current source remains in the v2-named production files. No upload or submission; pending owner review.
+
+## Bilingual motion demo — 2026-09-26
+
+The owner requested male English narration (a light Vietnamese accent only if natural), English/Vietnamese subtitles, a more persuasive story, diagrams and camera movement. The revised owner-review cut is `video/out/learnsprint-demo-v2-bilingual.mp4`: **160.917 seconds, 1920×1080, 24 fps, H.264/AAC**, approximately 11.6 MB. It uses the existing real AWS recordings, animated challenge/learning-flow/stock-delay/AWS-architecture sequences and eased camera zooms. Narration is `en-SG-WayneNeural` (male Singapore English), explicitly not represented as a Vietnamese accent. Separate English, Vietnamese and bilingual SRT files are in `video/public/audio/v2/`.
+
+All 13 scene previews were visually inspected, including the proposal/Apply shot and architecture diagram. Final export metadata was inspected with ffprobe. No local application build or application tests were run; the render does not invoke AWS inference. The video still labels voice as a prototype and does not claim native Alexa integration or learner validation. Script, translations, timeline and reproduction instructions are in `video/production-v2.json`, `video/src/production-v2-timeline.json` and `video/README.md`.
+
+**Next: owner watches and requests edits/approves this version.** No YouTube upload or final Devpost submission occurred. The v1 live cut below is historical; the still montage remains an internal reference.
+
 ## Live demo video and public navigation — 2026-09-26
 
 The owner requested an actual recorded walkthrough instead of the screenshot storyboard. Three macOS recordings of the deployed CloudFront app now show a fresh first shift, warehouse fact, manual allocation, review, supplier delay, customer B agreement, one bounded Nova 2 Lite allocation proposal and human Apply, recovery handoff, and a linked replay with changed facts. `video/scripts/render-live.py` edits those takes with the existing Polly narration and burned-in captions into `video/out/learnsprint-demo-live.mp4` (150.013 seconds, 1280×720 H.264/AAC). The raw recordings and exported MP4 are intentionally local and ignored by Git; the earlier still-based video is an internal storyboard, not the submission cut. The video is not uploaded to YouTube or linked in Devpost yet.

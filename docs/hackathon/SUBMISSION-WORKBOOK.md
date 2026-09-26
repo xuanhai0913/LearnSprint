@@ -1,5 +1,12 @@
 # LearnSprint submission workbook — R4 operations simulation
 
+## Publication and submission gate — 2026-09-26
+
+The owner approved the final branded cut and explicitly authorized YouTube upload/publication after its terms notice. YouTube displayed “Đã đăng video” on channel Hải Làm Dev Dạo: https://www.youtube.com/watch?v=gXUtlRcYEUE . Automated copyright/community checks were still in progress at publication; no clean-check result is claimed. Devpost saved the video URL and shows **4/5 steps done**, DRAFT. Preview: https://devpost.com/software/learnsprint . Final terms checkbox remains unchecked and Submit project has not been pressed.
+
+**New release gate:** a fresh official-rules read requires a working Agent Skill or self-hosted MCP server, minimum spec 2025-11-25, while web simulation is optional. Prior planning incorrectly treated simulation alone as sufficient. No MCP/Agent Skill was found in current app source/dependencies. Corrected `docs/hackathon/REQUIREMENTS.md`; do not claim complete primary-track compliance. Next implementation: expose existing career actions through a qualifying MCP adapter, retain ownership/revision/confirmation boundaries, deploy, demonstrate the MCP path and update submission/video evidence. No new code or paid inference was performed during this publication step.
+
+
 Type: draft and release checklist. Updated 2026-09-26. The Devpost project remains a draft. Recheck live Devpost fields and official rules before final entry. [Requirements](REQUIREMENTS.md) · [Observed status](../delivery/STATUS.md).
 
 The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 2026-09-25. The English story, banner, thumbnail, track, AWS Builder answer and five tool-feedback fields were also saved; the form shows **3/5 steps done**. See the [live-field record](DEVPOST-FIELDS.md) for exact status and the remaining video/final submission gates.
@@ -33,7 +40,7 @@ The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 20
 
 - Hosted demo: <https://d2g4a2ezl5lw7r.cloudfront.net/career>. Public First Shift entry requires no sign-in. Each browser owns its saved shifts through a Secure cookie; reviewers can start a fresh attempt.
 - Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and [reviewer guide](REVIEWER-GUIDE.md). The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. A clean clone/setup remains unverified.
-- Public YouTube/Vimeo video under three minutes: **pending publication**. The [live screen recording cut](../../video/README.md) is exported locally at `video/out/learnsprint-demo-live.mp4` (150 seconds) with narration and burned-in captions. The earlier screenshot montage is only a storyboard reference.
+- Public YouTube/Vimeo video under three minutes: **pending publication**. The [live screen recording cut](../../video/README.md) is exported locally at `video/out/learnsprint-demo-v3-branded.mp4` (170.458 seconds, Full HD) with male English narration, English/Vietnamese subtitles, real UI recordings, animated diagrams and camera movement. This revised cut awaits owner review before publication. The earlier screenshot montage is only a storyboard reference.
 - Thumbnail and concept banner: [thumbnail](media/learnsprint-thumbnail.png) and [banner](media/learnsprint-banner.png), both GPT Image illustrations uploaded to the Devpost draft. The real app walkthrough is locally recorded and ready for owner review.
 - Optional friction log: [public-ready draft](FRICTION-SUBMISSION.md), with account details removed and attribution limits stated.
 - Open Source additional challenge: **do not select by default**. Publishing the main repo alone does not satisfy a distinct open-source contribution.

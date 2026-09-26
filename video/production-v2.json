@@ -1,0 +1,291 @@
+{
+  "title": "LearnSprint — Practice the work before the first job",
+  "voice": "en-SG-WayneNeural",
+  "voiceNote": "Male English (Singapore). Selected for clear English with a Southeast Asian voice; not represented as Vietnamese-accented English.",
+  "fps": 24,
+  "scenes": [
+    {
+      "id": "intro",
+      "chapter": "PROJECT / AUTHOR / TECHNOLOGY",
+      "title": "Practice the work before the first job.",
+      "type": "intro",
+      "sentences": [
+        {
+          "en": "This is LearnSprint, created by Nguyen Xuan Hai, using Amazon Bedrock and Nova, and hosted on AWS.",
+          "vi": "Đây là LearnSprint, do Nguyễn Xuân Hải phát triển, sử dụng Amazon Bedrock và Nova, triển khai trên AWS."
+        }
+      ]
+    },
+    {
+      "id": "hook",
+      "chapter": "THE CHALLENGE",
+      "title": "What would you promise?",
+      "type": "hook",
+      "sentences": [
+        {
+          "en": "Three customers. Eighty kits. One delivery that will not arrive on time.",
+          "vi": "Ba khách hàng. Tám mươi bộ hàng. Một chuyến hàng không đến kịp."
+        },
+        {
+          "en": "What would you promise?",
+          "vi": "Bạn sẽ cam kết điều gì?"
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "chapter": "MEET LEARNSPRINT",
+      "title": "Practice before the first job.",
+      "type": "purpose",
+      "source": "live-01.mov",
+      "sourceStart": 0,
+      "sourceEnd": 9,
+      "sentences": [
+        {
+          "en": "LearnSprint helps students and first-time job seekers practice decisions before their first operations role.",
+          "vi": "LearnSprint giúp sinh viên và người tìm việc lần đầu luyện ra quyết định trong công việc vận hành."
+        },
+        {
+          "en": "This is a fictional shift you can actually work through.",
+          "vi": "Bạn trực tiếp xử lý một ca làm việc mô phỏng."
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "chapter": "THE LEARNING LOOP",
+      "title": "Every decision leads somewhere.",
+      "type": "flow",
+      "sentences": [
+        {
+          "en": "Find the facts. Build a plan. Handle the unexpected.",
+          "vi": "Tìm dữ kiện. Lập kế hoạch. Xử lý tình huống bất ngờ."
+        },
+        {
+          "en": "Then try again with different conditions.",
+          "vi": "Rồi thử lại với những điều kiện khác."
+        }
+      ]
+    },
+    {
+      "id": "facts",
+      "chapter": "01 / INVESTIGATE",
+      "title": "Ask the right person.",
+      "type": "footage",
+      "source": "live-01.mov",
+      "sourceStart": 14,
+      "sourceEnd": 19.5,
+      "focus": [
+        0.6,
+        0.53
+      ],
+      "callout": "40 confirmed · 40 expected",
+      "sentences": [
+        {
+          "en": "I start with Alex at the warehouse. Forty kits are confirmed; forty are still expected.",
+          "vi": "Tôi hỏi Alex ở kho: có sẵn 40 bộ; 40 bộ còn lại mới là dự kiến."
+        },
+        {
+          "en": "Each answer carries a source, so my plan rests on evidence.",
+          "vi": "Mỗi câu trả lời có nguồn để tôi lập kế hoạch dựa trên dữ kiện."
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "chapter": "02 / DECIDE",
+      "title": "Make a plan you can check.",
+      "type": "footage",
+      "source": "live-01.mov",
+      "sourceStart": 17,
+      "sourceEnd": 26,
+      "focus": [
+        0.4,
+        0.32
+      ],
+      "callout": "Your plan → rule-based review",
+      "sentences": [
+        {
+          "en": "I allocate the three orders, then review.",
+          "vi": "Tôi phân bổ ba đơn hàng rồi xem kết quả kiểm tra."
+        },
+        {
+          "en": "The engine checks stock over time, delivery promises, capacity, and cost.",
+          "vi": "Hệ thống kiểm tra tồn kho theo thời điểm, cam kết giao, sức chứa và chi phí."
+        }
+      ]
+    },
+    {
+      "id": "incident",
+      "chapter": "03 / ADAPT",
+      "title": "The facts have changed.",
+      "type": "incident",
+      "sentences": [
+        {
+          "en": "Now the supplier slips to five p.m.",
+          "vi": "Nhà cung cấp báo lùi thời gian đến 17 giờ."
+        },
+        {
+          "en": "The old plan is twenty kits short at today's departure. I need a new decision.",
+          "vi": "Kế hoạch cũ thiếu 20 bộ ở chuyến hôm nay. Tôi phải quyết định lại."
+        }
+      ]
+    },
+    {
+      "id": "agreement",
+      "chapter": "04 / NEGOTIATE",
+      "title": "An offer becomes a commitment.",
+      "type": "footage",
+      "source": "live-02.mov",
+      "sourceStart": 13,
+      "sourceEnd": 27,
+      "focus": [
+        0.68,
+        0.44
+      ],
+      "callout": "Ask → inspect terms → record",
+      "sentences": [
+        {
+          "en": "Jordan can accept ten kits today and twenty tomorrow.",
+          "vi": "Jordan đồng ý nhận 10 bộ hôm nay và 20 bộ ngày mai."
+        },
+        {
+          "en": "Reading that offer is not enough: I record the agreement before changing the promise.",
+          "vi": "Tôi phải ghi nhận thỏa thuận trước khi thay đổi cam kết giao hàng."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "chapter": "AI IN THE WORKFLOW",
+      "title": "AI proposes. You decide.",
+      "type": "footage",
+      "source": "live-02.mov",
+      "sourceStart": 34,
+      "sourceEnd": 47,
+      "focus": [
+        0.43,
+        0.43
+      ],
+      "callout": "Nova 2 Lite → preview → Apply",
+      "sentences": [
+        {
+          "en": "I ask Nova to set order B to ten kits today. It proposes one exact edit.",
+          "vi": "Tôi nhờ Nova đặt đơn B giao 10 bộ hôm nay. AI đề xuất một thay đổi cụ thể."
+        },
+        {
+          "en": "I review it, choose Apply, and keep control of the board.",
+          "vi": "Tôi xem trước, bấm Apply và vẫn là người quyết định trên bảng kế hoạch."
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "chapter": "05 / RECOVER",
+      "title": "A revised plan. A clear reason.",
+      "type": "footage",
+      "source": "live-02.mov",
+      "sourceStart": 46,
+      "sourceEnd": 56,
+      "focus": [
+        0.4,
+        0.25
+      ],
+      "callout": "Order B: 10 today + 20 tomorrow",
+      "sentences": [
+        {
+          "en": "The remaining twenty move to tomorrow.",
+          "vi": "Hai mươi bộ còn lại được chuyển sang ngày mai."
+        },
+        {
+          "en": "The updated review checks the whole plan, including the agreement and the expected stock.",
+          "vi": "Lần kiểm tra mới xét cả kế hoạch, thỏa thuận và hàng dự kiến về."
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "chapter": "YOUR DECISIONS / SAVED",
+      "title": "Leave evidence worth discussing.",
+      "type": "footage",
+      "source": "live-02.mov",
+      "sourceStart": 75,
+      "sourceEnd": 89,
+      "focus": [
+        0.45,
+        0.37
+      ],
+      "callout": "Plan · sources · help used",
+      "sentences": [
+        {
+          "en": "The handoff preserves what changed and why, with source facts and assistance used.",
+          "vi": "Bản bàn giao lưu những thay đổi, dữ kiện nguồn và sự trợ giúp đã dùng."
+        },
+        {
+          "en": "It is a record of decisions, not a certificate.",
+          "vi": "Đây là hồ sơ quyết định trong mô phỏng, không phải chứng chỉ."
+        }
+      ]
+    },
+    {
+      "id": "replay",
+      "chapter": "06 / TRY AGAIN",
+      "title": "New facts. A fresh decision.",
+      "type": "footage",
+      "source": "live-03.mov",
+      "sourceStart": 1,
+      "sourceEnd": 20,
+      "focus": [
+        0.1,
+        0.36
+      ],
+      "callout": "New stock · new customer terms",
+      "sentences": [
+        {
+          "en": "The next shift changes both stock and customer needs.",
+          "vi": "Ca tiếp theo thay đổi cả lượng tồn kho và nhu cầu khách hàng."
+        },
+        {
+          "en": "A fresh board and separate help history let a learner practice again.",
+          "vi": "Người học thử lại trên bảng mới, với lịch sử trợ giúp được lưu riêng."
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "chapter": "BUILT ON AWS",
+      "title": "Conversation grounded in state.",
+      "type": "architecture",
+      "sentences": [
+        {
+          "en": "Behind the experience, CloudFront serves a private EC2 application.",
+          "vi": "Phía sau trải nghiệm, CloudFront kết nối đến ứng dụng EC2 trong mạng riêng."
+        },
+        {
+          "en": "The domain engine checks every commitment. Bedrock Nova interprets requests; the learner confirms changes.",
+          "vi": "Bộ mô phỏng kiểm tra cam kết. Bedrock Nova hiểu yêu cầu; người học xác nhận thay đổi."
+        },
+        {
+          "en": "SQLite preserves the record.",
+          "vi": "SQLite lưu lại hồ sơ quyết định."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "chapter": "WHAT COMES NEXT",
+      "title": "Practice the work. Own the decision.",
+      "type": "close",
+      "sentences": [
+        {
+          "en": "Next, we'll review the scenario with practitioners and run a learner pilot. Voice is still a prototype.",
+          "vi": "Tiếp theo: chuyên gia góp ý tình huống và thử nghiệm với người học. Voice vẫn là nguyên mẫu."
+        },
+        {
+          "en": "LearnSprint: practice the work before the first job.",
+          "vi": "LearnSprint: luyện làm việc trước ngày đi làm đầu tiên."
+        }
+      ]
+    }
+  ]
+}

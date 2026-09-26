@@ -1,0 +1,66 @@
+{
+  "status": "live-observed",
+  "endpoint": "https://d2g4a2ezl5lw7r.cloudfront.net/api/career/mcp",
+  "sdk": "@modelcontextprotocol/sdk@1.30.1",
+  "sdkLatestProtocol": "2025-11-25",
+  "release": "preview-c12-mcp-20260926",
+  "observations": [
+    {
+      "server": {
+        "name": "learnsprint-career",
+        "version": "1.0.0"
+      },
+      "tools": [
+        "career_home",
+        "career_workspace",
+        "career_open_shift",
+        "career_ask_actor",
+        "career_review_plan"
+      ]
+    },
+    {
+      "operation": "ask_actor",
+      "sourceAnswer": {
+        "id": "9d43da18-8225-4b66-b0e6-fd14c6e4605c",
+        "actorId": "warehouse",
+        "actorName": "Alex",
+        "role": "Warehouse colleague",
+        "questionId": "stock",
+        "question": "What stock is available right now?",
+        "message": "We have 40 study kits on hand. The additional 40 are expected stock; I have not recorded them as received.",
+        "mode": "authored",
+        "dialogueVersion": "0.1.0",
+        "packVersion": "0.1.0",
+        "worldRevision": 1,
+        "facts": [
+          {
+            "id": "on-hand",
+            "label": "Confirmed on hand",
+            "value": "40 study kits",
+            "sourceId": "stock-register",
+            "sourceLabel": "Warehouse stock register",
+            "sourceVersion": "first-shift@0.1.0",
+            "target": "inventory"
+          },
+          {
+            "id": "expected-quantity",
+            "label": "Expected, not received",
+            "value": "40 additional kits",
+            "sourceId": "supplier-notice",
+            "sourceLabel": "Initial supplier notice",
+            "sourceVersion": "first-shift@0.1.0/initial",
+            "target": "inventory"
+          }
+        ],
+        "offerId": null,
+        "recordedAt": "2026-09-26T10:02:43.432Z"
+      },
+      "paidInference": false
+    }
+  ],
+  "limits": [
+    "Five tools listed; create and authored warehouse fact call completed.",
+    "Other tools, negative cases and cross-client interoperability not verified.",
+    "No native Alexa account linking or certification."
+  ]
+}

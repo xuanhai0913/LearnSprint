@@ -28,3 +28,7 @@ The deployed React/Vite and NestJS app uses EC2 with persistent SQLite storage a
 Nova 2 Sonic has a streamed voice prototype. A successful hosted browser voice action is **not verified**. The video and judging story therefore use the observed typed path. This is an Alexa+ style **web simulation**, not a native Alexa+ skill, device integration or certification. The project makes no claim that a short demo measures learning outcomes or job readiness.
 
 Read the [submission story](SUBMISSION-WORKBOOK.md), [judging evidence](JUDGING-EVIDENCE.md), [demo script](DEMO-SCRIPT.md), [tool feedback](PRODUCT-FEEDBACK.md), and [current verification status](../delivery/STATUS.md) for precise claims.
+
+## MCP endpoint (2026-09-26)
+
+The self-hosted endpoint is `/api/career/mcp` on the same public demo origin. See [connection instructions and tool boundaries](../career/MCP.md) and [live SDK-client evidence](../delivery/MCP-DEMO-2026-09-26.json). It uses an owner cookie and exact Origin, not OAuth. It supports source-backed investigation and deterministic review; learner commitments stay in the web UI. The currently published video predates this addition.
