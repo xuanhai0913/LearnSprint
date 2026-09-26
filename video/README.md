@@ -1,5 +1,22 @@
 # LearnSprint demo production
 
+## Current publication — 2026-09-26
+
+Owner approved v6 and explicitly confirmed YouTube terms/upload/publication. Published video: https://www.youtube.com/watch?v=gemDTY87gh4 (169.458 seconds, Full HD). YouTube displayed “Đã đăng video” and “Đã kiểm tra xong. Không phát hiện vấn đề nào.” The video includes original tech-demo music, editorial sound effects, male English narration, English/Vietnamese captions, real app footage and a labeled visualization of captured MCP output.
+
+Devpost saved the new video URL and updated the story to describe the MCP chapter. The saved field was reopened and confirmed. Submission remains **DRAFT, 4/5 steps**; final competition terms/submission have not been completed. Older entries below are production history and are superseded by this status.
+
+## Sound design revision — v6
+
+Owner requested a stronger technology-demo feel and relevant sound effects. `video/scripts/demo-soundtrack.py` synthesizes an original 104 BPM instrumental with soft kick, restrained percussion, bass and plucked synth notes. Caption-timed ducking keeps the bed lower under narration. Editorial effects mark chapter reveals, technology cards, the source receipt, supplier delay, proposal Apply vicinity, handoff and replay. Effects are added editorially, not claimed as sounds emitted by the app. No external samples are used.
+
+Current review file: `video/out/learnsprint-demo-v6-tech-sfx.mp4`; a 39-second excerpt covers the incident and AI segment at `video/out/learnsprint-v6-preview.mp4`. The video stream and narration timeline remain from v4. Pending owner listening review; no replacement upload or final submission occurred.
+
+
+## Current listening review — v5
+
+`out/learnsprint-demo-v5-music.mp4` adds an original synthesized instrumental bed to v4. 78 BPM, soft sustained chords and sparse rounded keyboard tones, with caption-timed narration ducking and opening/closing fades. No external music samples are used. `scripts/add-music.py` reproduces the bed and mix; the approved video stream is copied without re-encoding. A 25-second audio preview is `out/learnsprint-music-preview.mp3`. Owner listening review is pending; this version has not been uploaded.
+
 ## Current owner-review cut — v4 MCP
 
 `out/learnsprint-demo-v4-mcp.mp4`: 169.458 seconds, Full HD, English/Vietnamese subtitles. The learning-flow scene is replaced with a labeled visualization of the real saved MCP-client response. Original app footage and branding remain. Awaiting owner approval; YouTube still hosts v3.

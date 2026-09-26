@@ -1,5 +1,11 @@
 # Devpost live-form field draft
 
+## Current publication — 2026-09-26
+
+Owner approved v6 and explicitly confirmed YouTube terms/upload/publication. Published video: https://www.youtube.com/watch?v=gemDTY87gh4 (169.458 seconds, Full HD). YouTube displayed “Đã đăng video” and “Đã kiểm tra xong. Không phát hiện vấn đề nào.” The video includes original tech-demo music, editorial sound effects, male English narration, English/Vietnamese captions, real app footage and a labeled visualization of captured MCP output.
+
+Devpost saved the new video URL and updated the story to describe the MCP chapter. The saved field was reopened and confirmed. Submission remains **DRAFT, 4/5 steps**; final competition terms/submission have not been completed. Older entries below are production history and are superseded by this status.
+
 ## MCP video and Devpost revision
 
 The project story and AWS Builder integration answer were saved to live Devpost with the deployed MCP description, connection limits and links to captured SDK output. Devpost remains DRAFT, 4/5 steps; final terms are unchecked. Embedded YouTube still points to v3. The revised local cut `video/out/learnsprint-demo-v4-mcp.mp4` is 169.458 seconds (ffprobe), Full HD. Its MCP chapter visualizes the actual saved SDK response and is explicitly labeled as a captured transcript, not a new screen recording. The existing real app footage is retained. Awaiting owner review before uploading this replacement video.

@@ -1,5 +1,11 @@
 # LearnSprint submission workbook — R4 operations simulation
 
+## Current publication — 2026-09-26
+
+Owner approved v6 and explicitly confirmed YouTube terms/upload/publication. Published video: https://www.youtube.com/watch?v=gemDTY87gh4 (169.458 seconds, Full HD). YouTube displayed “Đã đăng video” and “Đã kiểm tra xong. Không phát hiện vấn đề nào.” The video includes original tech-demo music, editorial sound effects, male English narration, English/Vietnamese captions, real app footage and a labeled visualization of captured MCP output.
+
+Devpost saved the new video URL and updated the story to describe the MCP chapter. The saved field was reopened and confirmed. Submission remains **DRAFT, 4/5 steps**; final competition terms/submission have not been completed. Older entries below are production history and are superseded by this status.
+
 ## Publication and submission gate — 2026-09-26
 
 The owner approved the final branded cut and explicitly authorized YouTube upload/publication after its terms notice. YouTube displayed “Đã đăng video” on channel Hải Làm Dev Dạo: https://www.youtube.com/watch?v=gXUtlRcYEUE . Automated copyright/community checks were still in progress at publication; no clean-check result is claimed. Devpost saved the video URL and shows **4/5 steps done**, DRAFT. Preview: https://devpost.com/software/learnsprint . Final terms checkbox remains unchecked and Submit project has not been pressed.

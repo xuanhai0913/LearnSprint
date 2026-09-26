@@ -31,4 +31,4 @@ Read the [submission story](SUBMISSION-WORKBOOK.md), [judging evidence](JUDGING-
 
 ## MCP endpoint (2026-09-26)
 
-The self-hosted endpoint is `/api/career/mcp` on the same public demo origin. See [connection instructions and tool boundaries](../career/MCP.md) and [live SDK-client evidence](../delivery/MCP-DEMO-2026-09-26.json). It uses an owner cookie and exact Origin, not OAuth. It supports source-backed investigation and deterministic review; learner commitments stay in the web UI. The currently published video predates this addition.
+The self-hosted endpoint is `/api/career/mcp` on the same public demo origin. See [connection instructions and tool boundaries](../career/MCP.md) and [live SDK-client evidence](../delivery/MCP-DEMO-2026-09-26.json). It uses an owner cookie and exact Origin, not OAuth. It supports source-backed investigation and deterministic review; learner commitments stay in the web UI. The [published demo](https://www.youtube.com/watch?v=gemDTY87gh4) includes a labeled visualization of the captured MCP response alongside real app recordings.

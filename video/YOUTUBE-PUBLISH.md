@@ -1,5 +1,11 @@
 # YouTube publication package
 
+## Current publication — 2026-09-26
+
+Owner approved v6 and explicitly confirmed YouTube terms/upload/publication. Published video: https://www.youtube.com/watch?v=gemDTY87gh4 (169.458 seconds, Full HD). YouTube displayed “Đã đăng video” and “Đã kiểm tra xong. Không phát hiện vấn đề nào.” The video includes original tech-demo music, editorial sound effects, male English narration, English/Vietnamese captions, real app footage and a labeled visualization of captured MCP output.
+
+Devpost saved the new video URL and updated the story to describe the MCP chapter. The saved field was reopened and confirmed. Submission remains **DRAFT, 4/5 steps**; final competition terms/submission have not been completed. Older entries below are production history and are superseded by this status.
+
 Owner approved the v3 edit on 2026-09-26. Owner then explicitly accepted upload/publication at the YouTube terms gate. Published: https://www.youtube.com/watch?v=gXUtlRcYEUE. YouTube displayed publication confirmation on 2026-09-26; automated checks were still running. Devpost saved the URL (4/5 steps, still draft).
 
 ## Video
