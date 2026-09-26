@@ -1,5 +1,11 @@
 # Devpost live-form field draft
 
+## Submitted — 2026-09-26
+
+The owner explicitly confirmed final submission. Accepted the final Official Rules/Devpost Terms checkbox and submitted LearnSprint. Devpost redirected to https://devpost.com/software/learnsprint and displayed: “Project submitted! Continue to edit your project until the hackathon deadline: October 23, 2026 at 03:00pm EDT.” The entry includes published v6 https://www.youtube.com/watch?v=gemDTY87gh4. This confirms submission, not eligibility approval or a judging result. Earlier draft/submission gates below are historical.
+
+Edits remain available until the displayed deadline (October 24, 2026 at 02:00 in Vietnam). Preserve reviewer access to the AWS demo and public source/evidence during judging.
+
 ## Current publication — 2026-09-26
 
 Owner approved v6 and explicitly confirmed YouTube terms/upload/publication. Published video: https://www.youtube.com/watch?v=gemDTY87gh4 (169.458 seconds, Full HD). YouTube displayed “Đã đăng video” and “Đã kiểm tra xong. Không phát hiện vấn đề nào.” The video includes original tech-demo music, editorial sound effects, male English narration, English/Vietnamese captions, real app footage and a labeled visualization of captured MCP output.
