@@ -19,93 +19,89 @@ LearnSprint helps students and first-time job seekers practice decisions before 
 This is a fictional shift you can actually work through.
 
 6
-00:00:32,683 --> 00:00:39,187
-Find the facts. Build a plan. Handle the unexpected.
+00:00:32,683 --> 00:00:41,755
+Our hosted MCP server exposes five tools. The official client opened a shift and retrieved this warehouse receipt.
 
 7
-00:00:39,287 --> 00:00:42,767
-Then try again with different conditions.
-
-8
-00:00:43,892 --> 00:00:51,644
+00:00:42,892 --> 00:00:50,644
 I start with Alex at the warehouse. Forty kits are confirmed; forty are still expected.
 
-9
-00:00:51,744 --> 00:00:56,832
+8
+00:00:50,744 --> 00:00:55,832
 Each answer carries a source, so my plan rests on evidence.
 
-10
-00:00:57,933 --> 00:01:01,725
+9
+00:00:56,933 --> 00:01:00,725
 I allocate the three orders, then review.
 
-11
-00:01:01,825 --> 00:01:08,521
+10
+00:01:00,825 --> 00:01:07,521
 The engine checks stock over time, delivery promises, capacity, and cost.
 
-12
-00:01:09,642 --> 00:01:12,954
+11
+00:01:08,642 --> 00:01:11,954
 Now the supplier slips to five p.m.
 
-13
-00:01:13,054 --> 00:01:19,630
+12
+00:01:12,054 --> 00:01:18,630
 The old plan is twenty kits short at today's departure. I need a new decision.
 
-14
-00:01:20,767 --> 00:01:24,895
+13
+00:01:19,767 --> 00:01:23,895
 Jordan can accept ten kits today and twenty tomorrow.
 
-15
-00:01:24,995 --> 00:01:30,755
+14
+00:01:23,995 --> 00:01:29,755
 Reading that offer is not enough: I record the agreement before changing the promise.
 
-16
-00:01:31,892 --> 00:01:38,540
+15
+00:01:30,892 --> 00:01:37,540
 I ask Nova to set order B to ten kits today. It proposes one exact edit.
 
-17
-00:01:38,640 --> 00:01:43,488
+16
+00:01:37,640 --> 00:01:42,488
 I review it, choose Apply, and keep control of the board.
 
-18
-00:01:44,600 --> 00:01:47,720
+17
+00:01:43,600 --> 00:01:46,720
 The remaining twenty move to tomorrow.
 
-19
-00:01:47,820 --> 00:01:53,916
+18
+00:01:46,820 --> 00:01:52,916
 The updated review checks the whole plan, including the agreement and the expected stock.
 
-20
-00:01:55,017 --> 00:02:00,873
+19
+00:01:54,017 --> 00:01:59,873
 The handoff preserves what changed and why, with source facts and assistance used.
 
-21
-00:02:00,973 --> 00:02:05,077
+20
+00:01:59,973 --> 00:02:04,077
 It is a record of decisions, not a certificate.
 
-22
-00:02:06,183 --> 00:02:10,455
+21
+00:02:05,183 --> 00:02:09,455
 The next shift changes both stock and customer needs.
 
-23
-00:02:10,555 --> 00:02:15,283
+22
+00:02:09,555 --> 00:02:14,283
 A fresh board and separate help history let a learner practice again.
 
-24
-00:02:16,392 --> 00:02:21,888
+23
+00:02:15,392 --> 00:02:20,888
 Behind the experience, CloudFront serves a private EC2 application.
 
-25
-00:02:21,988 --> 00:02:30,652
+24
+00:02:20,988 --> 00:02:29,652
 The domain engine checks every commitment. Bedrock Nova interprets requests; the learner confirms changes.
 
-26
-00:02:30,752 --> 00:02:33,728
+25
+00:02:29,752 --> 00:02:32,728
 SQLite preserves the record.
 
-27
-00:02:34,850 --> 00:02:42,602
+26
+00:02:33,850 --> 00:02:41,602
 Next, we'll review the scenario with practitioners and run a learner pilot. Voice is still a prototype.
 
-28
-00:02:42,702 --> 00:02:46,686
+27
+00:02:41,702 --> 00:02:45,686
 LearnSprint: practice the work before the first job.

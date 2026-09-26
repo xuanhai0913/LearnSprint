@@ -16,7 +16,7 @@ The next short situation starts with different stock and customer terms. It has 
 
 The conversation has a purpose beyond returning advice: it reveals authorized scenario facts and can produce a concrete allocation proposal on a persistent order board. The learner reviews the exact edit, chooses Apply, and can Undo. The system retains the action history and checks whether the resulting plan meets stock, capacity, quantity, deadline and budget constraints.
 
-This entry uses the permitted **Alexa+ experience simulation** route. It is a contextual conversational experience on the web; it is not a native Alexa+ integration, skill, certification or partnership. Listed actor questions return authored replies with source facts. Amazon Bedrock Nova 2 Lite provides bounded natural-language interpretation and coaching-focus selection.
+This entry includes a **self-hosted MCP server** and an Alexa+ style web simulation. It is a contextual conversational experience on the web; it is not a native Alexa+ integration, skill, certification or partnership. Listed actor questions return authored replies with source facts. Amazon Bedrock Nova 2 Lite provides bounded natural-language interpretation and coaching-focus selection.
 
 ## How I built it
 
@@ -25,6 +25,10 @@ The frontend uses React, TypeScript and Vite. A NestJS API owns scenario revisio
 Bedrock Nova 2 Lite can route a typed request to a supported fact or suggest one allocation edit. It can also select a focus from approved guidance. The model cannot invent customer acceptance or override the evaluator. Assistance is requested and recorded explicitly.
 
 Nova 2 Sonic has a streaming voice prototype, but a successful hosted career microphone action remains unverified. The demonstrated release therefore uses the observed typed path. The cover art was created with GPT Image and is labeled as illustration; application evidence comes from the real demo.
+
+The MCP endpoint uses the official TypeScript SDK 1.30.1 and Streamable HTTP, with support for protocol 2025-11-25. Five tools expose the public brief, owned workspace, shift creation, authored actor questions and deterministic plan review. The endpoint preserves owner-cookie, Origin, revision and idempotency checks. Customer agreements and allocation Apply remain explicit learner actions on the web board. This first connection uses an owner cookie and matching Origin, not OAuth or native Alexa account linking.
+
+The official MCP client connected through the public AWS HTTPS endpoint, listed all five tools, opened a fictional shift and saved a warehouse response with stock-register and supplier-notice source receipts. These calls used no paid inference. Connection instructions and the captured output are in the public repository under docs/career/MCP.md and docs/delivery/MCP-DEMO-2026-09-26.json.
 
 ## What I learned and what worked
 

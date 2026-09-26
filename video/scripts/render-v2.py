@@ -203,6 +203,29 @@ def hook(canvas, t, scene):
         text(draw, (1750, y + 78), 'Your first real decision.', 30, INK, 'italic', 'ra')
 
 
+def mcp(canvas, t, scene):
+    draw = ImageDraw.Draw(canvas)
+    card(draw, (80, 230, 900, 825), fill=INK)
+    text(draw, (115, 263), 'OFFICIAL MCP CLIENT → AWS HTTPS', 26, '#c9dfcd', 'bold')
+    evidence = json.loads((ROOT.parent / 'docs/delivery/MCP-DEMO-2026-09-26.json').read_text())
+    tools = evidence['observations'][0]['tools']
+    for i, name in enumerate(tools):
+        if t > .35 + i * .35:
+            text(draw, (125, 345 + i * 65), name, 32, WHITE, 'bold')
+    text(draw, (115, 745), 'Captured SDK output · 26 Sep 2026', 24, '#c9dfcd')
+    arrow(draw, (922, 475), (1020, 475), pop(t, 2), ORANGE)
+    if t > 2:
+        card(draw, (1040, 230, 1840, 825))
+        pill(draw, 1075, 261, 'career_ask_actor → saved receipt')
+        answer = evidence['observations'][1]['sourceAnswer']
+        text(draw, (1075, 344), answer['actorName'] + ' / Warehouse', 38, INK, 'serif')
+        wrapped(draw, answer['message'], 1075, 417, 714, 33)
+        for i, fact in enumerate(answer['facts']):
+            text(draw, (1075, 604 + i * 86), fact['value'], 30, INK, 'bold')
+            text(draw, (1075, 644 + i * 86), fact['sourceLabel'], 24, MUTED)
+    text(draw, (80, 855), 'Real hosted response, visualized from the saved transcript · no paid inference', 23, MUTED)
+
+
 def flow(canvas, t, scene):
     draw = ImageDraw.Draw(canvas)
     labels = [('Discover', 'Read source facts'), ('Decide', 'Build the plan'), ('Adapt', 'Handle a disruption'), ('Reflect', 'Inspect the record'), ('Replay', 'Try changed facts')]
@@ -373,6 +396,8 @@ def compose(scene, index, t, source_frame=None):
         intro(canvas, t, scene)
     elif scene['type'] == 'hook':
         hook(canvas, t, scene)
+    elif scene['type'] == 'mcp':
+        mcp(canvas, t, scene)
     elif scene['type'] == 'flow':
         flow(canvas, t, scene)
     elif scene['type'] == 'incident':
@@ -492,7 +517,7 @@ def main():
     playlist = OUT / 'parts.ffconcat'
     playlist.write_text('ffconcat version 1.0\n' + ''.join(f"file '{part}'\n" for part in parts))
     voice = soundtrack()
-    target = ROOT / 'out/learnsprint-demo-v3-branded.mp4'
+    target = ROOT / 'out/learnsprint-demo-v4-mcp.mp4'
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', str(playlist),
         '-i', str(voice), '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
         '-t', str(DATA['duration']), '-movflags', '+faststart', str(target)], check=True)

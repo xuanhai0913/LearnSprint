@@ -1,5 +1,9 @@
 # LearnSprint demo production
 
+## Current owner-review cut — v4 MCP
+
+`out/learnsprint-demo-v4-mcp.mp4`: 169.458 seconds, Full HD, English/Vietnamese subtitles. The learning-flow scene is replaced with a labeled visualization of the real saved MCP-client response. Original app footage and branding remain. Awaiting owner approval; YouTube still hosts v3.
+
 Published owner-approved v3: https://www.youtube.com/watch?v=gXUtlRcYEUE. Devpost video URL saved on 2026-09-26. Final competition submission remains blocked by the newly identified MCP/Agent Skill track requirement; see `../docs/hackathon/REQUIREMENTS.md`. Earlier review gates below describe production history.
 
 ## Current review cut — v3 (branded opening)

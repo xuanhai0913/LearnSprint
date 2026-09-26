@@ -78,30 +78,22 @@
       "duration": 11.75
     },
     {
-      "id": "flow",
-      "chapter": "THE LEARNING LOOP",
-      "title": "Every decision leads somewhere.",
-      "type": "flow",
+      "id": "mcp",
+      "chapter": "SELF-HOSTED MCP / AWS",
+      "title": "The same facts. Through MCP.",
+      "type": "mcp",
       "sentences": [
         {
-          "en": "Find the facts. Build a plan. Handle the unexpected.",
-          "vi": "Tìm dữ kiện. Lập kế hoạch. Xử lý tình huống bất ngờ.",
-          "audio": "audio/v2/flow-01.mp3",
-          "audioDuration": 6.504,
+          "en": "Our hosted MCP server exposes five tools. The official client opened a shift and retrieved this warehouse receipt.",
+          "vi": "MCP server trên AWS cung cấp năm công cụ. Client chính thức đã mở ca và lấy dữ kiện kho này.",
+          "audio": "audio/v2/mcp-01.mp3",
+          "audioDuration": 9.072,
           "start": 32.68333333333333,
-          "end": 39.18733333333333
-        },
-        {
-          "en": "Then try again with different conditions.",
-          "vi": "Rồi thử lại với những điều kiện khác.",
-          "audio": "audio/v2/flow-02.mp3",
-          "audioDuration": 3.48,
-          "start": 39.28733333333333,
-          "end": 42.767333333333326
+          "end": 41.755333333333326
         }
       ],
       "start": 32.33333333333333,
-      "duration": 11.208333333333334
+      "duration": 10.208333333333334
     },
     {
       "id": "facts",
@@ -122,19 +114,19 @@
           "vi": "Tôi hỏi Alex ở kho: có sẵn 40 bộ; 40 bộ còn lại mới là dự kiến.",
           "audio": "audio/v2/facts-01.mp3",
           "audioDuration": 7.752,
-          "start": 43.891666666666666,
-          "end": 51.64366666666667
+          "start": 42.891666666666666,
+          "end": 50.64366666666667
         },
         {
           "en": "Each answer carries a source, so my plan rests on evidence.",
           "vi": "Mỗi câu trả lời có nguồn để tôi lập kế hoạch dựa trên dữ kiện.",
           "audio": "audio/v2/facts-02.mp3",
           "audioDuration": 5.088,
-          "start": 51.74366666666667,
-          "end": 56.83166666666667
+          "start": 50.74366666666667,
+          "end": 55.83166666666667
         }
       ],
-      "start": 43.541666666666664,
+      "start": 42.541666666666664,
       "duration": 14.041666666666666
     },
     {
@@ -156,19 +148,19 @@
           "vi": "Tôi phân bổ ba đơn hàng rồi xem kết quả kiểm tra.",
           "audio": "audio/v2/plan-01.mp3",
           "audioDuration": 3.792,
-          "start": 57.93333333333333,
-          "end": 61.72533333333333
+          "start": 56.93333333333333,
+          "end": 60.72533333333333
         },
         {
           "en": "The engine checks stock over time, delivery promises, capacity, and cost.",
           "vi": "Hệ thống kiểm tra tồn kho theo thời điểm, cam kết giao, sức chứa và chi phí.",
           "audio": "audio/v2/plan-02.mp3",
           "audioDuration": 6.696,
-          "start": 61.82533333333333,
-          "end": 68.52133333333333
+          "start": 60.82533333333333,
+          "end": 67.52133333333333
         }
       ],
-      "start": 57.58333333333333,
+      "start": 56.58333333333333,
       "duration": 11.708333333333334
     },
     {
@@ -182,19 +174,19 @@
           "vi": "Nhà cung cấp báo lùi thời gian đến 17 giờ.",
           "audio": "audio/v2/incident-01.mp3",
           "audioDuration": 3.312,
-          "start": 69.64166666666665,
-          "end": 72.95366666666665
+          "start": 68.64166666666665,
+          "end": 71.95366666666665
         },
         {
           "en": "The old plan is twenty kits short at today's departure. I need a new decision.",
           "vi": "Kế hoạch cũ thiếu 20 bộ ở chuyến hôm nay. Tôi phải quyết định lại.",
           "audio": "audio/v2/incident-02.mp3",
           "audioDuration": 6.576,
-          "start": 73.05366666666664,
-          "end": 79.62966666666664
+          "start": 72.05366666666664,
+          "end": 78.62966666666664
         }
       ],
-      "start": 69.29166666666666,
+      "start": 68.29166666666666,
       "duration": 11.125
     },
     {
@@ -216,19 +208,19 @@
           "vi": "Jordan đồng ý nhận 10 bộ hôm nay và 20 bộ ngày mai.",
           "audio": "audio/v2/agreement-01.mp3",
           "audioDuration": 4.128,
-          "start": 80.76666666666665,
-          "end": 84.89466666666665
+          "start": 79.76666666666665,
+          "end": 83.89466666666665
         },
         {
           "en": "Reading that offer is not enough: I record the agreement before changing the promise.",
           "vi": "Tôi phải ghi nhận thỏa thuận trước khi thay đổi cam kết giao hàng.",
           "audio": "audio/v2/agreement-02.mp3",
           "audioDuration": 5.76,
-          "start": 84.99466666666665,
-          "end": 90.75466666666665
+          "start": 83.99466666666665,
+          "end": 89.75466666666665
         }
       ],
-      "start": 80.41666666666666,
+      "start": 79.41666666666666,
       "duration": 11.125
     },
     {
@@ -250,19 +242,19 @@
           "vi": "Tôi nhờ Nova đặt đơn B giao 10 bộ hôm nay. AI đề xuất một thay đổi cụ thể.",
           "audio": "audio/v2/ai-01.mp3",
           "audioDuration": 6.648,
-          "start": 91.89166666666665,
-          "end": 98.53966666666665
+          "start": 90.89166666666665,
+          "end": 97.53966666666665
         },
         {
           "en": "I review it, choose Apply, and keep control of the board.",
           "vi": "Tôi xem trước, bấm Apply và vẫn là người quyết định trên bảng kế hoạch.",
           "audio": "audio/v2/ai-02.mp3",
           "audioDuration": 4.848,
-          "start": 98.63966666666664,
-          "end": 103.48766666666664
+          "start": 97.63966666666664,
+          "end": 102.48766666666664
         }
       ],
-      "start": 91.54166666666666,
+      "start": 90.54166666666666,
       "duration": 12.708333333333334
     },
     {
@@ -284,19 +276,19 @@
           "vi": "Hai mươi bộ còn lại được chuyển sang ngày mai.",
           "audio": "audio/v2/recovery-01.mp3",
           "audioDuration": 3.12,
-          "start": 104.59999999999998,
-          "end": 107.71999999999998
+          "start": 103.59999999999998,
+          "end": 106.71999999999998
         },
         {
           "en": "The updated review checks the whole plan, including the agreement and the expected stock.",
           "vi": "Lần kiểm tra mới xét cả kế hoạch, thỏa thuận và hàng dự kiến về.",
           "audio": "audio/v2/recovery-02.mp3",
           "audioDuration": 6.096,
-          "start": 107.81999999999998,
-          "end": 113.91599999999998
+          "start": 106.81999999999998,
+          "end": 112.91599999999998
         }
       ],
-      "start": 104.24999999999999,
+      "start": 103.24999999999999,
       "duration": 10.416666666666666
     },
     {
@@ -318,19 +310,19 @@
           "vi": "Bản bàn giao lưu những thay đổi, dữ kiện nguồn và sự trợ giúp đã dùng.",
           "audio": "audio/v2/handoff-01.mp3",
           "audioDuration": 5.856,
-          "start": 115.01666666666665,
-          "end": 120.87266666666665
+          "start": 114.01666666666665,
+          "end": 119.87266666666665
         },
         {
           "en": "It is a record of decisions, not a certificate.",
           "vi": "Đây là hồ sơ quyết định trong mô phỏng, không phải chứng chỉ.",
           "audio": "audio/v2/handoff-02.mp3",
           "audioDuration": 4.104,
-          "start": 120.97266666666664,
-          "end": 125.07666666666664
+          "start": 119.97266666666664,
+          "end": 124.07666666666664
         }
       ],
-      "start": 114.66666666666666,
+      "start": 113.66666666666666,
       "duration": 11.166666666666666
     },
     {
@@ -352,19 +344,19 @@
           "vi": "Ca tiếp theo thay đổi cả lượng tồn kho và nhu cầu khách hàng.",
           "audio": "audio/v2/replay-01.mp3",
           "audioDuration": 4.272,
-          "start": 126.18333333333332,
-          "end": 130.45533333333333
+          "start": 125.18333333333332,
+          "end": 129.45533333333333
         },
         {
           "en": "A fresh board and separate help history let a learner practice again.",
           "vi": "Người học thử lại trên bảng mới, với lịch sử trợ giúp được lưu riêng.",
           "audio": "audio/v2/replay-02.mp3",
           "audioDuration": 4.728,
-          "start": 130.55533333333332,
-          "end": 135.28333333333333
+          "start": 129.55533333333332,
+          "end": 134.28333333333333
         }
       ],
-      "start": 125.83333333333333,
+      "start": 124.83333333333333,
       "duration": 10.208333333333334
     },
     {
@@ -378,27 +370,27 @@
           "vi": "Phía sau trải nghiệm, CloudFront kết nối đến ứng dụng EC2 trong mạng riêng.",
           "audio": "audio/v2/architecture-01.mp3",
           "audioDuration": 5.496,
-          "start": 136.39166666666665,
-          "end": 141.88766666666666
+          "start": 135.39166666666665,
+          "end": 140.88766666666666
         },
         {
           "en": "The domain engine checks every commitment. Bedrock Nova interprets requests; the learner confirms changes.",
           "vi": "Bộ mô phỏng kiểm tra cam kết. Bedrock Nova hiểu yêu cầu; người học xác nhận thay đổi.",
           "audio": "audio/v2/architecture-02.mp3",
           "audioDuration": 8.664,
-          "start": 141.98766666666666,
-          "end": 150.65166666666664
+          "start": 140.98766666666666,
+          "end": 149.65166666666664
         },
         {
           "en": "SQLite preserves the record.",
           "vi": "SQLite lưu lại hồ sơ quyết định.",
           "audio": "audio/v2/architecture-03.mp3",
           "audioDuration": 2.976,
-          "start": 150.75166666666664,
-          "end": 153.72766666666664
+          "start": 149.75166666666664,
+          "end": 152.72766666666664
         }
       ],
-      "start": 136.04166666666666,
+      "start": 135.04166666666666,
       "duration": 18.458333333333332
     },
     {
@@ -412,23 +404,23 @@
           "vi": "Tiếp theo: chuyên gia góp ý tình huống và thử nghiệm với người học. Voice vẫn là nguyên mẫu.",
           "audio": "audio/v2/close-01.mp3",
           "audioDuration": 7.752,
-          "start": 154.85,
-          "end": 162.602
+          "start": 153.85,
+          "end": 161.602
         },
         {
           "en": "LearnSprint: practice the work before the first job.",
           "vi": "LearnSprint: luyện làm việc trước ngày đi làm đầu tiên.",
           "audio": "audio/v2/close-02.mp3",
           "audioDuration": 3.984,
-          "start": 162.702,
-          "end": 166.686
+          "start": 161.702,
+          "end": 165.686
         }
       ],
-      "start": 154.5,
+      "start": 153.5,
       "duration": 15.958333333333334
     }
   ],
-  "duration": 170.45833333333334,
+  "duration": 169.45833333333334,
   "captions": [
     {
       "en": "This is LearnSprint, created by Nguyen Xuan Hai, using Amazon Bedrock and Nova, and hosted on AWS.",
@@ -471,188 +463,180 @@
       "end": 31.545333333333335
     },
     {
-      "en": "Find the facts. Build a plan. Handle the unexpected.",
-      "vi": "Tìm dữ kiện. Lập kế hoạch. Xử lý tình huống bất ngờ.",
-      "audio": "audio/v2/flow-01.mp3",
-      "audioDuration": 6.504,
+      "en": "Our hosted MCP server exposes five tools. The official client opened a shift and retrieved this warehouse receipt.",
+      "vi": "MCP server trên AWS cung cấp năm công cụ. Client chính thức đã mở ca và lấy dữ kiện kho này.",
+      "audio": "audio/v2/mcp-01.mp3",
+      "audioDuration": 9.072,
       "start": 32.68333333333333,
-      "end": 39.18733333333333
-    },
-    {
-      "en": "Then try again with different conditions.",
-      "vi": "Rồi thử lại với những điều kiện khác.",
-      "audio": "audio/v2/flow-02.mp3",
-      "audioDuration": 3.48,
-      "start": 39.28733333333333,
-      "end": 42.767333333333326
+      "end": 41.755333333333326
     },
     {
       "en": "I start with Alex at the warehouse. Forty kits are confirmed; forty are still expected.",
       "vi": "Tôi hỏi Alex ở kho: có sẵn 40 bộ; 40 bộ còn lại mới là dự kiến.",
       "audio": "audio/v2/facts-01.mp3",
       "audioDuration": 7.752,
-      "start": 43.891666666666666,
-      "end": 51.64366666666667
+      "start": 42.891666666666666,
+      "end": 50.64366666666667
     },
     {
       "en": "Each answer carries a source, so my plan rests on evidence.",
       "vi": "Mỗi câu trả lời có nguồn để tôi lập kế hoạch dựa trên dữ kiện.",
       "audio": "audio/v2/facts-02.mp3",
       "audioDuration": 5.088,
-      "start": 51.74366666666667,
-      "end": 56.83166666666667
+      "start": 50.74366666666667,
+      "end": 55.83166666666667
     },
     {
       "en": "I allocate the three orders, then review.",
       "vi": "Tôi phân bổ ba đơn hàng rồi xem kết quả kiểm tra.",
       "audio": "audio/v2/plan-01.mp3",
       "audioDuration": 3.792,
-      "start": 57.93333333333333,
-      "end": 61.72533333333333
+      "start": 56.93333333333333,
+      "end": 60.72533333333333
     },
     {
       "en": "The engine checks stock over time, delivery promises, capacity, and cost.",
       "vi": "Hệ thống kiểm tra tồn kho theo thời điểm, cam kết giao, sức chứa và chi phí.",
       "audio": "audio/v2/plan-02.mp3",
       "audioDuration": 6.696,
-      "start": 61.82533333333333,
-      "end": 68.52133333333333
+      "start": 60.82533333333333,
+      "end": 67.52133333333333
     },
     {
       "en": "Now the supplier slips to five p.m.",
       "vi": "Nhà cung cấp báo lùi thời gian đến 17 giờ.",
       "audio": "audio/v2/incident-01.mp3",
       "audioDuration": 3.312,
-      "start": 69.64166666666665,
-      "end": 72.95366666666665
+      "start": 68.64166666666665,
+      "end": 71.95366666666665
     },
     {
       "en": "The old plan is twenty kits short at today's departure. I need a new decision.",
       "vi": "Kế hoạch cũ thiếu 20 bộ ở chuyến hôm nay. Tôi phải quyết định lại.",
       "audio": "audio/v2/incident-02.mp3",
       "audioDuration": 6.576,
-      "start": 73.05366666666664,
-      "end": 79.62966666666664
+      "start": 72.05366666666664,
+      "end": 78.62966666666664
     },
     {
       "en": "Jordan can accept ten kits today and twenty tomorrow.",
       "vi": "Jordan đồng ý nhận 10 bộ hôm nay và 20 bộ ngày mai.",
       "audio": "audio/v2/agreement-01.mp3",
       "audioDuration": 4.128,
-      "start": 80.76666666666665,
-      "end": 84.89466666666665
+      "start": 79.76666666666665,
+      "end": 83.89466666666665
     },
     {
       "en": "Reading that offer is not enough: I record the agreement before changing the promise.",
       "vi": "Tôi phải ghi nhận thỏa thuận trước khi thay đổi cam kết giao hàng.",
       "audio": "audio/v2/agreement-02.mp3",
       "audioDuration": 5.76,
-      "start": 84.99466666666665,
-      "end": 90.75466666666665
+      "start": 83.99466666666665,
+      "end": 89.75466666666665
     },
     {
       "en": "I ask Nova to set order B to ten kits today. It proposes one exact edit.",
       "vi": "Tôi nhờ Nova đặt đơn B giao 10 bộ hôm nay. AI đề xuất một thay đổi cụ thể.",
       "audio": "audio/v2/ai-01.mp3",
       "audioDuration": 6.648,
-      "start": 91.89166666666665,
-      "end": 98.53966666666665
+      "start": 90.89166666666665,
+      "end": 97.53966666666665
     },
     {
       "en": "I review it, choose Apply, and keep control of the board.",
       "vi": "Tôi xem trước, bấm Apply và vẫn là người quyết định trên bảng kế hoạch.",
       "audio": "audio/v2/ai-02.mp3",
       "audioDuration": 4.848,
-      "start": 98.63966666666664,
-      "end": 103.48766666666664
+      "start": 97.63966666666664,
+      "end": 102.48766666666664
     },
     {
       "en": "The remaining twenty move to tomorrow.",
       "vi": "Hai mươi bộ còn lại được chuyển sang ngày mai.",
       "audio": "audio/v2/recovery-01.mp3",
       "audioDuration": 3.12,
-      "start": 104.59999999999998,
-      "end": 107.71999999999998
+      "start": 103.59999999999998,
+      "end": 106.71999999999998
     },
     {
       "en": "The updated review checks the whole plan, including the agreement and the expected stock.",
       "vi": "Lần kiểm tra mới xét cả kế hoạch, thỏa thuận và hàng dự kiến về.",
       "audio": "audio/v2/recovery-02.mp3",
       "audioDuration": 6.096,
-      "start": 107.81999999999998,
-      "end": 113.91599999999998
+      "start": 106.81999999999998,
+      "end": 112.91599999999998
     },
     {
       "en": "The handoff preserves what changed and why, with source facts and assistance used.",
       "vi": "Bản bàn giao lưu những thay đổi, dữ kiện nguồn và sự trợ giúp đã dùng.",
       "audio": "audio/v2/handoff-01.mp3",
       "audioDuration": 5.856,
-      "start": 115.01666666666665,
-      "end": 120.87266666666665
+      "start": 114.01666666666665,
+      "end": 119.87266666666665
     },
     {
       "en": "It is a record of decisions, not a certificate.",
       "vi": "Đây là hồ sơ quyết định trong mô phỏng, không phải chứng chỉ.",
       "audio": "audio/v2/handoff-02.mp3",
       "audioDuration": 4.104,
-      "start": 120.97266666666664,
-      "end": 125.07666666666664
+      "start": 119.97266666666664,
+      "end": 124.07666666666664
     },
     {
       "en": "The next shift changes both stock and customer needs.",
       "vi": "Ca tiếp theo thay đổi cả lượng tồn kho và nhu cầu khách hàng.",
       "audio": "audio/v2/replay-01.mp3",
       "audioDuration": 4.272,
-      "start": 126.18333333333332,
-      "end": 130.45533333333333
+      "start": 125.18333333333332,
+      "end": 129.45533333333333
     },
     {
       "en": "A fresh board and separate help history let a learner practice again.",
       "vi": "Người học thử lại trên bảng mới, với lịch sử trợ giúp được lưu riêng.",
       "audio": "audio/v2/replay-02.mp3",
       "audioDuration": 4.728,
-      "start": 130.55533333333332,
-      "end": 135.28333333333333
+      "start": 129.55533333333332,
+      "end": 134.28333333333333
     },
     {
       "en": "Behind the experience, CloudFront serves a private EC2 application.",
       "vi": "Phía sau trải nghiệm, CloudFront kết nối đến ứng dụng EC2 trong mạng riêng.",
       "audio": "audio/v2/architecture-01.mp3",
       "audioDuration": 5.496,
-      "start": 136.39166666666665,
-      "end": 141.88766666666666
+      "start": 135.39166666666665,
+      "end": 140.88766666666666
     },
     {
       "en": "The domain engine checks every commitment. Bedrock Nova interprets requests; the learner confirms changes.",
       "vi": "Bộ mô phỏng kiểm tra cam kết. Bedrock Nova hiểu yêu cầu; người học xác nhận thay đổi.",
       "audio": "audio/v2/architecture-02.mp3",
       "audioDuration": 8.664,
-      "start": 141.98766666666666,
-      "end": 150.65166666666664
+      "start": 140.98766666666666,
+      "end": 149.65166666666664
     },
     {
       "en": "SQLite preserves the record.",
       "vi": "SQLite lưu lại hồ sơ quyết định.",
       "audio": "audio/v2/architecture-03.mp3",
       "audioDuration": 2.976,
-      "start": 150.75166666666664,
-      "end": 153.72766666666664
+      "start": 149.75166666666664,
+      "end": 152.72766666666664
     },
     {
       "en": "Next, we'll review the scenario with practitioners and run a learner pilot. Voice is still a prototype.",
       "vi": "Tiếp theo: chuyên gia góp ý tình huống và thử nghiệm với người học. Voice vẫn là nguyên mẫu.",
       "audio": "audio/v2/close-01.mp3",
       "audioDuration": 7.752,
-      "start": 154.85,
-      "end": 162.602
+      "start": 153.85,
+      "end": 161.602
     },
     {
       "en": "LearnSprint: practice the work before the first job.",
       "vi": "LearnSprint: luyện làm việc trước ngày đi làm đầu tiên.",
       "audio": "audio/v2/close-02.mp3",
       "audioDuration": 3.984,
-      "start": 162.702,
-      "end": 166.686
+      "start": 161.702,
+      "end": 165.686
     }
   ]
 }

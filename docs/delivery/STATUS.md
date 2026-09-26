@@ -1,5 +1,10 @@
 # LearnSprint status
 
+## MCP video and Devpost revision
+
+The project story and AWS Builder integration answer were saved to live Devpost with the deployed MCP description, connection limits and links to captured SDK output. Devpost remains DRAFT, 4/5 steps; final terms are unchecked. Embedded YouTube still points to v3. The revised local cut `video/out/learnsprint-demo-v4-mcp.mp4` is 169.458 seconds (ffprobe), Full HD. Its MCP chapter visualizes the actual saved SDK response and is explicitly labeled as a captured transcript, not a new screen recording. The existing real app footage is retained. Awaiting owner review before uploading this replacement video.
+
+
 ## MCP deployed and demonstrated — 2026-09-26
 
 AWS release `preview-c12-mcp-20260926` built successfully and replaced the existing app in the same Compose project; app health passed. The official MCP SDK client connected through public CloudFront HTTPS, listed five tools, created one fictional shift and saved an authored warehouse answer with stock-register/supplier-notice source receipts. No Bedrock inference was used. Evidence: `MCP-DEMO-2026-09-26.json`. Existing data mounts and inference ledgers were retained. No local app builds or tests were run. Negative cases and broader interoperability remain unverified.

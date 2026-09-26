@@ -52,18 +52,14 @@
       ]
     },
     {
-      "id": "flow",
-      "chapter": "THE LEARNING LOOP",
-      "title": "Every decision leads somewhere.",
-      "type": "flow",
+      "id": "mcp",
+      "chapter": "SELF-HOSTED MCP / AWS",
+      "title": "The same facts. Through MCP.",
+      "type": "mcp",
       "sentences": [
         {
-          "en": "Find the facts. Build a plan. Handle the unexpected.",
-          "vi": "Tìm dữ kiện. Lập kế hoạch. Xử lý tình huống bất ngờ."
-        },
-        {
-          "en": "Then try again with different conditions.",
-          "vi": "Rồi thử lại với những điều kiện khác."
+          "en": "Our hosted MCP server exposes five tools. The official client opened a shift and retrieved this warehouse receipt.",
+          "vi": "MCP server trên AWS cung cấp năm công cụ. Client chính thức đã mở ca và lấy dữ kiện kho này."
         }
       ]
     },
