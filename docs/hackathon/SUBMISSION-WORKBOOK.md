@@ -1,6 +1,6 @@
 # LearnSprint submission workbook — R4 operations simulation
 
-Type: draft and release checklist. Updated 2026-09-25. Nothing in this file has been submitted. Recheck live Devpost fields and official rules before entry. [Requirements](REQUIREMENTS.md) · [Observed status](../delivery/STATUS.md).
+Type: draft and release checklist. Updated 2026-09-26. The Devpost project remains a draft. Recheck live Devpost fields and official rules before final entry. [Requirements](REQUIREMENTS.md) · [Observed status](../delivery/STATUS.md).
 
 The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 2026-09-25. The English story, banner, thumbnail, track, AWS Builder answer and five tool-feedback fields were also saved; the form shows **3/5 steps done**. See the [live-field record](DEVPOST-FIELDS.md) for exact status and the remaining video/final submission gates.
 
@@ -33,8 +33,8 @@ The existing Devpost draft was renamed **LearnSprint** and its pitch saved on 20
 
 - Hosted demo: <https://d2g4a2ezl5lw7r.cloudfront.net/career>. Public First Shift entry requires no sign-in. Each browser owns its saved shifts through a Secure cookie; reviewers can start a fresh attempt.
 - Source repository: <https://github.com/xuanhai0913/LearnSprint>. Public `main` includes the MIT [LICENSE](../../LICENSE), source, content and [reviewer guide](REVIEWER-GUIDE.md). The 2026-09-25 remote check confirmed the license and R4 demo script are readable; `deploy/private/` is absent from the remote. A clean clone/setup remains unverified.
-- Public YouTube/Vimeo video under three minutes: **pending**. The [video kit](../../video/README.md) has Polly English narration, 26 synced captions, a 150-second Remotion timeline and a real-UI shot list. Chrome currently blocks the CloudFront domain, so authentic app footage is still needed.
-- Thumbnail and concept banner: [thumbnail](media/learnsprint-thumbnail.png) and [banner](media/learnsprint-banner.png), both GPT Image illustrations uploaded to the Devpost draft. Real app screenshots/video remain pending.
+- Public YouTube/Vimeo video under three minutes: **pending publication**. The [live screen recording cut](../../video/README.md) is exported locally at `video/out/learnsprint-demo-live.mp4` (150 seconds) with narration and burned-in captions. The earlier screenshot montage is only a storyboard reference.
+- Thumbnail and concept banner: [thumbnail](media/learnsprint-thumbnail.png) and [banner](media/learnsprint-banner.png), both GPT Image illustrations uploaded to the Devpost draft. The real app walkthrough is locally recorded and ready for owner review.
 - Optional friction log: [public-ready draft](FRICTION-SUBMISSION.md), with account details removed and attribution limits stated.
 - Open Source additional challenge: **do not select by default**. Publishing the main repo alone does not satisfy a distinct open-source contribution.
 
