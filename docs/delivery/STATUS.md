@@ -1,5 +1,11 @@
 # LearnSprint status
 
+## Live demo video and public navigation — 2026-09-26
+
+The owner requested an actual recorded walkthrough instead of the screenshot storyboard. Three macOS recordings of the deployed CloudFront app now show a fresh first shift, warehouse fact, manual allocation, review, supplier delay, customer B agreement, one bounded Nova 2 Lite allocation proposal and human Apply, recovery handoff, and a linked replay with changed facts. `video/scripts/render-live.py` edits those takes with the existing Polly narration and burned-in captions into `video/out/learnsprint-demo-live.mp4` (150.013 seconds, 1280×720 H.264/AAC). The raw recordings and exported MP4 are intentionally local and ignored by Git; the earlier still-based video is an internal storyboard, not the submission cut. The video is not uploaded to YouTube or linked in Devpost yet.
+
+CloudFront cross-site top-level document navigation from Devpost previously returned `FORBIDDEN`. The runtime now permits only safe cross-site GET document navigation while retaining the cross-site API and mutation guard. This source was deployed in the Sydney preview image on 2026-09-25; a Chrome visit opened the app and the recorded walkthrough completed. No local application build or automated tests were run. Remaining submission work: owner reviews the live MP4, uploads it publicly, adds its URL to Devpost, checks the final project preview and accepts the official submission terms.
+
 Updated: 2026-09-25, after hosted proposal Apply/Undo and UI repair for the **R4 operations-coordinator job simulation**. This status separates planned, implemented, observed and submitted behavior; PowerLab evidence is retained as historical context.
 
 ## Hosted proposal and contact desk repair — 2026-09-25

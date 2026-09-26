@@ -1,34 +1,26 @@
 import React from 'react';
-import {Audio, Video} from '@remotion/media';
+import {Audio} from '@remotion/media';
 import {AbsoluteFill, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import timeline from './timeline.json';
 
 const ink = '#253c34';
 const green = '#305844';
 const paper = '#f7f4ed';
-const footageAvailable = new Set([
-  // Add a scene ID after recording the corresponding real-app MP4.
-]);
-
 const Scene: React.FC<{scene: (typeof timeline.scenes)[number]}> = ({scene}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const zoom = 1 + Math.min(0.025, frame / fps * 0.0015);
+  const zoom = 1 + Math.min(0.012, frame / fps * 0.0008);
 
   return (
     <AbsoluteFill style={{background: paper, color: ink}}>
-      {footageAvailable.has(scene.id) ? (
-        <Video src={staticFile(scene.footage)} style={{width:'100%',height:'100%',objectFit:'contain'}} muted />
-      ) : (
-        <AbsoluteFill style={{overflow:'hidden'}}>
-          <Img src={staticFile('brand/learnsprint-banner.png')} style={{width:'100%',height:'100%',objectFit:'cover',transform:`scale(${zoom})`}} />
-          <div style={{position:'absolute',right:50,bottom:44,background:paper,padding:'12px 20px',fontSize:26,border:`1px solid ${green}`}}>
-            SCENE TO RECORD · {scene.id.toUpperCase()}
-          </div>
-        </AbsoluteFill>
-      )}
+      <AbsoluteFill style={{overflow:'hidden',background:'#e9ece5',padding:'80px 40px 110px'}}>
+        <Img src={staticFile(scene.footage)} style={{width:'100%',height:'100%',objectFit:'contain',transform:`scale(${zoom})`}} />
+      </AbsoluteFill>
       <div style={{position:'absolute',top:36,left:48,background:green,color:'white',padding:'12px 22px',fontSize:23,letterSpacing:1}}>
         {scene.title}
+      </div>
+      <div style={{position:'absolute',top:43,right:48,color:green,fontSize:20,letterSpacing:1}}>
+        AWS DEMO · STILL STORYBOARD
       </div>
     </AbsoluteFill>
   );

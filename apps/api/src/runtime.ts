@@ -36,5 +36,8 @@ export function requestAllowed(headers: Headers, requireOrigin = false): boolean
   if (host !== new URL(publicOrigin!).host) return false;
   if (origin ? origin !== publicOrigin : requireOrigin) return false;
   const fetchSite = textHeader(headers, 'sec-fetch-site');
-  return fetchSite !== 'cross-site';
+  if (fetchSite !== 'cross-site') return true;
+  // A judge may open the public demo from Devpost. Permit that document
+  // navigation while keeping cross-site API requests and writes blocked.
+  return !requireOrigin && textHeader(headers, 'sec-fetch-mode') === 'navigate' && textHeader(headers, 'sec-fetch-dest') === 'document';
 }

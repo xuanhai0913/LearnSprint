@@ -8,63 +8,63 @@
       "title": "Practice the work",
       "startMs": 9125,
       "endMs": 19165,
-      "footage": "footage/01-hook.mp4"
+      "footage": "stills/01-hook.png"
     },
     {
       "id": "brief",
       "title": "Three orders. Shared constraints.",
       "startMs": 19165,
       "endMs": 33265,
-      "footage": "footage/02-brief.mp4"
+      "footage": "stills/02-brief.png"
     },
     {
       "id": "plan",
       "title": "Make a plan, then review it",
       "startMs": 33265,
       "endMs": 47827,
-      "footage": "footage/03-plan.mp4"
+      "footage": "stills/03-plan.png"
     },
     {
       "id": "incident",
       "title": "The facts change",
       "startMs": 47827,
       "endMs": 59754,
-      "footage": "footage/04-incident.mp4"
+      "footage": "stills/04-incident.png"
     },
     {
       "id": "agreement",
       "title": "An offer is not yet an agreement",
       "startMs": 59754,
       "endMs": 74533,
-      "footage": "footage/05-agreement.mp4"
+      "footage": "stills/05-agreement.png"
     },
     {
       "id": "handoff",
       "title": "Leave an inspectable handoff",
       "startMs": 74533,
       "endMs": 88118,
-      "footage": "footage/06-handoff.mp4"
+      "footage": "stills/06-handoff.png"
     },
     {
       "id": "replay",
       "title": "Try a changed situation",
       "startMs": 88118,
       "endMs": 103730,
-      "footage": "footage/07-replay.mp4"
+      "footage": "stills/07-replay.png"
     },
     {
       "id": "ai",
       "title": "AI proposes. The learner decides.",
       "startMs": 103730,
       "endMs": 118931,
-      "footage": "footage/08-ai.mp4"
+      "footage": "stills/08-ai.png"
     },
     {
       "id": "close",
       "title": "LearnSprint",
       "startMs": 118931,
       "endMs": 135000,
-      "footage": "footage/09-close.mp4"
+      "footage": "stills/09-close.png"
     }
   ],
   "captions": [
