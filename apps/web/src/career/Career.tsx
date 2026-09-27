@@ -1,3 +1,5 @@
+import CareerPaths from './CareerPaths';
+import './it-support.css';
 import { useEffect, useRef, useState } from 'react';
 import type { CareerActorId, CareerBrief, CareerHome, CareerQuestionId, CareerResponse, CareerWorkspace } from '@learnsprint/contracts';
 import { api, ApiError } from '../api';
@@ -175,7 +177,7 @@ export default function Career() {
   return <div className="career-app">
     <a className="cr-skip" href="#career-main">Skip to your work desk</a>
     <header className="cr-header"><a className="cr-brand" href="/career"><span className="cr-brand-mark" aria-hidden="true">ls.</span>LearnSprint</a><span className="cr-header-label">THE CAREER PRACTICE DESK</span><a href="#career-about">About this shift ↗</a></header>
-    <main id="career-main" className="cr-main">
+    <main id="career-main" className="cr-main">{!s && <CareerPaths />}
       <div className="cr-live" role="status" aria-live="polite">{busy || notice}</div>
       {error ? <section className="cr-alert" role="alert"><strong>Your saved work is still here.</strong><p>{error}</p><div className="cr-buttons">{retry ? <button disabled={!!busy || aiActive} onClick={() => void perform(retry)}>Retry the same action</button> : null}<button disabled={!!busy || aiActive} onClick={() => void load(true)}>Load latest state & keep draft</button>{!work ? <a href="/career">Return to career desk</a> : null}</div></section> : null}
       {conflict ? <section className="cr-alert"><strong>Choose which plan to continue with.</strong><p>Load the latest state first if another tab changed this shift. Your local draft stays available for comparison.</p><div className="cr-buttons"><button disabled={!!busy || aiActive} onClick={() => void load(true)}>Load latest</button><button disabled={!!busy || aiActive || !work} onClick={() => resolveDraft(true)}>Use loaded saved plan</button><button disabled={!!busy || aiActive || !draft || finished} onClick={() => resolveDraft(false)}>Keep draft for review</button></div></section> : null}

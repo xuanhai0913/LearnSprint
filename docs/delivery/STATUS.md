@@ -1,5 +1,15 @@
 # LearnSprint status
 
+## Career expansion — 2026-09-27
+
+Implemented a second profession, IT support incident coordination, at `/career?role=it-support`. Added a shared career selector, three evidence-backed tickets, priority/team/action decisions, capacity checks, changing incident facts, immutable handoff, JSON report and linked changed-condition replay. Separate SQLite storage reuses the career owner cookie, input validation, revision checks and transactional idempotency. Replay lookup covers all saved shifts rather than only the 100 most recent home-list entries.
+
+The first cloud image `preview-c13-careers-20260927` compiled successfully and reported healthy. Chrome displayed the career selector and created a new IT shift with all three ticket cards and policy controls. This is a limited opening observation, not full handoff/replay/mobile acceptance. A follow-up image `preview-c13-careers-r2-20260927` contains the replay lookup correction; its cloud build and rollout also succeeded, with the app container reported healthy and the gateway started. Source archive SHA-256: `6c2263dfc65454c1f06a8ed5010a566a78a656313fbb3ca2d38ba97fab403d7f`.
+
+No local app build, app server, automated application tests, model invocation or new human pilot occurred. IT facts and feedback are authored; practitioner plausibility review and live AI/MCP integration for this role remain open. Operations remains the submitted video’s demonstrated AI workflow. The Devpost entry and video were not edited for this expansion.
+
+Next: obtain practitioner/learner feedback using the prepared pilot kit, then prioritize richer role-specific conversations and the next profession from observed needs. Preserve the distinction between cloud compilation, limited browser observations and full acceptance.
+
 ## Reviewer readiness pass — 2026-09-27
 
 Official rules rechecked: Submission Requirements explicitly allow a simulated Alexa+ experience without a mandatory MCP/SDK surface. The older Project Requirements wording remains less explicit. Corrected REQUIREMENTS.md; earlier blanket mandatory-MCP interpretation was incomplete. No native Alexa compatibility is claimed.

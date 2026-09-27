@@ -1,5 +1,9 @@
 # LearnSprint project context
 
+## September 27 career expansion
+
+Owner requested implementation and more professions. Added IT support incident coordination as a separate authored role alongside the operations simulation. See [IT support contract](career/IT-SUPPORT.md) and latest [delivery status](delivery/STATUS.md). Existing operations records and AI ledgers remain intact. IT uses source evidence, triage, an incident, handoff and changed-condition replay; no Bedrock calls in this new role.
+
 Type: explanation/handoff. **R4 career simulation**, updated 2026-09-24. Read [Vietnamese overview](PLAN-VI.md), [product brief](career/PRODUCT-BRIEF.md), [mission](career/MISSION-SPEC.md), [technical contract](career/TECHNICAL-CONTRACT.md), [delivery plan](career/DELIVERY-PLAN.md) and [actual status](delivery/STATUS.md).
 
 ## Latest owner decision

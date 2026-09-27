@@ -1,5 +1,9 @@
 # LearnSprint — thực tập trong công việc mô phỏng
 
+## Mở rộng nghề — 27/09/2026
+
+Theo yêu cầu mới, bổ sung **điều phối hỗ trợ IT** bên cạnh vận hành đơn hàng. Nghề mới có ticket, mức ảnh hưởng, đội phụ trách, hành động tiếp theo, tải công việc, sự cố và bàn giao; lượt luyện lại đổi dữ kiện. Đây là mô phỏng có kịch bản và luật rõ ràng, chưa tích hợp AI cho nghề IT. Bản vận hành/AWS/Bedrock vẫn là luồng đã quay trong video dự thi. Cần dùng thử và góp ý chuyên môn trước khi tuyên bố hiệu quả đào tạo.
+
 Cập nhật 24/09/2026, hướng R4. Bạn đã chọn **option 1**, sau đó chọn **điều phối vận hành: xử lý đơn hàng, khách hàng và sự cố giao hàng**. Đây là hướng sản phẩm hiện tại. PowerLab được giữ làm nguyên mẫu kỹ thuật. Bản nghề nghiệp local đầu tiên đã có tại `/career`; C06–C07 đã có source cho câu hỏi/voice, đề xuất sửa đơn, hướng dẫn và lịch sử trợ giúp; chưa chạy model thật cho luồng career.
 
 ## Cập nhật triển khai AWS — 24/09

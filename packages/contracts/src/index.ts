@@ -10,3 +10,5 @@ export interface Mutation { requestId: string; expectedRevision: number }
 export interface AnswerInput extends Mutation { questionId: string; text: string; fixtureOutcome?: Outcome }
 export type * from './powerlab.js';
 export type * from './career.js';
+
+export type { ItPriority, ItAssignee, ItTicket, ItDecision, ItReview, ItShift, ItWorkspace, ItHome } from './it-support.js';

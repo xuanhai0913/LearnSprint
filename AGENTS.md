@@ -9,6 +9,10 @@
 
 Current product direction is **R4 career simulation**. The owner selected simulated work experience, then operations coordination: orders, customers and delivery incidents. Read `docs/career/PRODUCT-BRIEF.md`, `MISSION-SPEC.md`, `TECHNICAL-CONTRACT.md` and `DELIVERY-PLAN.md`. C01–C05 have initial local source. C06 now has Lite question/preview routing, Sonic voice input, explicit proposal Apply/Undo and separate career allowances; C07 adds versioned coaching, conservative attempt history, bounded AI activity selection and assisted-only opt-in spoken replies. C08 now adds a separate replay/report; C05–C08 behavioral/live/content acceptance remains open. Read `docs/career/REPLAY-AND-REPORT.md`. Read `docs/career/LOCAL-IMPLEMENTATION.md` for exact boundaries. Compilation passed and the entry page was displayed; career behavior is not yet accepted. PowerLab, its authored help and initial Sonic controls remain historical prototypes; one synthetic voice edit was observed. Preserve their source/data/evidence. Do not continue physics coach/B/C work by default.
 
+## Career expansion — September 27, 2026
+
+The owner requested additional professions. IT support incident coordination is implemented as a separate authored role beside operations. Read `docs/career/IT-SUPPORT.md` and the latest status before changing it. Its current version has no live AI/MCP integration; keep this explicit. Preserve existing operations and historical prototype data.
+
 ## Project boundaries
 
 - Latest owner instruction (2026-09-24): skip local tests/heavy builds and deploy using AWS credits with an AWS-issued HTTPS URL. Cloud preview is deployed without reviewer Basic Auth in the AWS project's assigned Sydney region (`ap-southeast-2`); use `docs/delivery/STATUS.md` and ignored `deploy/private/resources.json` for current resources. The local server is stopped. Do not install local Docker or restart local verification. CloudFront VPC origin replaces the owner-domain prerequisite for this release. No account upgrade or SCP changes are needed; preserve the private ingress and local ledgers.
