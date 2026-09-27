@@ -1,0 +1,15 @@
+{
+  "protocol": "2025-11-25",
+  "tools": [
+    "career_home",
+    "career_workspace",
+    "career_open_shift",
+    "career_ask_actor",
+    "career_review_plan"
+  ],
+  "duplicateOpenSameShift": true,
+  "foreignOwnerDenied": true,
+  "wrongOriginStatus": 403,
+  "paidInference": false,
+  "createdFictionalShifts": 1
+}

@@ -1,5 +1,19 @@
 # LearnSprint status
 
+## Reviewer readiness pass — 2026-09-27
+
+Official rules rechecked: Submission Requirements explicitly allow a simulated Alexa+ experience without a mandatory MCP/SDK surface. The older Project Requirements wording remains less explicit. Corrected REQUIREMENTS.md; earlier blanket mandatory-MCP interpretation was incomplete. No native Alexa compatibility is claimed.
+
+Hosted MCP audit negotiated 2025-11-25, listed five tools, confirmed idempotent create, rejected a foreign-owner workspace read and wrong Origin (403). Saved sanitized evidence in MCP-AUDIT-2026-09-27.json and reproducible script in scripts/review/hosted-mcp-audit.py. The initial interrupted local audit process had no captured result; the subsequent completed run produced the saved evidence. These remote probes create fictional shifts, not paid inference.
+
+Chrome opened the demo without a sign-in prompt, created a fresh shift in the existing browser owner, recorded a warehouse fact, saved/reviewed/confirmed allocations, started the supplier incident and restored the shift on reload. This is NOT a clean-browser-cookie test. Full new handoff/replay and mobile acceptance remain pending.
+
+Found a reviewer blocker: the old 10-call Lite batch was exhausted (six completed, four closed/uncertain). Under the owner's standing credit authorization, enabled a distinct batch career-lite-reviewer-2026-09-27 with 50 reservations at $0.02, $1 reservation envelope; preserved the old ledger and voice config. UI showed 50 remaining after reload. Sent one fictional ETA question; the server ledger confirms one completed invocation, leaving 49 reservations. Chrome automation detached before its final response could be inspected, so no fresh end-to-end UI completion is claimed. Reservation envelope is not an invoice guarantee. This is a shared finite budget, not guaranteed judge access through November.
+
+Prepared docs/pilot/TRYOUT-KIT.md with EN/VI prompts, observation sheet, practitioner review, neutral questions, consent/privacy guidance and decision gates. Owner currently has no participants; no invitations sent and no human validation results claimed.
+
+Remaining priorities: restore browser control and finish handoff/replay/mobile verification; make voice prototype status obvious; replace shared-budget exhaustion with a sustainable bounded reviewer access design; recruit the small pilot before making impact claims. No local app build or app server was run.
+
 ## Submitted — 2026-09-26
 
 The owner explicitly confirmed final submission. Accepted the final Official Rules/Devpost Terms checkbox and submitted LearnSprint. Devpost redirected to https://devpost.com/software/learnsprint and displayed: “Project submitted! Continue to edit your project until the hackathon deadline: October 23, 2026 at 03:00pm EDT.” The entry includes published v6 https://www.youtube.com/watch?v=gemDTY87gh4. This confirms submission, not eligibility approval or a judging result. Earlier draft/submission gates below are historical.

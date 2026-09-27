@@ -1,6 +1,6 @@
 # LearnSprint reviewer guide
 
-Updated 2026-09-25. This guide describes the public R4 operations shift demo and its verified limits.
+Updated 2026-09-27. This guide describes the public R4 operations shift demo and its verified limits.
 
 ## Try the hosted experience
 
@@ -32,3 +32,7 @@ Read the [submission story](SUBMISSION-WORKBOOK.md), [judging evidence](JUDGING-
 ## MCP endpoint (2026-09-26)
 
 The self-hosted endpoint is `/api/career/mcp` on the same public demo origin. See [connection instructions and tool boundaries](../career/MCP.md) and [live SDK-client evidence](../delivery/MCP-DEMO-2026-09-26.json). It uses an owner cookie and exact Origin, not OAuth. It supports source-backed investigation and deterministic review; learner commitments stay in the web UI. The [published demo](https://www.youtube.com/watch?v=gemDTY87gh4) includes a labeled visualization of the captured MCP response alongside real app recordings.
+
+## Current evaluation limits
+
+The hosted text allowance is shared and finite (49 reservations remaining at the September 27 observation), so availability can change. Listed actor questions and manual controls remain usable without inference. Voice is experimental and has not passed hosted browser acceptance. The simulation-only path is explicitly permitted in the current official Submission Requirements; MCP is additional evidence. See the [pilot kit](../pilot/TRYOUT-KIT.md) for the planned human review, which has no results yet.

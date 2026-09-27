@@ -4,7 +4,7 @@ Status: deployed on AWS 2026-09-26. Cloud build and official SDK client initiali
 
 ## Purpose
 
-A self-hosted MCP endpoint delegates to the same career domain service as the web board. It exposes source-backed investigation and plan review to an MCP client, preserving owner, phase, revision and idempotency checks. This is an initial qualifying integration, not native Alexa account linking or certification.
+A self-hosted MCP endpoint delegates to the same career domain service as the web board. It exposes source-backed investigation and plan review to an MCP client, preserving owner, phase, revision and idempotency checks. This is an additional integration, not native Alexa account linking or certification. The current official rules also permit a simulation-only entry.
 
 Endpoint: `POST /api/career/mcp`. Official TypeScript SDK 1.30.1; Streamable HTTP with JSON responses and no transport session ID. GET/DELETE return 405. MCP initialization negotiates protocol versions including 2025-11-25 through the SDK. Deployment evidence must record the actual negotiated version.
 
@@ -36,12 +36,11 @@ node apps/api/dist/career/mcp-client.js --open-demo-shift
 
 The default demonstration lists tools and reads the public brief. It uses the official MCP Client and StreamableHTTPClientTransport, exercising initialization and tool calls. No cookie is logged or persisted. Use LEARNSPRINT_MCP_ORIGIN to select a different controlled deployment.
 
-## Release work remaining
+## Verification status
 
-- Cloud build with frozen lockfile and existing persistent data.
-- Observe initialization at 2025-11-25 or later, tools/list, and a source-backed actor call.
-- Observe owner isolation and wrong-Origin rejection when verification is authorized.
-- Add the MCP evidence and connection instructions to the reviewer guide and Devpost story.
-- Update the video to show the real MCP path while staying under three minutes, then obtain approval for the replacement upload.
+- Cloud build, public HTTPS client initialization, tools/list, shift creation and authored actor response: observed September 26.
+- Reviewer instructions and MCP chapter in public video: published September 26.
+- September 27 public HTTPS audit: negotiated 2025-11-25, five tools, repeat create returns same shift, foreign-owner read rejected, wrong Origin returned 403. See `../delivery/MCP-AUDIT-2026-09-27.json`. Audit uses raw JSON-RPC; the earlier SDK demonstration remains separate evidence.
+- Native Alexa/OAuth compatibility: not claimed or required for the alternate simulation route.
 
 Sources: https://modelcontextprotocol.io/specification/2025-11-25/basic/transports and https://github.com/modelcontextprotocol/typescript-sdk .
