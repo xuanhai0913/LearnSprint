@@ -1,5 +1,13 @@
 # LearnSprint status
 
+## Concept-to-UI implementation — 2026-09-27
+
+Implemented the approved editorial direction for career discovery and the IT workspace. Added an original GPT Image workplace illustration, two career cards with accurate capability labels, a three-step explanation, compact in-shift navigation, phase indicator, selected-ticket queue, central evidence/decision form, capacity context and sticky save/review controls. Responsive CSS stacks the workspace at smaller widths; no mobile acceptance claim is made. Existing ticket decisions, reports, API and persistence contracts are preserved.
+
+Cloud release `preview-c15-ui-20260927` compiled and deployed successfully; app container healthy and gateway started. Chrome reloaded the existing IT shift and displayed the new three-column desk, source controls and explicit decision fields. Screenshot saved privately in `deploy/private/career-ui-desk.png`. No local server/build, automated application tests or paid model inference occurred. GPT Image was used for design/art generation, separately from app inference. Full workflow regression, mobile and accessibility acceptance remain pending.
+
+Design assets and exact prompts are in `docs/design/concepts/`; production art is `apps/web/public/images/career-workplace-v1.png`. The bitmap concept is not an app screenshot. Replay comparison and EN/VI localization remain proposed features, not implemented by this increment.
+
 ## IT workflow refinement — 2026-09-27
 
 Removed implicit ticket decision defaults: priority, owner and action now require separate choices. Partial ticket drafts cannot be saved; discard restores the saved decisions. Added current-source and decision counts, contextual next-step guidance, an optional handoff outline and frozen decision cards in the saved report. Opening a previously unread fact invalidates the old review so evidence warnings are not stale. Existing authored scenario facts and historical handoffs remain unchanged.
