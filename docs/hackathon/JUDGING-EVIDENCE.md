@@ -9,6 +9,10 @@ Type: release map, 2026-09-25. Based on the [official rules](https://amazonappde
 | Potential Impact | A realistic entry-level work-preparation task with a clear learner and practitioner job; report what users actually do | Product hypothesis and one fictional scenario authored | Practitioner review and small learner pilot; no measured learning claim yet |
 | Quality of Idea | Stakeholder conversation changes a shared plan under a supplier disruption; replay tests adaptation; handoff makes decisions inspectable | Core workflow observed end to end on the AWS demo | Demonstrate the distinct value clearly in the video; compare fairly with an AI assistant using the same facts |
 
+## September 27 follow-up
+
+See [current readiness audit](READINESS-AUDIT-2026-09-27.md). Career discovery, the IT desk and replay comparison have since been implemented, but their cloud compilation is not complete browser acceptance. Operations remains the primary AI demonstration. The new [in-app reviewer guide](https://d2g4a2ezl5lw7r.cloudfront.net/career?view=reviewer) exposes the evaluation route and verified limits.
+
 ## Release interpretation
 
 The chosen Alexa+ route is a clearly labeled **web simulation**. The [rules](https://amazonappdev2026.devpost.com/rules) allow that route using an AI or agentic tool without a required MCP surface. The AWS Builder mini challenge requires documented AWS service integration. The current demo uses CloudFront, EC2, S3/SSM deployment operations and Bedrock Nova 2 Lite at runtime; Sonic is wired but lacks a successful hosted browser voice receipt. Claims in the video and Devpost story must match that distinction.

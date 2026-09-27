@@ -4,7 +4,7 @@ Updated 2026-09-27. This guide describes the public R4 operations shift demo and
 
 ## Try the hosted experience
 
-Open [First Shift](https://d2g4a2ezl5lw7r.cloudfront.net/career) in a current browser. The entry is public and needs no sign-in. Create a shift, inspect the three orders, ask the listed warehouse question, make an allocation, and use **Review** before recording a plan. Start the shift to reveal a supplier delay, negotiate and explicitly record customer B's split, revise the board, and save a handoff. A linked replay changes the opening facts and keeps a separate attempt. The report compares recorded decisions and can download JSON.
+Start with the [in-app evaluation guide](https://d2g4a2ezl5lw7r.cloudfront.net/career?view=reviewer), then open [First Shift](https://d2g4a2ezl5lw7r.cloudfront.net/career) in a current browser. The entry is public and needs no sign-in. Create a shift, inspect the three orders, ask the listed warehouse question, make an allocation, and use **Review** before recording a plan. Start the shift to reveal a supplier delay, negotiate and explicitly record customer B's split, revise the board, and save a handoff. A linked replay changes the opening facts and keeps a separate attempt. The report compares recorded decisions and can download JSON.
 
 The app uses a Secure browser cookie to associate saved shifts with one browser. A new browser has its own shifts. There is no account system or cross-device sync. The scenarios, businesses and people are fictional.
 
@@ -35,4 +35,8 @@ The self-hosted endpoint is `/api/career/mcp` on the same public demo origin. Se
 
 ## Current evaluation limits
 
-The hosted text allowance is shared and finite (49 reservations remaining at the September 27 observation), so availability can change. Listed actor questions and manual controls remain usable without inference. Voice is experimental and has not passed hosted browser acceptance. The simulation-only path is explicitly permitted in the current official Submission Requirements; MCP is additional evidence. See the [pilot kit](../pilot/TRYOUT-KIT.md) for the planned human review, which has no results yet.
+The hosted text allowance is shared and finite (new September 27 batches authorize up to 400 text calls and 8 voice sessions in a combined $10 reservation envelope; remaining availability changes with use), so availability can change. Listed actor questions and manual controls remain usable without inference. Voice is experimental and has not passed hosted browser acceptance. The simulation-only path is explicitly permitted in the current official Submission Requirements; MCP is additional evidence. See the [pilot kit](../pilot/TRYOUT-KIT.md) for the planned human review, which has no results yet.
+
+## Additional IT profession
+
+The IT role is an authored extension, with separate persistence and no Bedrock/MCP integration. Its newer UI and replay comparison postdate the submitted video. Operations remains the demonstrated track workflow. Compilation and limited desk observations are recorded; full IT handoff/replay browser acceptance remains open.

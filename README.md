@@ -1,5 +1,7 @@
 # LearnSprint
 
+**For judges (English):** [Evaluation guide](https://d2g4a2ezl5lw7r.cloudfront.net/career?view=reviewer) · [English setup and limits](docs/hackathon/REVIEWER-GUIDE.md) · [Current evidence](docs/hackathon/JUDGING-EVIDENCE.md). Operations is the demonstrated Alexa+ style web simulation; IT support is an authored extension.
+
 > Practice the work before the first job.
 
 **R4 — 25/09/2026:** học qua công việc mô phỏng. Bạn đã chọn **điều phối vận hành**, xử lý đơn hàng, khách hàng và sự cố giao hàng. Bài đầu tiên: **First Shift — Ca trực đầu tiên**. Bản demo hiện chạy trên AWS tại [LearnSprint First Shift](https://d2g4a2ezl5lw7r.cloudfront.net/career); các nguyên mẫu trước được giữ lại.

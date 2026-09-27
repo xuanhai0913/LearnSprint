@@ -1,5 +1,11 @@
 # LearnSprint status
 
+## Rules-aligned reviewer experience — 2026-09-27
+
+Revisited official rules and mapped current evidence/gaps in `docs/hackathon/READINESS-AUDIT-2026-09-27.md`. Added `/career?view=reviewer` with the operations AI journey, AWS responsibilities, authored IT distinction, experimental voice status, source/video links and browser persistence limits. Added voice prototype notice beside controls and corrected stale reviewer allowance text. English evaluation/setup links now appear at the top of README.
+
+Cloud release `preview-c17-review-guide-20260927` compiled and deployed successfully, app healthy. Chrome displayed the reviewer guide, both role links, walkthrough, AWS explanation and limitations. Screenshot saved in ignored `deploy/private/reviewer-guide-live.png`. No local application tests/build, inference or Devpost/video edits in this pass. Judge access through the full evaluation window, human validation, full current workflow acceptance and third-party media permission evidence remain explicit open items.
+
 ## Replay report and $10 AI authorization — 2026-09-27
 
 Owner explicitly authorized raising the AI allowance to $10. Activated replacement batches: Nova Lite $8 / 400 reservations at $0.02; Sonic $2 / 8 reservations at $0.25, each at most 60 seconds. These are application reservation bounds, not a provider billing cap or hosting allowance. Historical ledgers are preserved; old unused reservations are superseded, not added to the active $10 envelope. Configuration validation now caps the combined text/voice envelope at $10 and permits up to 500 invocations per batch.

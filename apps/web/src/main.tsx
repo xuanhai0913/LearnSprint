@@ -5,6 +5,7 @@ const App = lazy(() => import('./App'));
 const MissionPreview = lazy(() => import('./mission/MissionPreview'));
 const PowerLab = lazy(() => import('./powerlab/PowerLab'));
 const ItSupport = lazy(() => import('./career/ItSupport'));
+const Reviewer = lazy(() => import('./career/Reviewer'));
 const Career = lazy(() => import('./career/Career'));
 const preview = window.location.pathname.replace(/\/$/, '') === '/mission-preview';
 const powerlab = window.location.pathname.replace(/\/$/, '') === '/powerlab';
@@ -13,7 +14,7 @@ const career = window.location.pathname.replace(/\/$/, '') === '/career';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Suspense fallback={<p role="status" style={{ padding: 32, fontFamily: 'Georgia, serif' }}>Opening LearnSprint…</p>}>
-      {career ? (new URLSearchParams(window.location.search).get('role') === 'it-support' ? <ItSupport /> : <Career />) : powerlab ? <PowerLab /> : preview ? <MissionPreview /> : <App />}
+      {career && new URLSearchParams(window.location.search).get('view') === 'reviewer' ? <Reviewer /> : career ? (new URLSearchParams(window.location.search).get('role') === 'it-support' ? <ItSupport /> : <Career />) : powerlab ? <PowerLab /> : preview ? <MissionPreview /> : <App />}
     </Suspense>
   </StrictMode>,
 );
