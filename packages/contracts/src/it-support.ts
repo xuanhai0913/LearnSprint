@@ -8,6 +8,7 @@ export interface ItShift {
   revision: number; world: number; phase: 'triage' | 'incident' | 'handed_off';
   facts: string[]; decisions: Record<string, ItDecision>; review: ItReview | null;
   history: { at: string; message: string }[]; createdAt: string;
+  handoffDraft?: { note: string; savedAt: string };
   handoff: { at: string; note: string; review: ItReview; decisions: Record<string, ItDecision> } | null;
 }
 export interface ItWorkspace { shift: ItShift; tickets: ItTicket[]; sourceHandoff?: NonNullable<ItShift['handoff']>; }

@@ -1,5 +1,11 @@
 # LearnSprint status
 
+## Handoff continuity — 2026-09-27
+
+Implemented explicit server-saved IT handoff drafts during the incident phase. Draft notes are optional for old records, owner/revision/idempotency protected, restored on reopen and distinguished from unsaved browser text. Added readable plain-text exports containing frozen decisions, issues, workload and history, including the source handoff for completed replays. JSON export remains available.
+
+AWS release `preview-c18-handoff-20260927` compiled and deployed successfully; the application container reported healthy and the gateway started. No local application build, tests or inference calls performed. Draft-save/reload and download browser acceptance remain pending; compilation alone does not establish these behaviors.
+
 ## Rules-aligned reviewer experience — 2026-09-27
 
 Revisited official rules and mapped current evidence/gaps in `docs/hackathon/READINESS-AUDIT-2026-09-27.md`. Added `/career?view=reviewer` with the operations AI journey, AWS responsibilities, authored IT distinction, experimental voice status, source/video links and browser persistence limits. Added voice prototype notice beside controls and corrected stale reviewer allowance text. English evaluation/setup links now appear at the top of README.

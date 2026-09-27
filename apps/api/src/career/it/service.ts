@@ -5,7 +5,7 @@ import { ItRepository } from './repository.js';
 import { itTickets, review, workspace } from './content.js';
 import { careerError } from '../errors.js';
 
-export type ItAction = { requestId:string; expectedRevision:number; type:'read'|'save'|'review'|'incident'|'handoff'; ticketId?:string; decisions?:Record<string,ItDecision>; note?:string };
+export type ItAction = { requestId:string; expectedRevision:number; type:'read'|'save'|'review'|'incident'|'handoff'|'save_handoff_draft'; ticketId?:string; decisions?:Record<string,ItDecision>; note?:string };
 @Injectable()
 export class ItService {
   constructor(private readonly repo:ItRepository){}
@@ -41,6 +41,9 @@ export class ItService {
       } else if(input.type==='save'){
         const decisions=input.decisions!;if(Object.keys(decisions).some(k=>!itTickets(s).some(t=>t.id===k)))careerError(400,'INVALID_TICKET','Choose listed tickets only.');
         s.decisions=decisions;s.review=null;message='Triage decisions saved. Review them against the current evidence.';
+      } else if(input.type==='save_handoff_draft'){
+        if(s.phase!=='incident')careerError(409,'INVALID_PHASE','Start the incident before drafting a handoff.');
+        s.handoffDraft={note:input.note!,savedAt:new Date().toISOString()};message='Handoff draft saved. The shift remains editable.';
       } else if(input.type==='review'){
         s.review=review(s);message=`Review recorded: ${s.review.issues.length} unresolved observations.`;
       } else if(input.type==='incident'){

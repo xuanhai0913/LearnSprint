@@ -35,6 +35,12 @@ The handoff editor offers an optional blank outline. It is a writing aid, not an
 
 A completed replay includes its original, owner-checked frozen handoff. The report compares priorities, owners, actions and unresolved observation counts, and exposes the earlier note. JSON export includes both handoffs. The comparison appears only after the replay handoff to avoid revealing earlier decisions during independent practice. Different facts make raw counts unsuitable as a learning score.
 
+## Handoff drafts and readable exports
+
+During the incident phase, users can explicitly save up to 1500 characters of handoff draft text without finalizing the shift or requiring a completed review. The draft uses the same owner, revision and idempotency checks and is restored on reopen. Existing records without a draft remain compatible. Unsaved text is distinguished from the saved draft; the browser unload warning applies to unsaved changes. Saving ticket decisions is required before saving the note so accepting a response cannot overwrite unsaved choices. Final handoffs remain read-only.
+
+Completed shifts offer a plain-text report with the frozen note, decisions, workload, unresolved observations and action history, alongside the existing JSON export. Completed replays include the earlier frozen handoff. The download does not send the report to another person or certify competence.
+
 ## Review still needed
 
 Cloud compilation/rollout results belong in STATUS.md. No new local application tests were requested for this increment. Practitioner plausibility review, browser end-to-end acceptance, mobile review and learner sessions remain distinct from compilation. Use `../pilot/TRYOUT-KIT.md`, adapting prompts to tickets and escalation. Neither scenario demonstrates learning gains yet.

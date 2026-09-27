@@ -10,6 +10,7 @@ const command=z.discriminatedUnion('type',[
   z.object({...base,type:z.literal('read'),ticketId:z.enum(['vpn','access','print'])}).strict(),
   z.object({...base,type:z.literal('save'),decisions:z.record(z.string().regex(/^(vpn|access|print)$/),decision)}).strict(),
   z.object({...base,type:z.enum(['review','incident'])}).strict(),
+  z.object({...base,type:z.literal('save_handoff_draft'),note:z.string().max(1500)}).strict(),
   z.object({...base,type:z.literal('handoff'),note:z.string().trim().min(20).max(1500)}).strict(),
 ]);
 function parse<T>(schema:z.ZodType<T>,body:unknown):T{const r=schema.safeParse(body);if(!r.success)careerError(400,'INVALID_INPUT','Check the ticket choices. Handoff notes need 20–1500 characters.');return r.data;}
