@@ -10,5 +10,5 @@ export interface ItShift {
   history: { at: string; message: string }[]; createdAt: string;
   handoff: { at: string; note: string; review: ItReview; decisions: Record<string, ItDecision> } | null;
 }
-export interface ItWorkspace { shift: ItShift; tickets: ItTicket[]; }
+export interface ItWorkspace { shift: ItShift; tickets: ItTicket[]; sourceHandoff?: NonNullable<ItShift['handoff']>; }
 export interface ItHome { sessions: { id: string; phase: ItShift['phase']; variant: ItShift['variant']; createdAt: string }[]; }

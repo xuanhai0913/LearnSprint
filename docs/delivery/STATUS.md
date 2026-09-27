@@ -1,5 +1,13 @@
 # LearnSprint status
 
+## Replay report and $10 AI authorization — 2026-09-27
+
+Owner explicitly authorized raising the AI allowance to $10. Activated replacement batches: Nova Lite $8 / 400 reservations at $0.02; Sonic $2 / 8 reservations at $0.25, each at most 60 seconds. These are application reservation bounds, not a provider billing cap or hosting allowance. Historical ledgers are preserved; old unused reservations are superseded, not added to the active $10 envelope. Configuration validation now caps the combined text/voice envelope at $10 and permits up to 500 invocations per batch.
+
+Implemented a completed-replay comparison for IT: frozen first/replay priorities, owners, next actions, unresolved counts and earlier handoff note, with both handoffs in the JSON export. Original handoff is owner-checked and exposed only after replay completion. It does not claim learning gains or equate lower counts across different scenarios with improvement.
+
+Cloud release `preview-c16-report-budget-20260927` compiled and deployed successfully; app healthy and gateway started. Remote configuration readback confirmed `career-lite-ten-dollar-2026-09-27` (400 / $8) and `career-sonic-ten-dollar-2026-09-27` (8 / $2), with no new reservations and historical invocation counts preserved. No local application build/tests or inference calls performed. Full report browser acceptance remains pending.
+
 ## Concept-to-UI implementation — 2026-09-27
 
 Implemented the approved editorial direction for career discovery and the IT workspace. Added an original GPT Image workplace illustration, two career cards with accurate capability labels, a three-step explanation, compact in-shift navigation, phase indicator, selected-ticket queue, central evidence/decision form, capacity context and sticky save/review controls. Responsive CSS stacks the workspace at smaller widths; no mobile acceptance claim is made. Existing ticket decisions, reports, API and persistence contracts are preserved.

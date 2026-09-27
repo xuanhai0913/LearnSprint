@@ -31,6 +31,10 @@ Ticket choices remain blank until explicitly selected; changing priority does no
 
 The handoff editor offers an optional blank outline. It is a writing aid, not an evaluated answer or a quality guarantee. The saved report displays the frozen ticket decisions beside the note and unresolved count.
 
+## Replay comparison
+
+A completed replay includes its original, owner-checked frozen handoff. The report compares priorities, owners, actions and unresolved observation counts, and exposes the earlier note. JSON export includes both handoffs. The comparison appears only after the replay handoff to avoid revealing earlier decisions during independent practice. Different facts make raw counts unsuitable as a learning score.
+
 ## Review still needed
 
 Cloud compilation/rollout results belong in STATUS.md. No new local application tests were requested for this increment. Practitioner plausibility review, browser end-to-end acceptance, mobile review and learner sessions remain distinct from compilation. Use `../pilot/TRYOUT-KIT.md`, adapting prompts to tickets and escalation. Neither scenario demonstrates learning gains yet.

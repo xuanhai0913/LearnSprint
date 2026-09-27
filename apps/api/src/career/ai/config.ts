@@ -6,14 +6,14 @@ export const careerAiDataDir = process.env.LEARNSPRINT_DATA_DIR
   ? pathToFileURL(process.env.LEARNSPRINT_DATA_DIR.replace(/\/$/, '') + '/')
   : new URL('../../../../../.data/', import.meta.url);
 const allowance = {
-  batchId: z.string().regex(/^[a-z0-9-]{8,100}$/), maxInvocations: z.number().int().min(1).max(50),
-  budgetUsd: z.number().positive().max(5), reserveUsd: z.number().min(.02).max(1),
+  batchId: z.string().regex(/^[a-z0-9-]{8,100}$/), maxInvocations: z.number().int().min(1).max(500),
+  budgetUsd: z.number().positive().max(10), reserveUsd: z.number().min(.02).max(1),
 };
 const schema = z.object({
   enabled: z.literal(true), awsProfile: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/).optional(), region: z.literal('us-east-1'),
   text: z.object({ ...allowance, modelId: z.literal('us.amazon.nova-2-lite-v1:0') }).strict(),
   voice: z.object({ ...allowance, modelId: z.literal('amazon.nova-2-sonic-v1:0'), maxDurationSeconds: z.number().int().min(15).max(60) }).strict(),
-}).strict().refine(s => s.text.batchId !== s.voice.batchId && [s.text, s.voice].every(a => a.maxInvocations * a.reserveUsd <= a.budgetUsd + 1e-9) && s.voice.reserveUsd >= .25);
+}).strict().refine(s => s.text.batchId !== s.voice.batchId && [s.text, s.voice].every(a => a.maxInvocations * a.reserveUsd <= a.budgetUsd + 1e-9) && s.voice.reserveUsd >= .25 && s.text.budgetUsd + s.voice.budgetUsd <= 10);
 export type CareerAiSettings = z.infer<typeof schema>;
 export type CareerAllowance = (CareerAiSettings['text'] | CareerAiSettings['voice']) & { mode: 'text' | 'voice'; region: string; awsProfile?: string };
 export function careerAllowance(config: CareerAiSettings, mode: 'text' | 'voice'): CareerAllowance {

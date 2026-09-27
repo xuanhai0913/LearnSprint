@@ -11,12 +11,13 @@ export class ItService {
   constructor(private readonly repo:ItRepository){}
   home(owner:string){return {sessions:this.repo.list(owner).map(({id,phase,variant,createdAt})=>({id,phase,variant,createdAt}))};}
   get(owner:string,id:string){const s=this.repo.get(owner,id);if(!s)careerError(404,'NOT_FOUND','This IT shift is not available in this browser.');return s;}
-  workspace(owner:string,id:string){return workspace(this.get(owner,id));}
+  workspace(owner:string,id:string){return this.present(owner,this.get(owner,id));}
+  private present(owner:string,s:ItShift){const result=workspace(s);if(s.sourceId&&s.phase==='handed_off'){const source=this.get(owner,s.sourceId);if(source.handoff)result.sourceHandoff=source.handoff;}return result;}
   private commit(owner:string,requestId:string,fingerprint:string,fn:()=>ItShift){
     return this.repo.transaction(()=>{
       const saved=this.repo.request(owner,requestId);
-      if(saved){if(saved.fingerprint!==fingerprint)careerError(409,'REQUEST_REUSED','This request was already used for another action.');return workspace(JSON.parse(saved.body));}
-      const s=fn();this.repo.save(owner,s);this.repo.remember(owner,requestId,fingerprint,s);return workspace(s);
+      if(saved){if(saved.fingerprint!==fingerprint)careerError(409,'REQUEST_REUSED','This request was already used for another action.');return this.present(owner,JSON.parse(saved.body) as ItShift);}
+      const s=fn();this.repo.save(owner,s);this.repo.remember(owner,requestId,fingerprint,s);return this.present(owner,s);
     });
   }
   create(owner:string,input:{requestId:string;sourceId?:string}){

@@ -13,6 +13,10 @@ Current product direction is **R4 career simulation**. The owner selected simula
 
 The owner requested additional professions. IT support incident coordination is implemented as a separate authored role beside operations. Read `docs/career/IT-SUPPORT.md` and the latest status before changing it. Its current version has no live AI/MCP integration; keep this explicit. Preserve existing operations and historical prototype data.
 
+## Active AI envelope — September 27, 2026
+
+Owner explicitly authorized $10 for the active career AI allowance: new Lite batch 400 calls at $0.02 reserved ($8) plus new Sonic batch 8 sessions at $0.25 reserved ($2), each at most 60 seconds. Older batch limits below are historical. Preserve all ledgers. This is an application reservation envelope, not an AWS billing cap or hosting budget. Read current status/config before inference.
+
 ## Project boundaries
 
 - Latest owner instruction (2026-09-24): skip local tests/heavy builds and deploy using AWS credits with an AWS-issued HTTPS URL. Cloud preview is deployed without reviewer Basic Auth in the AWS project's assigned Sydney region (`ap-southeast-2`); use `docs/delivery/STATUS.md` and ignored `deploy/private/resources.json` for current resources. The local server is stopped. Do not install local Docker or restart local verification. CloudFront VPC origin replaces the owner-domain prerequisite for this release. No account upgrade or SCP changes are needed; preserve the private ingress and local ledgers.
