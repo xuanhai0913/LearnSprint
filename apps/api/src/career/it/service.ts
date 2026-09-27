@@ -35,7 +35,7 @@ export class ItService {
       let message='';
       if(input.type==='read'){
         if(!itTickets(s).some(t=>t.id===input.ticketId))careerError(400,'INVALID_TICKET','Choose a listed ticket.');
-        const key=`${s.world}:${input.ticketId}`;if(!s.facts.includes(key))s.facts.push(key);
+        const key=`${s.world}:${input.ticketId}`;if(!s.facts.includes(key)){s.facts.push(key);s.review=null;}
         message=`Current evidence opened for ${input.ticketId} (facts ${s.world}).`;
       } else if(input.type==='save'){
         const decisions=input.decisions!;if(Object.keys(decisions).some(k=>!itTickets(s).some(t=>t.id===k)))careerError(400,'INVALID_TICKET','Choose listed tickets only.');

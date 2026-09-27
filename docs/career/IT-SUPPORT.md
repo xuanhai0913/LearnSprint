@@ -25,6 +25,12 @@ A changed-condition replay is available after the first handoff. VPN impact is s
 - Review issues persist in final handoff; unresolved work does not silently become a success.
 - This role does not consume the Lite/Sonic allowance. AI and MCP integration for IT is future work and must preserve these decision boundaries.
 
+## Usability refinement
+
+Ticket choices remain blank until explicitly selected; changing priority does not silently assign an owner or action. Every started draft must contain all three choices before saving, and users can discard unsaved choices. A progress panel counts current evidence and complete decisions and describes the next step. Opening previously unread evidence invalidates an older review so its missing-evidence warnings cannot be mistaken for current feedback.
+
+The handoff editor offers an optional blank outline. It is a writing aid, not an evaluated answer or a quality guarantee. The saved report displays the frozen ticket decisions beside the note and unresolved count.
+
 ## Review still needed
 
 Cloud compilation/rollout results belong in STATUS.md. No new local application tests were requested for this increment. Practitioner plausibility review, browser end-to-end acceptance, mobile review and learner sessions remain distinct from compilation. Use `../pilot/TRYOUT-KIT.md`, adapting prompts to tickets and escalation. Neither scenario demonstrates learning gains yet.

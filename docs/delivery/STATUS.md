@@ -1,5 +1,11 @@
 # LearnSprint status
 
+## IT workflow refinement — 2026-09-27
+
+Removed implicit ticket decision defaults: priority, owner and action now require separate choices. Partial ticket drafts cannot be saved; discard restores the saved decisions. Added current-source and decision counts, contextual next-step guidance, an optional handoff outline and frozen decision cards in the saved report. Opening a previously unread fact invalidates the old review so evidence warnings are not stale. Existing authored scenario facts and historical handoffs remain unchanged.
+
+Release `preview-c14-it-polish-20260927` compiled and deployed successfully on AWS; the application container reported healthy and the gateway started. No local build/server or application tests were run. Full browser handoff/replay acceptance and practitioner review remain pending; no inference was invoked by this increment.
+
 ## Career expansion — 2026-09-27
 
 Implemented a second profession, IT support incident coordination, at `/career?role=it-support`. Added a shared career selector, three evidence-backed tickets, priority/team/action decisions, capacity checks, changing incident facts, immutable handoff, JSON report and linked changed-condition replay. Separate SQLite storage reuses the career owner cookie, input validation, revision checks and transactional idempotency. Replay lookup covers all saved shifts rather than only the 100 most recent home-list entries.
